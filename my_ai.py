@@ -1,23 +1,37 @@
 import os
+import os.path
 import openai
 import json
 import requests 
-import os.path
 
 import mood_langchain
 
-#OPENAI_API_KEY = os.getenv("OPENAI_API_KEY")
-SD_API_KEY = os.getenv("SD_API_KEY")
 
+############################
+######### API KEYS #########
+############################
+SD_API_KEY = os.getenv("SD_API_KEY")
+#OPENAI_API_KEY = os.getenv("OPENAI_API_KEY")
 openai.api_key = os.getenv("OPENAI_API_KEY")
 
 
-def generate_text(my_prompt: str):
-    template = """You are an assistant who generates words depending on the user's adjective and mood.
-    A user will pass in two words. The first word will contain the adjective and the second word will contain the mood;
-    you should generate 5 synonyms of that adjective that fits the mood in a comma separated list.
-    ONLY return a comma separated list, and nothing more."""
+############################
+######### TEMPLATE #########
+############################
+template_file = open("template.txt", "r")
+template_txt = template_file.read()
+template_file.close()
+
+
+
+
+def generate_text(my_prompt: str, template = template_txt):
+    # template = """You are an assistant who generates words depending on the user's adjective and mood.
+    #     A user will pass in two words. The first word will contain the adjective and the second word will contain the mood;
+    #     you should generate 5 synonyms of that adjective that fits the mood in a comma separated list.
+    #     ONLY return a comma separated list, and nothing more."""
     # print("Input two words, adjective and mood modifier")
+    
     return mood_langchain.langchainApply(template, my_prompt)
 
 
