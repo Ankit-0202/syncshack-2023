@@ -106,14 +106,14 @@ def get_images():
         if ip in slide:
             num_images = 0
             for j, item in enumerate(slide[ip]):
-                image = generate_image(slide[ip][j], "")
+                image = generate_image(slide[ip][j], "text")
                 if image is not None:
                     slide[ip][j] = image
                     num_images += 1
                     print(f"Image {num_images}: {slide[ip][j]}")
                     print("--------")
                     
-        print("\n----------------\n")
+        print("\n---------------------\n")
             
 
     # Save the modified data back to the JSON file
