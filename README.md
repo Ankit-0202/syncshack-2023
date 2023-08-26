@@ -95,6 +95,7 @@ Once you've pulled the repository, follow these steps to use Slidey:
 3. Load the extension into Chrome.
 
     3.1. Open Google Chrome and go to [chrome://extensions/](chrome://extensions/).
+    
 
     3.2. Enable "Developer mode" at the top right corner.
 

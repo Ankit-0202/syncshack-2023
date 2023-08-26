@@ -9,7 +9,8 @@ install:
 	npm install
 
 clean:
-	rm output.json
+	rm -f output.json
+	rm -rf __pycache__
 
 
 
