@@ -18,18 +18,19 @@ export default function PromptForm() {
 
     chrome.tabs.query({active: true, currentWindow: true})
         .then(([tab]) => {
-          if (GOOGLE_SLIDES_URL_REGEX.test(tab.url)) {
+          const [, presentationID] = GOOGLE_SLIDES_URL_REGEX.exec(tab.url);
+          if (presentationID) {
             console.log("matched");
             return chrome.scripting.executeScript({
               target: {tabId: tab.id},
-              func: () => {
+              func: (paramPresentationID) => {
                 const SELECTED_ELEMENT_COLOUR = "#8ab4f8";
                 const selectedElementDOMElement =
                     document.querySelector(`path[stroke="${SELECTED_ELEMENT_COLOUR}"]`);
 
                 // If no element is selected, return null
                 if (selectedElementDOMElement === null) {
-                  return null;
+                  return {presentationID: paramPresentationID, objectID: null};
                 }
 
                 // Parent is 3 nodes above
@@ -40,8 +41,9 @@ export default function PromptForm() {
 
                 // Now, get the object ID from the `id` attribute
                 const objectID = targetElement.id;
-                return objectID;
+                return {presentationID: paramPresentationID, objectID};
               },
+              args: [presentationID],
             });
           } else {
             return null;
@@ -51,8 +53,13 @@ export default function PromptForm() {
           const jsonData = {
             prompt,
             mood,
-            objectID: selectedObjectID,
           };
+
+          if (selectedObjectID) {
+            const {presentationID, objectID} = selectedObjectID;
+            jsonData.presentationID = presentationID;
+            jsonData.objectID = objectID;
+          }
           
           return jsonData;
         }).then((jsonData) => {
