@@ -1,4 +1,4 @@
-from flask import Flask, request
+from flask import Flask, request, session
 from my_ai import *
 from json import *
 from logging import Logger
@@ -9,29 +9,27 @@ from flask_cors import CORS
 
 app = Flask(__name__)
 CORS(app)
-
-def call_api(prompt_text):
-    # Check if requesting image
-    if 'image' in prompt_text:
-        return generate_image(prompt_text, "")
-    else:
-        return generate_text(prompt_text)
+app.secret_key = "DEV"
 
 
 @app.post("/prompt-processing")
 def process_prompt():
 
     # Get JSON data sent with POST request
+    assert request.json is not None
     json_data = request.json
     # Access prompt data (under "prompt" key)
-    prompt_text = json_data["prompt"] # type: ignore
+    prompt_text = json_data["prompt"]
+    # Get object ID
+    selected_object_id = json_data["objectID"]
+    if selected_object_id is not None:
+        session["selected_object_id"] = selected_object_id
     
-    out = call_api(prompt_text)
-
-    print(prompt_text, out, "\n", sep='\n', flush=True)
-    # print(prompt_text, out, "\n", sep='\n', flush=True, file=sys.stderr)
-    # print(prompt_text, out, "\n", sep='\n', flush=True, file=file)
-    file = open("output.txt", "w+")
+    print(json_data)
+    
+    out = generate_text(prompt_text)
+    
+    print(prompt_text, out, "\n", sep='\n')
 
     response = {
         "status": "OK",
@@ -42,3 +40,11 @@ def process_prompt():
     get_images()
 
     return response
+
+
+@app.before_request
+def initialise_session():
+    try:
+        session["selected_object_id"]
+    except KeyError:
+        session["selected_object_id"] = None

@@ -1,5 +1,8 @@
-import { useState } from 'react';
+import { useEffect, useState } from 'react';
 import { Button, Grid, TextField } from '@mui/material';
+
+const GOOGLE_SLIDES_URL_REGEX =
+    /https:\/\/docs\.google\.com\/presentation\/d\/([a-zA-Z0-9_-]+)/;
 
 export default function PromptForm() {
   const [prompt, setPrompt] = useState("");
@@ -12,26 +15,65 @@ export default function PromptForm() {
 
   function submitPrompt(event) {
     event.preventDefault();
-  
-    const jsonData = {prompt, mood}
-    fetch("http://localhost:5000/prompt-processing", {
-      method: "POST",
-      headers: {
-        "Content-Type": "application/json",
-      },
-      body: JSON.stringify(jsonData),
-    }).then((data) => {
-      console.log(data.json())
-      return data.json();
-    }).then((jsonResponseData) => {
-      if (jsonResponseData.status != "OK") {
-        throw new Error("bad status");
-      }
-    }).catch((error) => {
-      console.error(error);
-    })
-  
-    clearForm();
+
+    chrome.tabs.query({active: true, currentWindow: true})
+        .then(([tab]) => {
+          if (GOOGLE_SLIDES_URL_REGEX.test(tab.url)) {
+            console.log("matched");
+            return chrome.scripting.executeScript({
+              target: {tabId: tab.id},
+              func: () => {
+                const SELECTED_ELEMENT_COLOUR = "#8ab4f8";
+                const selectedElementDOMElement =
+                    document.querySelector(`path[stroke="${SELECTED_ELEMENT_COLOUR}"]`);
+
+                // If no element is selected, return null
+                if (selectedElementDOMElement === null) {
+                  return null;
+                }
+
+                // Parent is 3 nodes above
+                let targetElement = selectedElementDOMElement;
+                while (!targetElement.hasAttribute("id")) {
+                  targetElement = targetElement.parentElement;
+                }
+
+                // Now, get the object ID from the `id` attribute
+                const objectID = targetElement.id;
+                return objectID;
+              },
+            });
+          } else {
+            return null;
+          }
+        }).then((results) => {
+          const selectedObjectID = results !== null ? results[0].result : null;
+          const jsonData = {
+            prompt,
+            mood,
+            objectID: selectedObjectID,
+          };
+          
+          return jsonData;
+        }).then((jsonData) => {
+          return fetch("http://localhost:5000/prompt-processing", {
+            method: "POST",
+            headers: {
+              "Content-Type": "application/json",
+            },
+            body: JSON.stringify(jsonData),
+          });
+        }).then((data) => {
+          return data.json();
+        }).then((jsonResponseData) => {
+          if (jsonResponseData.status != "OK") {
+            throw new Error("bad status");
+          }
+        }).then(() => {
+          clearForm();
+        }).catch((error) => {
+          console.error(error);
+        });
   }
 
   return (
