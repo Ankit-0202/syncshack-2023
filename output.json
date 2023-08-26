@@ -1,0 +1,93 @@
+{
+  "title": {
+    "title": "Coral Reef",
+    "subtitle": "An Ecosystem of Beauty and Biodiversity"
+  },
+  "slides": [
+    {
+      "title": "Introduction",
+      "content": [
+        "What are coral reefs?",
+        "Why are they important?",
+        "Overview of the presentation"
+      ],
+      "image_prompts": [
+        "coral reef",
+        "underwater world",
+        "marine life"
+      ]
+    },
+    {
+      "title": "Definition",
+      "content": [
+        "Coral reefs are underwater ecosystems composed of diverse colonies of coral polyps.",
+        "They are one of the most biodiverse ecosystems on Earth.",
+        "They are primarily found in tropical and subtropical waters."
+      ],
+      "image_prompts": [
+        "coral polyps",
+        "tropical waters",
+        "subtropical waters"
+      ]
+    },
+    {
+      "title": "Importance",
+      "content": [
+        "Biodiversity hotspots",
+        "Protect coastal areas from erosion",
+        "Provide habitats for marine organisms",
+        "Support fishing and tourism industries"
+      ],
+      "image_prompts": [
+        "biodiversity",
+        "coastal erosion",
+        "marine organisms",
+        "fishing industry",
+        "tourism industry"
+      ]
+    },
+    {
+      "title": "Threats",
+      "content": [
+        "Climate change and coral bleaching",
+        "Ocean acidification",
+        "Overfishing",
+        "Pollution",
+        "Destructive fishing practices"
+      ],
+      "image_prompts": [
+        "coral bleaching",
+        "ocean acidification",
+        "overfishing",
+        "pollution",
+        "destructive fishing"
+      ]
+    },
+    {
+      "title": "Conservation",
+      "content": [
+        "Coral reef restoration",
+        "Marine protected areas",
+        "Sustainable fishing practices",
+        "Reducing pollution and plastic waste"
+      ],
+      "image_prompts": [
+        "coral reef restoration",
+        "marine protected areas",
+        "sustainable fishing",
+        "pollution reduction"
+      ]
+    },
+    {
+      "title": "Conclusion",
+      "content": [
+        "Coral reefs are invaluable ecosystems that need our protection.",
+        "By taking action, we can preserve the beauty and biodiversity of coral reefs for future generations."
+      ],
+      "image_prompts": [
+        "coral reef preservation",
+        "ecosystem protection"
+      ]
+    }
+  ]
+}
