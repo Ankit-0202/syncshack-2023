@@ -62,7 +62,11 @@ def generate_image(my_prompt: str, neg_prompt: str):
     }
 
     response = requests.request("POST", url, headers=headers, data=payload)
-    return response.json()['output']
+    try:
+        if response.json()['output']:
+            return response.json()['output']
+    except:
+        pass
 
 
 def set_json(output):
@@ -77,17 +81,23 @@ def get_images():
         
     # Loop through each slide and modify image prompts
     # Iterate through each slide
+    
+    print("---GENERATING IMAGES---")
     for i, slide in enumerate(json_output['slides']):
-        print(f"Slide {i + 1}: {slide['title']}")
+        print(f"Slide {i + 1}: {slide['title']}\n")
         
         # Iterate through each image_prompt item
         ip = 'image_prompts'
         if ip in slide:
+            num_images = 0
             for j, item in enumerate(slide[ip]):
-                slide[ip][j] = generate_image(slide[ip][j], "")
-                print(f"{j}: {slide[ip][j]}")
-            
-                print("--------")
+                image = generate_image(slide[ip][j], "")
+                if image is not None:
+                    slide[ip][j] = image
+                    num_images += 1
+                    print(f"Image {num_images}: {slide[ip][j]}")
+                    print("--------")
+                    
         print("\n----------------\n")
             
 

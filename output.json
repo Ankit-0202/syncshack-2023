@@ -1,98 +1,112 @@
 {
   "title_slide": {
-    "title": "Squirrels",
-    "subtitle": "A Presentation on the Fascinating World of Squirrels"
+    "title": "The Evolution of Shoes",
+    "subtitle": "From Functionality to Fashion",
+    "image": "shoes"
   },
   "slides": [
     {
       "title": "Introduction",
-      "content": "Welcome to the presentation on squirrels! In this presentation, we will explore the fascinating world of squirrels, their behavior, habitats, and some interesting facts about them.",
-      "image_prompts": []
+      "content": "Shoes have come a long way throughout history, evolving from simple protective coverings to stylish fashion statements. Let's explore the fascinating journey of shoes!",
+      "image_prompts": [
+        [
+          "https://cdn2.stablediffusionapi.com/generations/3cefa178-3cd6-4280-84be-932e3dbdfdb6-0.png"
+        ],
+        [
+          "https://cdn2.stablediffusionapi.com/generations/6e64fe11-696b-49a3-8bc5-a61d7ad8e10c-0.png"
+        ],
+        [
+          "https://cdn2.stablediffusionapi.com/generations/00d5b992-a284-4605-a053-bd142877f427-0.png"
+        ]
+      ],
+      "speaker_notes": "Introduce the topic of shoes and their evolution. Highlight the importance of footwear in human history and how it has transformed over time."
     },
     {
-      "title": "Types of Squirrels",
-      "content": "Squirrels are a diverse group of rodents that are found all around the world. There are more than 200 different species of squirrels, but some of the most common types include:",
+      "title": "Ancient Footwear",
+      "content": "The earliest known shoes date back to around 7,000-8,000 BCE. They were made from natural materials such as animal hides and plant fibers.",
+      "image_prompts": [
+        [
+          "https://cdn2.stablediffusionapi.com/generations/4dafaa48-599c-47af-8911-5f6a16fafaf2-0.png"
+        ],
+        [
+          "https://cdn2.stablediffusionapi.com/generations/8c712657-a468-4457-a62e-ca383facf2fc-0.png"
+        ],
+        [
+          "https://cdn2.stablediffusionapi.com/generations/38ef42ac-e137-478b-838a-f0e7fca977b3-0.png"
+        ]
+      ],
+      "speaker_notes": "Discuss the archaeological evidence of ancient shoes and their construction. Mention the materials used and their basic designs."
+    },
+    {
+      "title": "Functional Footwear",
+      "content": "As civilizations developed, shoes became more than just protective coverings. They were designed for specific purposes, such as:",
       "bullets": [
-        "Eastern Gray Squirrel",
-        "Red Squirrel",
-        "Fox Squirrel"
+        "Hunting and outdoor activities",
+        "Warfare and military footwear",
+        "Working and occupational shoes"
       ],
       "image_prompts": [
         [
-          "https://cdn2.stablediffusionapi.com/generations/609fe958-65c1-47b2-a447-d3d555d272b8-0.png"
+          "https://cdn2.stablediffusionapi.com/generations/cea78d56-2a9e-48c8-b88d-0024da8d7c27-0.png"
         ],
         [
-          "https://cdn2.stablediffusionapi.com/generations/8808c5ef-dddf-46d7-9194-27025ddb93b1-0.png"
+          "https://cdn2.stablediffusionapi.com/generations/64c1b568-5e4c-42cf-b397-81d77f6fd572-0.png"
         ],
         [
-          "https://cdn2.stablediffusionapi.com/generations/a16eddaa-e53c-4d22-9fb1-3b8f12563c91-0.png"
+          "https://cdn2.stablediffusionapi.com/generations/dbb3ee88-eac5-442c-b25e-88dfd6e3c372-0.png"
         ]
-      ]
+      ],
+      "speaker_notes": "Explain how shoes started serving functional purposes beyond basic protection. Mention specific types of functional footwear and their uses."
     },
     {
-      "title": "Habitats and Diet",
-      "content": "Squirrels can adapt to various environments and can be found in forests, woodlands, urban areas, and even deserts. They build nests called dreys in trees or construct burrows in the ground. When it comes to their diet, squirrels are known for being omnivorous. Some common food sources for squirrels include:",
+      "title": "Fashion and Style",
+      "content": "With the rise of social status and the desire for self-expression, shoes began to reflect fashion trends and personal style. Notable shoe fashion milestones include:",
       "bullets": [
-        "Nuts (acorns, walnuts, etc.)",
-        "Seeds",
-        "Fruits and berries"
+        "High-heeled shoes in the 16th century",
+        "Victorian era's extravagant footwear",
+        "The rise of sneakers and athletic shoes"
       ],
       "image_prompts": [
         [
-          "https://cdn2.stablediffusionapi.com/generations/605da97e-3b2f-4ca0-b982-00b5b71b9894-0.png"
+          "https://cdn2.stablediffusionapi.com/generations/d0cb7802-b16e-4ccd-882b-e3e6c85506a7-0.png"
         ],
         [
-          "https://cdn2.stablediffusionapi.com/generations/08e9906b-4664-4a42-b794-266a281dfc33-0.png"
+          "https://cdn2.stablediffusionapi.com/generations/64bf593a-d38b-4d7c-a197-2e14a49f234e-0.png"
         ],
         [
-          "https://cdn2.stablediffusionapi.com/generations/fbf4f08c-4311-4b71-90fb-f1e1ed2f9c39-0.png"
+          "https://cdn2.stablediffusionapi.com/generations/ece90c8e-06d8-4e98-9527-c44ed68d944e-0.png"
         ]
-      ]
+      ],
+      "speaker_notes": "Discuss the shift of shoes from functionality to fashion. Highlight significant fashion trends and styles throughout history, showcasing iconic examples."
     },
     {
-      "title": "Squirrel Behavior",
-      "content": "Squirrels are known for their agile and acrobatic behavior. Some interesting behaviors exhibited by squirrels include:",
+      "title": "Innovation and Technology",
+      "content": "Advancements in technology have revolutionized the shoe industry, leading to innovative designs and improved comfort. Some notable innovations include:",
       "bullets": [
-        "Tree jumping and climbing",
-        "Buried food caching (hoarding)",
-        "Tail flicking and vocalizations"
+        "Mass production and assembly line techniques",
+        "Development of specialized sports shoes",
+        "Introduction of sustainable and eco-friendly materials"
       ],
       "image_prompts": [
         [
-          "https://cdn2.stablediffusionapi.com/generations/508fdf8d-4b74-495a-9659-4254c2b7b046-0.png"
+          "https://cdn2.stablediffusionapi.com/generations/7215278d-dcd9-4d1b-aec9-6fa34e77d9d3-0.png"
         ],
         [
-          "https://cdn2.stablediffusionapi.com/generations/5b23ff27-c526-4aaf-a4aa-e185cc762917-0.png"
+          "https://cdn2.stablediffusionapi.com/generations/d1c0fb68-29e2-499a-af04-a29b234f0796-0.png"
         ],
-        [
-          "https://cdn2.stablediffusionapi.com/generations/40d259a4-90d1-4871-9e41-2dd5990e0b6d-0.png"
-        ]
-      ]
-    },
-    {
-      "title": "Fun Facts about Squirrels",
-      "content": "Here are some fun facts about squirrels:",
-      "bullets": [
-        "Squirrels have excellent memory and can remember where they have buried thousands of nuts.",
-        "Some squirrels can glide through the air using the skin between their legs, allowing them to travel long distances.",
-        "Squirrels play an important role in seed dispersal and tree regeneration."
+        "sustainable footwear"
       ],
-      "image_prompts": [
-        [
-          "https://cdn2.stablediffusionapi.com/generations/083ddaca-ff70-481d-8ab8-f4e80dcf7622-0.png"
-        ],
-        [
-          "https://cdn2.stablediffusionapi.com/generations/7728139c-43ed-4bdc-be36-77ed2ce0639b-0.png"
-        ],
-        [
-          "https://cdn2.stablediffusionapi.com/generations/1b658dd0-3e98-4044-ade7-b631d2e94017-0.png"
-        ]
-      ]
+      "speaker_notes": "Explore how technology has transformed the shoe industry. Discuss key advancements and their impact on design, performance, and sustainability."
     },
     {
       "title": "Conclusion",
-      "content": "Squirrels are fascinating creatures that have adapted to various environments and have unique behaviors. Their ability to climb, jump, and store food makes them remarkable animals. Next time you spot a squirrel, take a moment to appreciate their presence in our ecosystem.",
-      "image_prompts": []
+      "content": "Shoes have evolved from basic protective coverings to fashion statements and technological marvels. They not only serve practical purposes but also reflect our culture, style, and aspirations.",
+      "image_prompts": [
+        "modern shoe collection",
+        "diverse shoe styles",
+        "shoes as self-expression"
+      ],
+      "speaker_notes": "Summarize the evolution of shoes and their significance in society. Emphasize the multifaceted role of shoes as both functional and fashionable items."
     }
   ]
 }
