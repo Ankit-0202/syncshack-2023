@@ -1,134 +1,96 @@
 {
-  "title_slide": {
-    "title": "Chillies",
-    "subtitle": "A presentation on the different types and uses of chillies"
-  },
+  "title": "The History of Potato",
   "slides": [
     {
       "title": "Introduction",
       "content": [
-        "Chillies are a type of fruit from the Capsicum family",
-        "They are commonly used as a spice to add heat and flavor to dishes",
-        "Chillies come in a variety of shapes, sizes, and levels of spiciness"
+        "Potato is a versatile and widely-consumed staple food that has a fascinating history.",
+        "It is believed to have originated in the Andean region of South America.",
+        "Let's explore the journey of the potato throughout history!"
       ],
       "image_prompts": [
         [
-          "https://cdn2.stablediffusionapi.com/generations/edb29805-164a-4af0-a295-d33befdc81c8-0.png"
+          "https://cdn2.stablediffusionapi.com/generations/5f086d86-eb8c-47b0-9a0e-bb2035653441-0.png"
         ],
         [
-          "https://cdn2.stablediffusionapi.com/generations/ff02f4f1-8ede-4d12-95e6-11def60e1e0f-0.png"
+          "https://cdn2.stablediffusionapi.com/generations/fb34740a-9caa-41bc-8b9d-fc27d067b38a-0.png"
         ],
         [
-          "https://cdn2.stablediffusionapi.com/generations/e5446774-f42e-4170-bb17-9f299643b2f3-0.png"
+          "https://cdn2.stablediffusionapi.com/generations/35517292-21e3-4ffc-9690-fcaa833e3b4a-0.png"
         ]
-      ],
-      "notes": "In this slide, we will introduce the topic of chillies, highlighting their classification as a fruit from the Capsicum family. We will mention their common use as a spice and the wide range of options available in terms of shape, size, and spiciness."
+      ]
     },
     {
-      "title": "Scoville Scale",
+      "title": "Discovery and Spread",
       "content": [
-        "The Scoville scale measures the spiciness of chillies",
-        "It is named after American pharmacist Wilbur Scoville",
-        "The scale ranges from 0 (no heat) to over 2 million (extremely hot)"
+        "Potatoes were first domesticated by indigenous people in the Andes around 7,000 to 10,000 years ago.",
+        "Spanish conquistadors encountered the potato during their expeditions in the 16th century.",
+        "The potato was introduced to Europe and gradually spread across the continent."
       ],
       "image_prompts": [
         [
-          "https://cdn2.stablediffusionapi.com/generations/c35bef06-78ea-4de4-aa58-e76d86346991-0.png"
+          "https://cdn2.stablediffusionapi.com/generations/1767390a-9fb5-4f58-9c1c-76aee605624f-0.png"
         ],
+        "Potato cultivation in Europe",
         [
-          "https://cdn2.stablediffusionapi.com/generations/dbfe0a8e-1b5d-4aa4-95d5-baf87882c59d-0.png"
-        ],
-        [
-          "https://cdn2.stablediffusionapi.com/generations/0ed1a8cb-5d50-47ab-9045-fa90ce3f0f4f-0.png"
+          "https://cdn2.stablediffusionapi.com/generations/627095cd-91ce-46cb-b7e9-64dea9c3d918-0.png"
         ]
-      ],
-      "notes": "In this slide, we will discuss the Scoville scale, which is used to measure the spiciness of chillies. We will mention its origin and the range of values it encompasses, from no heat to extremely hot."
+      ]
     },
     {
-      "title": "Types of Chillies",
+      "title": "Potato Revolution",
       "content": [
-        "Jalapeno: Medium spiciness, commonly used in Mexican cuisine",
-        "Habanero: Very hot, often used in Caribbean dishes",
-        "Thai Bird's Eye: Extremely spicy, popular in Thai cuisine",
-        "Poblano: Mild, often used for stuffing in dishes like chiles rellenos",
-        "Ghost Pepper: One of the hottest chillies in the world"
+        "The potato played a crucial role in history as a reliable source of nutrition.",
+        "During the Industrial Revolution, potatoes became a staple food for the working class in Europe.",
+        "Potato cultivation also helped alleviate famines in various regions."
       ],
       "image_prompts": [
         [
-          "https://cdn2.stablediffusionapi.com/generations/78d7b774-0a50-409b-b037-c26370ad84f1-0.png"
+          "https://cdn2.stablediffusionapi.com/generations/22421322-3aa4-425b-a2a9-afb67f107b7b-0.png"
         ],
         [
-          "https://cdn2.stablediffusionapi.com/generations/99654552-ae6c-4bbb-8af6-af28f1b6b367-0.png"
+          "https://cdn2.stablediffusionapi.com/generations/0883bf55-9170-43cb-865d-4feb3fc6effe-0.png"
         ],
         [
-          "https://cdn2.stablediffusionapi.com/generations/c5ecef14-c88c-401b-a0a7-a9a61009a5ee-0.png"
+          "https://cdn2.stablediffusionapi.com/generations/e6453c59-cab2-4641-b499-fcdaadb199a3-0.png"
         ]
-      ],
-      "notes": "In this slide, we will explore different types of chillies and their characteristics. We will mention their level of spiciness and their common usage in various cuisines, such as Mexican, Caribbean, and Thai. We will also highlight the Ghost Pepper as one of the hottest chillies in the world."
+      ]
     },
     {
-      "title": "Culinary Uses",
+      "title": "Impact on Global Cuisine",
       "content": [
-        "Adding heat to dishes: Chillies are commonly used to spice up various recipes",
-        "Sauces and condiments: Chillies are used to make hot sauces, salsas, and chutneys",
-        "Drying and powdering: Some chillies are dried and ground into chili powder",
-        "Marinades and rubs: Chillies can be used in marinades for meat or as rubs for grilling",
-        "Pickling: Chillies can be pickled to preserve their flavor and add a tangy kick"
+        "The introduction of potatoes had a significant impact on global cuisine.",
+        "Potatoes are now a key ingredient in various traditional and modern dishes.",
+        "They are used in diverse cuisines, from mashed potatoes to French fries."
       ],
       "image_prompts": [
         [
-          "https://cdn2.stablediffusionapi.com/generations/e9affe50-64d4-47d5-a33f-01a06b4e250a-0.png"
+          "https://cdn2.stablediffusionapi.com/generations/f4d17b51-79f8-42f7-8e06-25a5c73793a7-0.png"
         ],
+        "Different varieties of potatoes",
         [
-          "https://cdn2.stablediffusionapi.com/generations/d9ee819f-1442-4bfb-b511-1071b8f3cbc9-0.png"
-        ],
-        [
-          "https://cdn2.stablediffusionapi.com/generations/8f4bacdd-7e46-4981-800c-6dbe2d2d3abf-0.png"
+          "https://cdn2.stablediffusionapi.com/generations/482c7c14-f2ce-45c1-b753-34b223dac998-0.png"
         ]
-      ],
-      "notes": "In this slide, we will discuss the various culinary uses of chillies. We will mention their role in adding heat to dishes, as well as their presence in sauces, condiments, and spices like chili powder. We will also touch upon their usage in marinades, rubs, and pickling."
-    },
-    {
-      "title": "Health Benefits",
-      "content": [
-        "Rich in vitamins: Chillies are a good source of vitamins A, C, and E",
-        "Boosts metabolism: The capsaicin in chillies can increase metabolism",
-        "Pain relief: Capsaicin is also known for its analgesic properties",
-        "Heart health: Chillies may help lower blood pressure and cholesterol levels",
-        "Digestive benefits: Chillies may aid digestion and reduce stomach issues"
-      ],
-      "image_prompts": [
-        [
-          "https://cdn2.stablediffusionapi.com/generations/d90f414e-fde6-40ae-befd-962afcba3648-0.png"
-        ],
-        [
-          "https://cdn2.stablediffusionapi.com/generations/88f6def1-d53f-4911-b4de-36082571553d-0.png"
-        ],
-        [
-          "https://cdn2.stablediffusionapi.com/generations/27cbe5eb-a2d7-4ecd-8260-8b05e4b43f29-0.png"
-        ]
-      ],
-      "notes": "In this slide, we will highlight the potential health benefits of consuming chillies. We will mention their vitamin content, their role in boosting metabolism, and their potential pain-relieving properties. We will also touch upon their impact on heart health and digestion."
+      ]
     },
     {
       "title": "Conclusion",
       "content": [
-        "Chillies are versatile and widely used in various cuisines",
-        "They add heat, flavor, and health benefits to dishes",
-        "Explore different types of chillies to find your preferred level of spiciness"
+        "The history of the potato is a testament to its importance in human civilization.",
+        "From its humble beginnings in the Andes to its global popularity, the potato has left a lasting impact.",
+        "Today, it continues to be a beloved and versatile food enjoyed by people worldwide."
       ],
       "image_prompts": [
         [
-          "https://cdn2.stablediffusionapi.com/generations/657a3e47-e0e5-4f05-986a-0bea3489a6a6-0.png"
+          "https://cdn2.stablediffusionapi.com/generations/f631ed8e-e9d7-40ad-be4f-6ea4c160c144-0.png"
         ],
         [
-          "https://cdn2.stablediffusionapi.com/generations/6105ba1b-0a58-485a-83d1-f0c2fb410f75-0.png"
+          "https://cdn2.stablediffusionapi.com/generations/87049732-a0c7-46b7-b468-75fa1a5ed070-0.png"
         ],
         [
-          "https://cdn2.stablediffusionapi.com/generations/053f2394-3416-474d-9382-64d161bff567-0.png"
+          "https://cdn2.stablediffusionapi.com/generations/577a8d20-b231-4084-94cc-39bcc5188978-0.png"
         ]
-      ],
-      "notes": "In this final slide, we will summarize the key points about chillies. We will mention their versatility, their role in enhancing flavor, and their potential health benefits. We will encourage the audience to explore different types of chillies to discover their preferred level of spiciness."
+      ]
     }
   ]
 }
