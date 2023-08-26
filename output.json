@@ -1,151 +1,85 @@
 {
   "title_slide": {
     "title": "Indian Culture",
-    "subtitle": "A Glimpse into the Rich Heritage of India"
+    "subtitle": "A Rich Tapestry of Traditions and Diversity"
   },
   "slides": [
     {
-      "title": "Introduction",
+      "title": "Introduction to Indian Culture",
       "content": [
-        "Diverse and vibrant",
-        "One of the oldest civilizations",
-        "Influenced by various religions and traditions"
+        "India is known for its rich and diverse culture, which is a blend of various traditions, languages, religions, and art forms.",
+        "Indian culture has a history of thousands of years, with influences from ancient civilizations like the Indus Valley Civilization and the Vedic period.",
+        "The cultural diversity of India is reflected in its festivals, music, dance, literature, cuisine, and clothing styles."
       ],
       "image_prompts": [
-        [
-          "https://cdn2.stablediffusionapi.com/generations/3729d807-8254-4da8-8fa3-c38bdbf1686a-0.png"
-        ],
-        [
-          "https://cdn2.stablediffusionapi.com/generations/76771e1f-e180-4c03-8340-6a67b9820689-0.png"
-        ],
-        [
-          "https://cdn2.stablediffusionapi.com/generations/a6b77a6a-0bc1-4953-8793-65007c2bbb8f-0.png"
-        ]
+        "Colorful traditional Indian clothing",
+        "Vibrant Indian festivals",
+        "Classical Indian dance performances"
       ]
     },
     {
       "title": "Religion and Spirituality",
       "content": [
-        "Hinduism, Buddhism, Jainism, and Sikhism originated in India",
-        "Temples, mosques, gurudwaras, and churches coexist",
-        "Yoga and meditation practices"
+        "India is the birthplace of major religions like Hinduism, Buddhism, Jainism, and Sikhism.",
+        "Hinduism is the dominant religion in India, with a wide range of gods and goddesses worshipped across the country.",
+        "Spirituality plays a significant role in Indian culture, with many people practicing meditation, yoga, and other spiritual disciplines."
       ],
       "image_prompts": [
-        [
-          "https://cdn2.stablediffusionapi.com/generations/db6a739d-e76d-4cbb-b46c-8df5288abcc2-0.png"
-        ],
-        [
-          "https://cdn2.stablediffusionapi.com/generations/0f1d17ad-814b-428d-95e7-77b6a8dc7f72-0.png"
-        ],
-        [
-          "https://cdn2.stablediffusionapi.com/generations/149c7f03-d74c-432f-a260-ef1b18263692-0.png"
-        ]
+        "Hindu temple with intricate carvings",
+        "Buddhist monastery in the mountains",
+        "People practicing yoga on a serene beach"
       ]
     },
     {
       "title": "Art and Architecture",
       "content": [
-        "Intricate carvings and sculptures",
-        "Famous Ajanta and Ellora Caves",
-        "Mughal architecture like Taj Mahal"
+        "Indian art and architecture showcase intricate craftsmanship and a blend of various styles.",
+        "Ancient temples and palaces feature detailed carvings, sculptures, and vibrant paintings.",
+        "Famous examples of Indian architecture include the Taj Mahal, Ajanta and Ellora Caves, and the temples of Khajuraho."
       ],
       "image_prompts": [
-        [
-          "https://cdn2.stablediffusionapi.com/generations/8b3e633e-7e22-4531-b00b-f96d5f6ec1df-0.png"
-        ],
-        [
-          "https://cdn2.stablediffusionapi.com/generations/6e562b95-33b7-4004-9533-5864bad7e67d-0.png"
-        ],
-        [
-          "https://cdn2.stablediffusionapi.com/generations/b2ed5787-75ec-4eda-8b60-650a86313c26-0.png"
-        ]
+        "Intricate carvings on a temple wall",
+        "Colorful mural painting in a traditional Indian style",
+        "The majestic Taj Mahal at sunrise"
       ]
     },
     {
-      "title": "Festivals and Celebrations",
+      "title": "Cuisine and Festivals",
       "content": [
-        "Diwali - Festival of Lights",
-        "Holi - Festival of Colors",
-        "Eid, Christmas, and other religious festivals"
+        "Indian cuisine is diverse and known for its rich flavors and aromatic spices.",
+        "Each region in India has its own unique culinary traditions and specialties.",
+        "Indian festivals like Diwali, Holi, and Eid are celebrated with great enthusiasm and showcase the cultural vibrancy of the country."
       ],
       "image_prompts": [
-        "Diwali celebrations",
-        [
-          "https://cdn2.stablediffusionapi.com/generations/1fc01028-b07f-4b68-860b-64b90b04f80f-0.png"
-        ],
-        "Religious processions"
+        "Plate of delicious Indian food with various dishes",
+        "Traditional sweets and snacks for Diwali",
+        "Colorful celebration during Holi festival"
       ]
     },
     {
-      "title": "Cuisine and Traditional Clothing",
+      "title": "Traditional Clothing and Dance",
       "content": [
-        "Spices and flavors in Indian cuisine",
-        "Regional variations in food",
-        "Saree, kurta, dhoti, and other traditional clothing"
+        "Indian clothing varies across different regions, with saree, salwar kameez, and dhoti being popular traditional attire.",
+        "Indian classical dance forms like Bharatanatyam, Kathak, and Odissi are known for their intricate footwork, expressions, and storytelling.",
+        "These dance forms are often performed during religious ceremonies, festivals, and cultural events."
       ],
       "image_prompts": [
-        [
-          "https://cdn2.stablediffusionapi.com/generations/c3511101-9f7b-4c9f-b856-c75e2adc6c30-0.png"
-        ],
-        [
-          "https://cdn2.stablediffusionapi.com/generations/9b80fdd8-4a13-454f-9143-060e6f27b7f2-0.png"
-        ],
-        [
-          "https://cdn2.stablediffusionapi.com/generations/9f805360-df69-4933-be2f-6273ede005e1-0.png"
-        ]
+        "Elegant woman wearing a traditional Indian saree",
+        "Dancers in colorful costumes performing Kathak",
+        "Traditional Indian dance pose with intricate hand gestures"
       ]
     },
     {
-      "title": "Music and Dance",
+      "title": "Literature and Languages",
       "content": [
-        "Classical music traditions like Hindustani and Carnatic",
-        "Bollywood music and dance",
-        "Folk dances like Bhangra and Garba"
+        "Indian literature has a rich heritage dating back to ancient texts like the Vedas, Mahabharata, and Ramayana.",
+        "Prominent Indian authors like Rabindranath Tagore, R.K. Narayan, and Arundhati Roy have made significant contributions to world literature.",
+        "India is known for its diverse languages, with Hindi, Bengali, Tamil, and Urdu being some of the widely spoken languages."
       ],
       "image_prompts": [
-        [
-          "https://cdn2.stablediffusionapi.com/generations/cc21db66-e461-4fe7-8b3d-598671767618-0.png"
-        ],
-        [
-          "https://cdn2.stablediffusionapi.com/generations/2aa1f2fa-e387-47a8-a027-61a3569bec7f-0.png"
-        ],
-        [
-          "https://cdn2.stablediffusionapi.com/generations/f48dc238-2ee0-4d60-86bc-5d8549efb381-0.png"
-        ]
-      ]
-    },
-    {
-      "title": "Influence on World Culture",
-      "content": [
-        "Yoga and Ayurveda gaining worldwide popularity",
-        "Indian diaspora spreading cultural influences",
-        "Bollywood films reaching global audiences"
-      ],
-      "image_prompts": [
-        [
-          "https://cdn2.stablediffusionapi.com/generations/99dd0d59-f4d1-4846-a733-83f1ab64a489-0.png"
-        ],
-        [
-          "https://cdn2.stablediffusionapi.com/generations/3fea5298-57b8-408a-8bd1-b3f40e3dcee7-0.png"
-        ],
-        [
-          "https://cdn2.stablediffusionapi.com/generations/47b56510-34fe-45cc-b4e3-a67b44d64c90-0.png"
-        ]
-      ]
-    },
-    {
-      "title": "Conclusion",
-      "content": [
-        "Indian culture is a tapestry of traditions and customs",
-        "Preserving ancient heritage in the modern world",
-        "A vibrant and dynamic expression of diversity"
-      ],
-      "image_prompts": [
-        "Traditional Indian handicrafts",
-        "Heritage conservation efforts in India",
-        [
-          "https://cdn2.stablediffusionapi.com/generations/cff9c038-055f-44b0-9d2f-8d2bd24f1959-0.png"
-        ]
+        "Stack of ancient Indian manuscripts",
+        "Bust of Rabindranath Tagore, Nobel laureate in Literature",
+        "People reading books in different Indian languages"
       ]
     }
   ]
