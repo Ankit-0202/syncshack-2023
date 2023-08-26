@@ -23,7 +23,7 @@ def generate_image(my_prompt: str, neg_prompt:str):
     payload = json.dumps({
         "key": SD_API_KEY,
         "prompt": my_prompt,
-        "negative_prompt": None if len(neg_prompt) == 0,
+        "negative_prompt": None if len(neg_prompt) == 0 else None,
         "width": "512",
         "height": "512",
         "samples": "1",
