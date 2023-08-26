@@ -9,7 +9,7 @@ from googleapiclient.errors import HttpError
 import google
 from enum import Enum
 from dataclasses import dataclass
-
+import json
 
 @dataclass
 class Rect():
@@ -32,6 +32,12 @@ class Layout():
     TITLE_AND_BODY = "TITLE_AND_BODY"
     BLANK = "BLANK"
 
+# Font size
+def getptobj(scalar):
+    return {
+        'magnitude': scalar,
+        'unit': 'PT'
+    }
 
 def service_helper(request: dict, creds: str):
     """
@@ -89,7 +95,7 @@ def list_slides(presentation_id, creds):
     """
     def func(service):
         presentation = service.presentations().get(
-            presentationId=PRESENTATION_ID).execute()
+            presentationId=presentation_id).execute()
 
         slides = presentation.get('slides')
         return slides
@@ -159,12 +165,7 @@ def create_textbox_with_text(presentation_id, page_id, textbox_id, rect, text, c
     def func(service):
         # Create a new square textbox, using the supplied element ID.
 
-        # Font size
-        def getptobj(scalar):
-            return {
-                'magnitude': scalar,
-                'unit': 'PT'
-            }
+       
 
         requests = [
             {
@@ -259,11 +260,7 @@ def make_textbox_bullets(presentation_id, textbox_id, creds):
 
 def add_image_to_slide(presentation_id, page_id, image_id, img_addr, img_rect, creds):
     def func(service):
-        image_id = 'MyImage_11'
-        emu4M = {
-            'magnitude': 4000000,
-            'unit': 'EMU'
-        }
+        
         requests = [{
             'createImage': {
                 'objectId': image_id,
@@ -271,15 +268,15 @@ def add_image_to_slide(presentation_id, page_id, image_id, img_addr, img_rect, c
                 'elementProperties': {
                     'pageObjectId': page_id,
                     'size': {
-                        'height': emu4M,
-                        'width': emu4M
+                        'height': getptobj(img_rect.height),
+                        'width': getptobj(img_rect.width)
                     },
                     'transform': {
                         'scaleX': 1,
                         'scaleY': 1,
-                        'translateX': 100000,
-                        'translateY': 100000,
-                        'unit': 'EMU'
+                        'translateX': img_rect.x,
+                        'translateY': img_rect.y,
+                        'unit': 'pt'
                     }
                 }
             }
@@ -308,8 +305,29 @@ def populate_slides(filename: str, presentation_id: str):
     json_output = json.load(json_file)
     json_file.close()
     creds = get_credentials()
-    list_slides(presentation_id, creds)
-    create_slide(presentation_id, None, layout, None, creds)
+    # list_slides(presentation_id, creds)
+
+    slide_info = json_output["slides"]
+    print(slide_info)
+
+    title_box_rect = Rect(20,20, 50, 500)
+    content_box_rect = Rect(20,50,300, 500)
+    dim = 512
+    scale_factor = 0.3
+    new_dim = dim*scale_factor
+    image_box_rect = Rect(550, 50, new_dim, new_dim)
+    image_counter = 0;
+    for slide in slide_info:
+        page_id = create_slide(presentation_id, None, Layout.BLANK, None, creds)["objectId"]
+        print(page_id)
+        create_textbox_with_text(presentation_id, page_id, page_id+"textbox", title_box_rect, slide["title"], creds)
+        create_textbox_with_text(presentation_id, page_id, page_id+"bodybox", content_box_rect, slide["content"], creds)
+        if len(slide["image_prompts"]) > 0:
+            image_url = slide["image_prompts"][0][0]
+            add_image_to_slide(presentation_id, page_id, page_id+str(image_counter), image_url, image_box_rect, creds)
+            image_counter += 1
+
+
     
     #hardcoded textbox locations: title, content, images
 
@@ -317,19 +335,21 @@ def populate_slides(filename: str, presentation_id: str):
 
 def main():
     creds = get_credentials()
-    # NB: Object id for slide must have length >= 5
-    list_slides(PRESENTATION_ID, creds)
 
-    new_page = create_slide(PRESENTATION_ID, None,
-                            Layout.TITLE_AND_BODY, None, creds)
-    page_id = new_page["objectId"]
-    response = create_textbox_with_text(PRESENTATION_ID, page_id,
-                                        page_id + "textbox", Rect(0, 0, 100, 100), "Ankit is a savage", creds)
-    textbox_id = response["objectId"]
-    make_textbox_bullets(PRESENTATION_ID, textbox_id, creds)
-    add_image_to_slide(PRESENTATION_ID, page_id, None, 
-                       "https://cdn2.stablediffusionapi.com/generations/3c617436-bd0f-4c3c-8782-f0f02c9d1254-0.png", creds)
-    print(response)
+    populate_slides("output.json", PRESENTATION_ID)
+    # # NB: Object id for slide must have length >= 5
+    # list_slides(PRESENTATION_ID, creds)
+
+    # new_page = create_slide(PRESENTATION_ID, None,
+    #                         Layout.TITLE_AND_BODY, None, creds)
+    # page_id = new_page["objectId"]
+    # response = create_textbox_with_text(PRESENTATION_ID, page_id,
+    #                                     page_id + "textbox", Rect(0, 0, 100, 100), "Ankit is a savage", creds)
+    # textbox_id = response["objectId"]
+    # make_textbox_bullets(PRESENTATION_ID, textbox_id, creds)
+    # add_image_to_slide(PRESENTATION_ID, page_id, None, 
+    #                    "https://cdn2.stablediffusionapi.com/generations/3c617436-bd0f-4c3c-8782-f0f02c9d1254-0.png", creds)
+    # print(response)
 
 if __name__ == "__main__":
     main()
