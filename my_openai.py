@@ -1,7 +1,7 @@
 import os
 import openai
 
-openai.api_key = "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"
+openai.api_key = os.getenv("OPENAI_KEY")
 
 def openai_prompt(my_prompt: str):
     response = openai.Completion.create(
