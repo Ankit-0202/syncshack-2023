@@ -5,5 +5,10 @@
   "action": { "default_popup": "index.html" },
   "host_permissions": [
     "http://localhost:5000/*"
+  ],
+  "permissions": [
+    "scripting",
+    "activeTab",
+    "tabs"
   ]
 }

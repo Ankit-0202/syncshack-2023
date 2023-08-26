@@ -13,6 +13,7 @@
     "@emotion/styled": "^11.11.0",
     "@fontsource/roboto": "^5.0.8",
     "@mui/material": "^5.14.6",
+    "chrome-types": "^0.1.227",
     "react": "^18.0.0",
     "react-dom": "^18.0.0",
     "typechat": "^0.0.10"
