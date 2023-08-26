@@ -1,0 +1,152 @@
+{
+  "title_slide": {
+    "title": "Indian Culture",
+    "subtitle": "A Glimpse into the Rich Heritage of India"
+  },
+  "slides": [
+    {
+      "title": "Introduction",
+      "content": [
+        "Diverse and vibrant",
+        "One of the oldest civilizations",
+        "Influenced by various religions and traditions"
+      ],
+      "image_prompts": [
+        [
+          "https://cdn2.stablediffusionapi.com/generations/3729d807-8254-4da8-8fa3-c38bdbf1686a-0.png"
+        ],
+        [
+          "https://cdn2.stablediffusionapi.com/generations/76771e1f-e180-4c03-8340-6a67b9820689-0.png"
+        ],
+        [
+          "https://cdn2.stablediffusionapi.com/generations/a6b77a6a-0bc1-4953-8793-65007c2bbb8f-0.png"
+        ]
+      ]
+    },
+    {
+      "title": "Religion and Spirituality",
+      "content": [
+        "Hinduism, Buddhism, Jainism, and Sikhism originated in India",
+        "Temples, mosques, gurudwaras, and churches coexist",
+        "Yoga and meditation practices"
+      ],
+      "image_prompts": [
+        [
+          "https://cdn2.stablediffusionapi.com/generations/db6a739d-e76d-4cbb-b46c-8df5288abcc2-0.png"
+        ],
+        [
+          "https://cdn2.stablediffusionapi.com/generations/0f1d17ad-814b-428d-95e7-77b6a8dc7f72-0.png"
+        ],
+        [
+          "https://cdn2.stablediffusionapi.com/generations/149c7f03-d74c-432f-a260-ef1b18263692-0.png"
+        ]
+      ]
+    },
+    {
+      "title": "Art and Architecture",
+      "content": [
+        "Intricate carvings and sculptures",
+        "Famous Ajanta and Ellora Caves",
+        "Mughal architecture like Taj Mahal"
+      ],
+      "image_prompts": [
+        [
+          "https://cdn2.stablediffusionapi.com/generations/8b3e633e-7e22-4531-b00b-f96d5f6ec1df-0.png"
+        ],
+        [
+          "https://cdn2.stablediffusionapi.com/generations/6e562b95-33b7-4004-9533-5864bad7e67d-0.png"
+        ],
+        [
+          "https://cdn2.stablediffusionapi.com/generations/b2ed5787-75ec-4eda-8b60-650a86313c26-0.png"
+        ]
+      ]
+    },
+    {
+      "title": "Festivals and Celebrations",
+      "content": [
+        "Diwali - Festival of Lights",
+        "Holi - Festival of Colors",
+        "Eid, Christmas, and other religious festivals"
+      ],
+      "image_prompts": [
+        "Diwali celebrations",
+        [
+          "https://cdn2.stablediffusionapi.com/generations/1fc01028-b07f-4b68-860b-64b90b04f80f-0.png"
+        ],
+        "Religious processions"
+      ]
+    },
+    {
+      "title": "Cuisine and Traditional Clothing",
+      "content": [
+        "Spices and flavors in Indian cuisine",
+        "Regional variations in food",
+        "Saree, kurta, dhoti, and other traditional clothing"
+      ],
+      "image_prompts": [
+        [
+          "https://cdn2.stablediffusionapi.com/generations/c3511101-9f7b-4c9f-b856-c75e2adc6c30-0.png"
+        ],
+        [
+          "https://cdn2.stablediffusionapi.com/generations/9b80fdd8-4a13-454f-9143-060e6f27b7f2-0.png"
+        ],
+        [
+          "https://cdn2.stablediffusionapi.com/generations/9f805360-df69-4933-be2f-6273ede005e1-0.png"
+        ]
+      ]
+    },
+    {
+      "title": "Music and Dance",
+      "content": [
+        "Classical music traditions like Hindustani and Carnatic",
+        "Bollywood music and dance",
+        "Folk dances like Bhangra and Garba"
+      ],
+      "image_prompts": [
+        [
+          "https://cdn2.stablediffusionapi.com/generations/cc21db66-e461-4fe7-8b3d-598671767618-0.png"
+        ],
+        [
+          "https://cdn2.stablediffusionapi.com/generations/2aa1f2fa-e387-47a8-a027-61a3569bec7f-0.png"
+        ],
+        [
+          "https://cdn2.stablediffusionapi.com/generations/f48dc238-2ee0-4d60-86bc-5d8549efb381-0.png"
+        ]
+      ]
+    },
+    {
+      "title": "Influence on World Culture",
+      "content": [
+        "Yoga and Ayurveda gaining worldwide popularity",
+        "Indian diaspora spreading cultural influences",
+        "Bollywood films reaching global audiences"
+      ],
+      "image_prompts": [
+        [
+          "https://cdn2.stablediffusionapi.com/generations/99dd0d59-f4d1-4846-a733-83f1ab64a489-0.png"
+        ],
+        [
+          "https://cdn2.stablediffusionapi.com/generations/3fea5298-57b8-408a-8bd1-b3f40e3dcee7-0.png"
+        ],
+        [
+          "https://cdn2.stablediffusionapi.com/generations/47b56510-34fe-45cc-b4e3-a67b44d64c90-0.png"
+        ]
+      ]
+    },
+    {
+      "title": "Conclusion",
+      "content": [
+        "Indian culture is a tapestry of traditions and customs",
+        "Preserving ancient heritage in the modern world",
+        "A vibrant and dynamic expression of diversity"
+      ],
+      "image_prompts": [
+        "Traditional Indian handicrafts",
+        "Heritage conservation efforts in India",
+        [
+          "https://cdn2.stablediffusionapi.com/generations/cff9c038-055f-44b0-9d2f-8d2bd24f1959-0.png"
+        ]
+      ]
+    }
+  ]
+}
