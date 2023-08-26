@@ -42,7 +42,18 @@ def set_json(output):
         
 
 def get_images():
-    with open('output.json', 'a+') as json_file:
-        output = json.load(json_file)
+    json_file = open('output.json', 'r')
+    json_output = json.load(json_file)
+    json_file.close()
         
+    # Loop through each slide and modify image prompts
+    for slide in json_output['slides']:
+        image_prompts = slide['image_prompts']
         
+        for index, prompt in enumerate(image_prompts):
+            print(index, prompt)
+            
+
+    # Save the modified data back to the JSON file
+    with open('output.json', 'w') as json_file:
+        json.dump(json_output, json_file, indent=2)
