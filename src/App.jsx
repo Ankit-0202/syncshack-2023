@@ -1,11 +1,7 @@
-import { useState } from 'react'
-
 import './App.css'
 import PromptForm from './components/PromptForm'
 
-function App() {
-  const [count, setCount] = useState(0)
-
+export default function App() {
   return (
     <div className="App">
       <header className="App-header">
@@ -14,7 +10,5 @@ function App() {
 
       <PromptForm />
     </div>
-  )
+  );
 }
-
-export default App

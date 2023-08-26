@@ -1,17 +1,17 @@
-import { useState } from 'react'
+import { useState } from 'react';
 import { Button, Grid, TextField } from '@mui/material';
 
 export default function PromptForm() {
-  const [prompt, setPrompt] = useState("")
-  const [mood, setMood] = useState("")
+  const [prompt, setPrompt] = useState("");
+  const [mood, setMood] = useState("");
 
   function clearForm() {
-    setPrompt("")
-    setMood("")
+    setPrompt("");
+    setMood("");
   }
 
   function submitPrompt(event) {
-    event.preventDefault()
+    event.preventDefault();
   
     const jsonData = {prompt, mood}
     fetch("http://localhost:5000/prompt-processing", {
@@ -21,16 +21,16 @@ export default function PromptForm() {
       },
       body: JSON.stringify(jsonData),
     }).then((data) => {
-      return data.json()
+      return data.json();
     }).then((jsonResponseData) => {
       if (jsonResponseData.status != "OK") {
-        throw new Error("bad status")
+        throw new Error("bad status");
       }
     }).catch((error) => {
-      console.error(error)
+      console.error(error);
     })
   
-    clearForm()
+    clearForm();
   }
 
   return (
@@ -46,6 +46,7 @@ export default function PromptForm() {
           label="Prompt input"
           multiline
           fullWidth
+          size="small"
           value={prompt}
           onChange={(e) => setPrompt(e.target.value)}
         />
@@ -57,6 +58,7 @@ export default function PromptForm() {
           label="Mood"
           helperText="Enter a mood to jazz up your presentation!"
           fullWidth
+          size="small"
           value={mood}
           onChange={(e) => setMood(e.target.value)}
         />
@@ -66,5 +68,5 @@ export default function PromptForm() {
         <Button type="submit" variant="contained">Send Prompt</Button>
       </Grid>
     </Grid>
-  )
+  );
 }
