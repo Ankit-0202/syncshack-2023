@@ -3,10 +3,10 @@ import openai
 import json
 import requests 
 
-OPENAI_API_KEY = os.getenv("OPENAI_API_KEY")
+#OPENAI_API_KEY = os.getenv("OPENAI_API_KEY")
 SD_API_KEY = os.getenv("SD_API_KEY")
 
-openai.api_key = os.getenv(OPENAI_API_KEY)
+openai.api_key = os.getenv("OPENAI_API_KEY")
 print(openai.api_key);
 
 def openai_prompt(my_prompt: str):
