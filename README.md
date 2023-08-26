@@ -1,1 +1,0 @@
-# syncshack-2023
