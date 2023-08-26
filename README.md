@@ -4,53 +4,56 @@ A Chrome extension for presentations made using Google Slides that leverages the
 
 ## Table of Contents
 
-- [Introduction](#introduction)
-- [Features](#features)
-- [Getting Started](#getting-started)
-  - [Prerequisites](#prerequisites)
-  - [Installation](#installation)
-  - [Usage](#usage)
-- [Configuration](#configuration)
-- [Contributing](#contributing)
-- [License](#license)
-- [Contact](#contact)
+- [Problem Statement](#problem-statement)
+- [Introducing Slidey: Simplifying Presentation Production](#introducing-slidey-simplifying-presentation-production)
+- [Seamless User Experience](#how-does-slidey-work?)
+- [Who Can Use Slidey?](#who-can-use-slidey)
+- [Prototype Overview](#prototype-overview)
+- [How Slidey Operates](#how-slidey-operates)
+- [Experience Slidey For Yourself!](#experience-slidey-for-yourself)
 
-## Introduction
 
-Explain what your project is about and why it's useful or interesting.
+## Problem Statement
 
-## Features
+In an era marked by the constant emergence of new ideas and concepts, effective presentation of knowledge holds paramount importance. However, the process of creating engaging presentations remains a daunting and time-intensive task, diverting valuable efforts and resources away from other productive endeavors.
 
-List the main features or functionalities of your project.
+## Introducing Slidey: Simplifying Presentation Production
 
-## Getting Started
+**Slidey** addresses the challenge of presentation creation head-on. By harnessing the capabilities of Language Models (LLMs) and text-to-image generation, Slidey revolutionizes the way presentations are crafted. Gone are the days of intricate and laborious slide design processes. With Slidey, producing captivating slides for demonstrations and research becomes effortlessly efficient.
 
-Provide instructions on how to get the project up and running on a local machine.
+## How does Slidey work?
 
-### Prerequisites
+Slidey offers a user-friendly Chrome extension that streamlines the presentation preparation process. Here's how it works:
 
-List any software, tools, or libraries that users need to have installed before they can use your project.
+1. **Prompt and Mood:** Start by providing a prompt and specifying the desired mood or tone of your presentation.
 
-### Installation
+2. **Google Account Integration:** Log in to your Google account and open a presentation where you intend to incorporate the slides.
 
-Step-by-step guide on how to install and set up your project.
+3. **Automated Content Generation:** Slidey takes it from there, generating content, speaker notes, and complementary images tailored to enhance your presentation's impact.
 
-### Usage
+## Who Can Use Slidey?
 
-Examples and explanations on how to use your project. Provide code snippets if necessary.
+Slidey is designed to cater to a wide spectrum of users eager to share information effectively. Its intuitive interface makes it accessible to users of all demographics, from tech-savvy youngsters to seasoned professionals. Specifically, Slidey caters to:
 
-## Configuration
+- Individuals looking to create quick and engaging presentations for informal occasions.
+- Those seeking a template to build comprehensive and visually appealing slideshows.
 
-Explain any configuration options or settings available for your project.
+## Prototype Overview
 
-## Contributing
+Our prototype is a Chrome extension that taps into Google's API to craft dynamic and compelling slideshows. With just a concept and a desired tone, Slidey generates a cohesive set of assets, including images, speaker notes, and concise text for each slide.
 
-Guidelines for other developers who want to contribute to your project. Include information about how to submit pull requests, coding standards, etc.
+## How Slidey Operates
 
-## License
+Slidey operates through an amalgamation of AI technologies:
 
-Specify the license under which your project is distributed.
+1. **Prompts and AI Tools:** The extension utilizes a series of prompts that synergize outputs from diverse AI tools, including the prowess of OpenAI and Stable Diffusion.
 
-## Contact
+2. **Langchain Model:** The generated content undergoes refinement through a langchain model, ensuring coherence and relevance.
 
-Provide your contact information or ways to reach out to you. This could be your email, social media profiles, or a link to the issue tracker for your project.
+3. **Seamless Integration:** Finally, the refined content seamlessly integrates with a Google Slides presentation, ready to captivate and inform your audience.
+
+## Experience Slidey For Yourself!
+
+Ready to transform your presentation creation process? Clone our Git repository and access Slidey today:
+
+[Slidey Repository](https://github.com/Ankit-0202/syncshack-2023.git)
