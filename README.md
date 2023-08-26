@@ -4,8 +4,14 @@ A Chrome extension for presentations made using Google Slides that leverages the
 
 ## Table of Contents
 
-
-
+- [Problem Statement](#problem-statement)
+- [Introducing Slidey: Simplifying Presentation Production](#introducing-slidey-simplifying-presentation-production)
+- [How does Slidey work?](#how-does-slidey-work)
+- [Who Can Use Slidey?](#who-can-use-slidey)
+- [Prototype Overview](#prototype-overview)
+- [How Slidey Operates](#how-slidey-operates)
+- [Experience Slidey For Yourself!](#experience-slidey-for-yourself)
+    - [Installation Guide](#installation-guide)
 
 ## Problem Statement
 
