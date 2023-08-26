@@ -34,26 +34,3 @@ def process_prompt():
     get_images()
 
     return response
-
-
-def set_json(output):
-    with open('output.json', 'w+') as json_file:
-        json_file.write(output)
-        
-
-def get_images():
-    json_file = open('output.json', 'r')
-    json_output = json.load(json_file)
-    json_file.close()
-        
-    # Loop through each slide and modify image prompts
-    for slide_index, slide in enumerate(json_output['slides']):
-        image_prompts = slide["image_prompts"]
-        
-        for image_index, prompt in enumerate(image_prompts):
-            json_output[slide][image_index] = generate_image(prompt, "")
-            
-
-    # Save the modified data back to the JSON file
-    with open('output.json', 'w') as json_file:
-        json.dump(json_output, json_file, indent=2)
