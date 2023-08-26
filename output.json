@@ -1,86 +1,92 @@
 {
   "title_slide": {
     "title": "Indian Culture",
-    "subtitle": "A Rich Tapestry of Traditions and Diversity"
+    "subtitle": "An Overview"
   },
   "slides": [
     {
-      "title": "Introduction to Indian Culture",
+      "title": "Introduction",
       "content": [
-        "India is known for its rich and diverse culture, which is a blend of various traditions, languages, religions, and art forms.",
-        "Indian culture has a history of thousands of years, with influences from ancient civilizations like the Indus Valley Civilization and the Vedic period.",
-        "The cultural diversity of India is reflected in its festivals, music, dance, literature, cuisine, and clothing styles."
+        "India is a diverse country with a rich cultural heritage.",
+        "Indian culture encompasses various aspects including art, music, dance, cuisine, religion, and festivals.",
+        "It is known for its unity in diversity, with different regions having their own distinct traditions and customs."
       ],
       "image_prompts": [
-        "Colorful traditional Indian clothing",
-        "Vibrant Indian festivals",
-        "Classical Indian dance performances"
-      ]
-    },
-    {
-      "title": "Religion and Spirituality",
-      "content": [
-        "India is the birthplace of major religions like Hinduism, Buddhism, Jainism, and Sikhism.",
-        "Hinduism is the dominant religion in India, with a wide range of gods and goddesses worshipped across the country.",
-        "Spirituality plays a significant role in Indian culture, with many people practicing meditation, yoga, and other spiritual disciplines."
+        "Traditional Indian dance - Bharatanatyam",
+        "Indian art - Madhubani painting",
+        "Indian cuisine - Biryani"
       ],
-      "image_prompts": [
-        "Hindu temple with intricate carvings",
-        "Buddhist monastery in the mountains",
-        "People practicing yoga on a serene beach"
-      ]
+      "notes": "In this slide, we will introduce Indian culture and highlight its diverse nature. The image prompts can be used to showcase different aspects of Indian culture."
     },
     {
       "title": "Art and Architecture",
       "content": [
-        "Indian art and architecture showcase intricate craftsmanship and a blend of various styles.",
-        "Ancient temples and palaces feature detailed carvings, sculptures, and vibrant paintings.",
-        "Famous examples of Indian architecture include the Taj Mahal, Ajanta and Ellora Caves, and the temples of Khajuraho."
+        "Indian art is known for its intricate designs, vibrant colors, and spiritual themes.",
+        "Famous art forms include Madhubani paintings, Tanjore paintings, and miniature paintings.",
+        "Indian architecture showcases a blend of various styles such as Mughal, Rajput, and Dravidian architecture."
       ],
       "image_prompts": [
-        "Intricate carvings on a temple wall",
-        "Colorful mural painting in a traditional Indian style",
-        "The majestic Taj Mahal at sunrise"
-      ]
+        "Mughal architecture - Taj Mahal",
+        "Rajput architecture - Hawa Mahal",
+        "Dravidian architecture - Brihadeeswarar Temple"
+      ],
+      "notes": "In this slide, we will discuss Indian art and architecture. The image prompts can be used to showcase famous architectural marvels in India."
     },
     {
-      "title": "Cuisine and Festivals",
+      "title": "Music and Dance",
       "content": [
-        "Indian cuisine is diverse and known for its rich flavors and aromatic spices.",
-        "Each region in India has its own unique culinary traditions and specialties.",
-        "Indian festivals like Diwali, Holi, and Eid are celebrated with great enthusiasm and showcase the cultural vibrancy of the country."
+        "Indian classical music is based on ragas and has a rich history dating back thousands of years.",
+        "Popular instruments include sitar, tabla, and veena.",
+        "Indian classical dance forms like Bharatanatyam, Kathak, and Odissi are known for their grace and storytelling."
       ],
       "image_prompts": [
-        "Plate of delicious Indian food with various dishes",
-        "Traditional sweets and snacks for Diwali",
-        "Colorful celebration during Holi festival"
-      ]
+        "Indian classical music - Sitar player",
+        "Bharatanatyam - Traditional Indian dance form",
+        "Kathakali - Classical dance-drama form"
+      ],
+      "notes": "In this slide, we will explore Indian music and dance. The image prompts can be used to showcase different musical instruments and dance forms."
     },
     {
-      "title": "Traditional Clothing and Dance",
+      "title": "Religion and Festivals",
       "content": [
-        "Indian clothing varies across different regions, with saree, salwar kameez, and dhoti being popular traditional attire.",
-        "Indian classical dance forms like Bharatanatyam, Kathak, and Odissi are known for their intricate footwork, expressions, and storytelling.",
-        "These dance forms are often performed during religious ceremonies, festivals, and cultural events."
+        "India is the birthplace of major religions like Hinduism, Buddhism, Jainism, and Sikhism.",
+        "Religious diversity is reflected in the numerous festivals celebrated throughout the year.",
+        "Diwali, Holi, Eid, Christmas, and Pongal are some of the widely celebrated festivals in India."
       ],
       "image_prompts": [
-        "Elegant woman wearing a traditional Indian saree",
-        "Dancers in colorful costumes performing Kathak",
-        "Traditional Indian dance pose with intricate hand gestures"
-      ]
+        "Diwali - Festival of Lights",
+        "Holi - Festival of Colors",
+        "Eid - Celebration of Muslim festival"
+      ],
+      "notes": "In this slide, we will highlight the religious diversity and festivals in India. The image prompts can be used to showcase the vibrant celebrations of different festivals."
     },
     {
-      "title": "Literature and Languages",
+      "title": "Cuisine",
       "content": [
-        "Indian literature has a rich heritage dating back to ancient texts like the Vedas, Mahabharata, and Ramayana.",
-        "Prominent Indian authors like Rabindranath Tagore, R.K. Narayan, and Arundhati Roy have made significant contributions to world literature.",
-        "India is known for its diverse languages, with Hindi, Bengali, Tamil, and Urdu being some of the widely spoken languages."
+        "Indian cuisine is renowned for its diverse flavors, spices, and regional specialties.",
+        "Popular dishes include biryani, curry, dosa, samosa, and butter chicken.",
+        "Each region in India has its own unique culinary traditions and signature dishes."
       ],
       "image_prompts": [
-        "Stack of ancient Indian manuscripts",
-        "Bust of Rabindranath Tagore, Nobel laureate in Literature",
-        "People reading books in different Indian languages"
-      ]
+        "Indian cuisine - Biryani",
+        "South Indian cuisine - Dosa",
+        "Street food - Samosa and Chai"
+      ],
+      "notes": "In this slide, we will discuss Indian cuisine and its variety. The image prompts can be used to showcase different mouth-watering dishes from Indian cuisine."
+    },
+    {
+      "title": "Conclusion",
+      "content": [
+        "Indian culture is a tapestry of traditions, art forms, languages, and beliefs.",
+        "It continues to evolve and thrive, preserving its essence while embracing modern influences.",
+        "Exploring Indian culture offers a glimpse into its rich history and the values cherished by its people."
+      ],
+      "image_prompts": [
+        "Traditional Indian attire - Saree",
+        "Indian festivals - Colorful celebration",
+        "Indian diversity - People from different regions"
+      ],
+      "notes": "In this slide, we will conclude the presentation by summarizing the key points about Indian culture and its significance. The image prompts can be used to showcase the diversity and vibrancy of Indian culture."
     }
   ]
 }

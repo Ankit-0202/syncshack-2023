@@ -12,23 +12,23 @@ from cryptography.fernet import Fernet
 ############################
 ######### API KEYS #########
 ############################
-SD_API_KEY = os.getenv("SD_API_KEY")
+#SD_API_KEY = os.getenv("SD_API_KEY")
 # SD_API_KEY = ''
-openai.api_key = os.getenv("OPENAI_API_KEY")
+#openai.api_key = os.getenv("OPENAI_API_KEY")
 
-# pwd_hash = b'$2b$12$FBKIC4h4fy2Bo9XhCgCzlehrYCpWaZEwgegzDdqm3OilytsMg.hRC'
-# key_crypt = b'q3UGH3GalYYT6CqH_7b2KsSdZEUf5e-6ZwQxtJVPwSU='
-# token_crypt = b'gAAAAABk6m_uQltJ7TnjN0RrSc0b0Q41gxnoz6PkYM8yFs_nA1FsxrAKI2vD-p7qQFQ0VnikFKveUBSvnSIaXycTlQPrhYIgAWCi-vGozCBm8FY9HliNvnM0ltNLnfjM9TOEVGT6O86IkXWCMD593_z09rj-ezaZ_w=='
-# sd_token_crypt = b'gAAAAABk6nGfbZ_LgJMgBNUTacz2XnBjCiOwdCB6eM9UxDOWgHIZcCw2Qm6ug32NJJRF6jHMZGk0X4oFZF1ArLCPbu3f5-oXzre5YKR60D_vBOd_ctaB9qyhof1KEEI_iOduogCyVLgvNSlCy3RMtyC18IajHXeePw=='
+pwd_hash = b'$2b$12$FBKIC4h4fy2Bo9XhCgCzlehrYCpWaZEwgegzDdqm3OilytsMg.hRC'
+key_crypt = b'q3UGH3GalYYT6CqH_7b2KsSdZEUf5e-6ZwQxtJVPwSU='
+token_crypt = b'gAAAAABk6m_uQltJ7TnjN0RrSc0b0Q41gxnoz6PkYM8yFs_nA1FsxrAKI2vD-p7qQFQ0VnikFKveUBSvnSIaXycTlQPrhYIgAWCi-vGozCBm8FY9HliNvnM0ltNLnfjM9TOEVGT6O86IkXWCMD593_z09rj-ezaZ_w=='
+sd_token_crypt = b'gAAAAABk6nGfbZ_LgJMgBNUTacz2XnBjCiOwdCB6eM9UxDOWgHIZcCw2Qm6ug32NJJRF6jHMZGk0X4oFZF1ArLCPbu3f5-oXzre5YKR60D_vBOd_ctaB9qyhof1KEEI_iOduogCyVLgvNSlCy3RMtyC18IajHXeePw=='
 
-# pwd = input('enter password: ')
-# if bcrypt.checkpw(pwd.encode('utf-8'), pwd_hash):
-#     f = Fernet(key_crypt)
-#     openai.api_key = f.decrypt(token_crypt)
-#     SD_API_KEY = f.decrypt(sd_token_crypt)
-# else:
-#     raise ValueError("Bad password")
-# pwd = ''
+pwd = input('enter password: ')
+if bcrypt.checkpw(pwd.encode('utf-8'), pwd_hash):
+    f = Fernet(key_crypt)
+    openai.api_key = f.decrypt(token_crypt).decode('utf-8')
+    SD_API_KEY = f.decrypt(sd_token_crypt).decode('utf-8')
+else:
+    raise ValueError("Bad password")
+pwd = ''
 
 ############################
 ######### TEMPLATE #########
