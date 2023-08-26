@@ -1,12 +1,18 @@
 {
   "title_slide": {
+<<<<<<< HEAD
     "title": "Indian Culture",
     "subtitle": "An Overview"
+=======
+    "title": "Exploring Nigerian Culture",
+    "subtitle": "A Journey into the Rich and Diverse Traditions of Nigeria"
+>>>>>>> 74d22797330561de5657f28bc547b51334a3acdf
   },
   "slides": [
     {
       "title": "Introduction",
       "content": [
+<<<<<<< HEAD
         "India is a diverse country with a rich cultural heritage.",
         "Indian culture encompasses various aspects including art, music, dance, cuisine, religion, and festivals.",
         "It is known for its unity in diversity, with different regions having their own distinct traditions and customs."
@@ -17,10 +23,45 @@
         "Indian cuisine - Biryani"
       ],
       "notes": "In this slide, we will introduce Indian culture and highlight its diverse nature. The image prompts can be used to showcase different aspects of Indian culture."
+=======
+        "Overview of Nigeria - the most populous country in Africa",
+        "Nigeria's cultural diversity and vibrant traditions",
+        "Importance of preserving and celebrating Nigerian culture"
+      ],
+      "image_prompts": [
+        [
+          "https://cdn2.stablediffusionapi.com/generations/4fd2e1b9-fbbe-4167-af9d-1e088152e404-0.png"
+        ],
+        "Traditional Nigerian attire",
+        [
+          "https://cdn2.stablediffusionapi.com/generations/2e7134a1-827c-4a53-af99-d4d81e97121a-0.png"
+        ]
+      ]
     },
     {
-      "title": "Art and Architecture",
+      "title": "Ethnic Groups",
       "content": [
+        "Over 250 ethnic groups in Nigeria",
+        "Major ethnic groups include Hausa-Fulani, Yoruba, and Igbo",
+        "Unique languages, customs, and traditions of each group"
+      ],
+      "image_prompts": [
+        [
+          "https://cdn2.stablediffusionapi.com/generations/5edf77d8-5d84-492f-8981-9a6ffa7e889d-0.png"
+        ],
+        [
+          "https://cdn2.stablediffusionapi.com/generations/7c488d97-a54d-4974-aa11-5491c50e1bfa-0.png"
+        ],
+        [
+          "https://cdn2.stablediffusionapi.com/generations/7e570621-2166-4de1-b8f1-5d51280f9b2c-0.png"
+        ]
+      ]
+>>>>>>> 74d22797330561de5657f28bc547b51334a3acdf
+    },
+    {
+      "title": "Music and Dance",
+      "content": [
+<<<<<<< HEAD
         "Indian art is known for its intricate designs, vibrant colors, and spiritual themes.",
         "Famous art forms include Madhubani paintings, Tanjore paintings, and miniature paintings.",
         "Indian architecture showcases a blend of various styles such as Mughal, Rajput, and Dravidian architecture."
@@ -73,10 +114,102 @@
         "Street food - Samosa and Chai"
       ],
       "notes": "In this slide, we will discuss Indian cuisine and its variety. The image prompts can be used to showcase different mouth-watering dishes from Indian cuisine."
+=======
+        "Variety of music genres - Afrobeat, Highlife, Juju, and more",
+        "Traditional musical instruments like talking drums and shekere",
+        "Energetic and expressive traditional dances"
+      ],
+      "image_prompts": [
+        [
+          "https://cdn2.stablediffusionapi.com/generations/4bbf60ba-36ec-4cee-b279-3354c1bac61d-0.png"
+        ],
+        [
+          "https://cdn2.stablediffusionapi.com/generations/8f8be759-ae9f-464d-832a-9acb26814a8a-0.png"
+        ],
+        [
+          "https://cdn2.stablediffusionapi.com/generations/4e3da090-7624-4a0f-b945-97bac9690cda-0.png"
+        ]
+      ]
+    },
+    {
+      "title": "Cuisine",
+      "content": [
+        "Diverse Nigerian cuisine with regional specialties",
+        "Staple foods like jollof rice, pounded yam, and egusi soup",
+        "Flavorful spices and ingredients unique to Nigerian dishes"
+      ],
+      "image_prompts": [
+        [
+          "https://cdn2.stablediffusionapi.com/generations/70ff44ba-d825-4caf-bcd8-9afe303773c8-0.png"
+        ],
+        [
+          "https://cdn2.stablediffusionapi.com/generations/f41737ca-4371-4565-b72a-2d631c36c598-0.png"
+        ],
+        [
+          "https://cdn2.stablediffusionapi.com/generations/6168bbe9-fe53-4c7a-a643-ae74eb246228-0.png"
+        ]
+      ]
+    },
+    {
+      "title": "Fashion and Attire",
+      "content": [
+        "Beautiful and diverse traditional Nigerian attire",
+        "Popular fabrics like Ankara and Aso-oke",
+        "Significance of clothing in Nigerian culture"
+      ],
+      "image_prompts": [
+        [
+          "https://cdn2.stablediffusionapi.com/generations/d7158f47-a596-48f6-bdb7-8fc48c74c66e-0.png"
+        ],
+        [
+          "https://cdn2.stablediffusionapi.com/generations/1d10753f-2b03-4524-9134-937dafeae296-0.png"
+        ],
+        [
+          "https://cdn2.stablediffusionapi.com/generations/3d5f2dca-fc94-452a-910a-2b26bc0bbf77-0.png"
+        ]
+      ]
+    },
+    {
+      "title": "Art and Crafts",
+      "content": [
+        "Rich artistic heritage in Nigeria",
+        "Famous Nigerian artists and their contributions",
+        "Traditional crafts like pottery, weaving, and wood carving"
+      ],
+      "image_prompts": [
+        [
+          "https://cdn2.stablediffusionapi.com/generations/b88eeca3-00dc-48ec-a1f4-eb5d98c9113c-0.png"
+        ],
+        [
+          "https://cdn2.stablediffusionapi.com/generations/894af8f6-6fef-4196-8fd2-cc75ce268711-0.png"
+        ],
+        [
+          "https://cdn2.stablediffusionapi.com/generations/f797b2d3-1a66-489b-acd4-c6db282387ad-0.png"
+        ]
+      ]
+    },
+    {
+      "title": "Festivals and Celebrations",
+      "content": [
+        "Vibrant festivals and celebrations throughout the year",
+        "Cultural events like the Eyo Festival and Durbar Festival",
+        "Importance of festivals in promoting cultural identity"
+      ],
+      "image_prompts": [
+        [
+          "https://cdn2.stablediffusionapi.com/generations/b0a75380-6899-4e19-8b41-53ad5a7f87a8-0.png"
+        ],
+        [
+          "https://cdn2.stablediffusionapi.com/generations/f68e3b35-f011-477e-9532-dcced51c13a0-0.png"
+        ],
+        "Colorful Nigerian festival decorations"
+      ]
+>>>>>>> 74d22797330561de5657f28bc547b51334a3acdf
     },
     {
       "title": "Conclusion",
       "content": [
+<<<<<<< HEAD
         "Indian culture is a tapestry of traditions, art forms, languages, and beliefs.",
         "It continues to evolve and thrive, preserving its essence while embracing modern influences.",
         "Exploring Indian culture offers a glimpse into its rich history and the values cherished by its people."
@@ -87,6 +220,23 @@
         "Indian diversity - People from different regions"
       ],
       "notes": "In this slide, we will conclude the presentation by summarizing the key points about Indian culture and its significance. The image prompts can be used to showcase the diversity and vibrancy of Indian culture."
+=======
+        "Nigerian culture - a treasure trove of traditions and heritage",
+        "The importance of cultural preservation and appreciation",
+        "Inviting everyone to explore and experience Nigerian culture"
+      ],
+      "image_prompts": [
+        [
+          "https://cdn2.stablediffusionapi.com/generations/ff71a1dc-8596-40e0-a43a-3222a0a71fe6-0.png"
+        ],
+        [
+          "https://cdn2.stablediffusionapi.com/generations/1fbbe62b-66b8-46a1-806d-79aaa7a66cfe-0.png"
+        ],
+        [
+          "https://cdn2.stablediffusionapi.com/generations/8b6589bf-f4c5-41f6-8f3b-985e1c40522d-0.png"
+        ]
+      ]
+>>>>>>> 74d22797330561de5657f28bc547b51334a3acdf
     }
   ]
 }
