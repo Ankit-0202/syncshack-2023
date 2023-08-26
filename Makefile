@@ -12,3 +12,8 @@ t:
 	git add -A
 	git commit -m 'Tim made changes'
 	git push
+
+d:
+	git add -A
+	git commit -m 'Daniel made changes'
+	git push

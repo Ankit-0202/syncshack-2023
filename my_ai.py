@@ -5,11 +5,11 @@ import requests
 import os.path
 
 
-OPENAI_API_KEY = os.getenv("OPENAI_API_KEY")
+#OPENAI_API_KEY = os.getenv("OPENAI_API_KEY")
 SD_API_KEY = os.getenv("SD_API_KEY")
 
-openai.api_key = os.getenv(OPENAI_API_KEY)
-print(openai.api_key);
+openai.api_key = os.getenv("OPENAI_API_KEY")
+print(openai.api_key)
 
 def openai_prompt(my_prompt: str):
     response = openai.Completion.create(
@@ -53,8 +53,8 @@ if __name__ == "__main__":
     option = input("Choose an option (A) generate text (B) generate image: ")
     option = option.upper()
     if option != "A" and option != "B":
-        print("Invalid option");
-        exit();
+        print("Invalid option")
+        exit()
     
     prompt = input("Please enter a prompt: ")
     if (option == "B"):
