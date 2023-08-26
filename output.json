@@ -1,127 +1,128 @@
 {
   "title_slide": {
-    "title": "Mice: Small, Adaptable, and Fascinating Creatures",
-    "subtitle": "A Presentation by Your Assistant",
-    "image_prompts": [
-      "Cute mice in a grassy field",
-      "A group of mice exploring a maze",
-      "A close-up of a mouse's face"
-    ]
+    "title": "The Commercial Viability of iPhones",
+    "content": []
   },
   "slides": [
     {
       "title": "Introduction",
       "content": [
-        "Definition of a mouse",
-        "Overview of the different species of mice",
-        "Importance of mice in various ecosystems"
+        "Overview of iPhones",
+        "Introduction to commercial viability",
+        "Objective of the presentation"
       ],
       "image_prompts": [
         [
-          "https://cdn2.stablediffusionapi.com/generations/9a71043a-989f-402b-a091-678e531ff07b-0.png"
+          "https://cdn2.stablediffusionapi.com/generations/9ece5397-7a64-44a8-9370-c71d52c35857-0.png"
         ],
         [
-          "https://cdn2.stablediffusionapi.com/generations/5e60891e-4e05-4121-8d8f-0e28b564cdcb-0.png"
+          "https://cdn2.stablediffusionapi.com/generations/a2cb9495-a1be-4401-8c2f-5bc5f07af711-0.png"
         ],
         [
-          "https://cdn2.stablediffusionapi.com/generations/66ab2e08-e54d-4c92-a295-6252298636bb-0.png"
+          "https://cdn2.stablediffusionapi.com/generations/7b198d57-8bd6-4a80-8f60-4167611d2b06-0.png"
         ]
-      ]
+      ],
+      "speaker_notes": "In this presentation, we will explore the commercial viability of iPhones. We will begin with an overview of iPhones, followed by an introduction to commercial viability. The objective of this presentation is to understand the factors that contribute to the success of iPhones in the market."
     },
     {
-      "title": "Physical Characteristics",
+      "title": "Market Share and Sales",
       "content": [
-        "Size and weight of mice",
-        "Distinctive features (e.g., large ears, long tail)",
-        "Variations in coat color and patterns"
+        "Current market share of iPhones",
+        "Sales figures of iPhones",
+        "Comparison with competitors"
       ],
       "image_prompts": [
         [
-          "https://cdn2.stablediffusionapi.com/generations/0146bdae-57c8-49d6-800a-bb2dabdbebd6-0.png"
+          "https://cdn2.stablediffusionapi.com/generations/d23f5dfb-485a-4b86-aa5c-ec65a20e5415-0.png"
         ],
         [
-          "https://cdn2.stablediffusionapi.com/generations/2bdc85a2-8283-4d15-8873-8fff0aaaa9b1-0.png"
+          "https://cdn2.stablediffusionapi.com/generations/d7ac617c-f7a7-4620-b4c5-903978500361-0.png"
         ],
         [
-          "https://cdn2.stablediffusionapi.com/generations/ba0b997d-1ad5-4a74-be11-0d1edb2e4eb7-0.png"
+          "https://cdn2.stablediffusionapi.com/generations/1c1fe717-935e-4bba-b99d-ae24db0cfe44-0.png"
         ]
-      ]
+      ],
+      "speaker_notes": "One of the key indicators of commercial viability is market share and sales. We will analyze the current market share of iPhones and examine the sales figures. Additionally, we will compare the performance of iPhones with their competitors in the market."
     },
     {
-      "title": "Adaptations and Behavior",
+      "title": "Brand Loyalty and Customer Satisfaction",
       "content": [
-        "Nocturnal behavior and excellent sense of hearing",
-        "Ability to climb, jump, and squeeze through small spaces",
-        "Social behavior and communication among mice"
+        "Importance of brand loyalty",
+        "Customer satisfaction ratings",
+        "Repeat purchases and customer retention"
       ],
       "image_prompts": [
         [
-          "https://cdn2.stablediffusionapi.com/generations/00e8254e-1145-46f6-a24b-42bd7f150dcb-0.png"
+          "https://cdn2.stablediffusionapi.com/generations/2ec5c3bd-d549-4304-95e3-338612b52925-0.png"
         ],
         [
-          "https://cdn2.stablediffusionapi.com/generations/bb2c7302-908f-41b4-8b8a-38620f6c21c9-0.png"
+          "https://cdn2.stablediffusionapi.com/generations/570c240e-68ba-4518-9aa4-675931b0bf9a-0.png"
         ],
         [
-          "https://cdn2.stablediffusionapi.com/generations/541f16aa-bdf4-4189-9120-4eeaf66ae923-0.png"
+          "https://cdn2.stablediffusionapi.com/generations/8f7d0f4c-a11a-4e4c-bfca-8e473a6e159f-0.png"
         ]
-      ]
+      ],
+      "speaker_notes": "Brand loyalty plays a crucial role in the commercial success of iPhones. We will explore the importance of brand loyalty and examine customer satisfaction ratings. Additionally, we will analyze repeat purchases and customer retention rates to understand the level of satisfaction among iPhone users."
     },
     {
-      "title": "Ecological Impact",
+      "title": "Technological Innovation",
       "content": [
-        "Role of mice as prey for predators",
-        "Seed dispersal through their feeding habits",
-        "Potential negative impact on agriculture and human dwellings"
+        "iPhone's reputation for technological innovation",
+        "Introduction of new features and advancements",
+        "Impact on commercial viability"
       ],
       "image_prompts": [
         [
-          "https://cdn2.stablediffusionapi.com/generations/29abaf2e-677a-40f6-b2c8-9df7cc04e71d-0.png"
+          "https://cdn2.stablediffusionapi.com/generations/d24f9c30-b775-4855-a5f5-bf8e5719b353-0.png"
         ],
         [
-          "https://cdn2.stablediffusionapi.com/generations/79c8e8eb-13a6-45b1-adb5-33a29e6bdb23-0.png"
+          "https://cdn2.stablediffusionapi.com/generations/13d9d12b-938a-4886-8ea6-419060a68739-0.png"
         ],
         [
-          "https://cdn2.stablediffusionapi.com/generations/270a1c39-2750-426d-bede-fa4202bd13b5-0.png"
+          "https://cdn2.stablediffusionapi.com/generations/d6c3f078-3344-4089-8a73-741306185366-0.png"
         ]
-      ]
+      ],
+      "speaker_notes": "The iPhone has been renowned for its technological innovation. We will discuss the reputation of iPhones in terms of technological advancements and the introduction of new features. Furthermore, we will examine the impact of these innovations on the commercial viability of iPhones."
     },
     {
-      "title": "Research and Scientific Significance",
+      "title": "Market Trends and Future Prospects",
       "content": [
-        "Use of mice as model organisms in biomedical research",
-        "Contributions to understanding genetics and diseases",
-        "Advancements in technology facilitated by mouse studies"
+        "Current market trends in the smartphone industry",
+        "Anticipated future developments",
+        "Potential challenges and opportunities"
       ],
       "image_prompts": [
         [
-          "https://cdn2.stablediffusionapi.com/generations/d9ecfd2f-02fa-4c6a-87d2-6159c9ba1ad7-0.png"
+          "https://cdn2.stablediffusionapi.com/generations/b6de9c6c-20f6-4566-aba5-8a6bc53aeafa-0.png"
         ],
         [
-          "https://cdn2.stablediffusionapi.com/generations/3de7fb43-21c0-4a4f-9eda-de047a038696-0.png"
+          "https://cdn2.stablediffusionapi.com/generations/d846bf87-4b67-4fe6-bf89-b5a5cc13533f-0.png"
         ],
         [
-          "https://cdn2.stablediffusionapi.com/generations/cd51e16c-3273-4595-a278-874a85c23cc2-0.png"
+          "https://cdn2.stablediffusionapi.com/generations/0396ecb6-b2cf-4b89-9684-fe33662a6239-0.png"
         ]
-      ]
+      ],
+      "speaker_notes": "Understanding market trends and anticipating future developments is crucial for assessing the commercial viability of iPhones. We will analyze the current market trends in the smartphone industry and explore the anticipated future developments. Additionally, we will discuss potential challenges and opportunities that may impact the commercial success of iPhones."
     },
     {
       "title": "Conclusion",
       "content": [
-        "Recap of key points about mice",
-        "Appreciation for the diversity and adaptability of mice",
-        "Encouragement to learn more and appreciate these fascinating creatures"
+        "Summary of key points",
+        "Assessment of iPhone's commercial viability",
+        "Final thoughts and recommendations"
       ],
       "image_prompts": [
         [
-          "https://cdn2.stablediffusionapi.com/generations/8dd59e8a-e179-4742-92e6-3d4e93203849-0.png"
+          "https://cdn2.stablediffusionapi.com/generations/501bdb6c-204c-45d8-acc4-398eb1621cfc-0.png"
         ],
         [
-          "https://cdn2.stablediffusionapi.com/generations/81145463-cd69-4d05-8a3a-2b28d154a95d-0.png"
+          "https://cdn2.stablediffusionapi.com/generations/3bdf3ddc-57e6-4548-a0d4-4b65690f929b-0.png"
         ],
         [
-          "https://cdn2.stablediffusionapi.com/generations/758a0ba3-098f-46b1-af5e-ee587599778e-0.png"
+          "https://cdn2.stablediffusionapi.com/generations/3807b125-ad5f-47ff-a713-fea4553dea06-0.png"
         ]
-      ]
+      ],
+      "speaker_notes": "In conclusion, we will summarize the key points discussed throughout the presentation. We will then assess the commercial viability of iPhones based on the information presented. Finally, we will provide our final thoughts and recommendations regarding the future prospects of iPhones in the market."
     }
   ]
 }
