@@ -25,7 +25,7 @@ SCOPES = ['https://www.googleapis.com/auth/presentations.readonly',
           "https://www.googleapis.com/auth/presentations"]
 
 # The ID of a sample presentation.
-PRESENTATION_ID = '15hsTvmzWSGCZFfY_mbFEZxAc7ZIzNsn0tpAPrrhRe-g'
+PRESENTATION_ID = '1IlA5ES-gKdA_ySNXK3SsiQD3D0Oo8NhCSqby7VGrqPQ'
 
 
 class Layout():
@@ -257,8 +257,52 @@ def make_textbox_bullets(presentation_id, textbox_id, creds):
     return response
 
 
-def add_image_to_slide(image, creds):
-    pass
+def add_image_to_slide(presentation_id, page_id, image_id, img_addr, img_rect, creds):
+    def func(service):
+        image_id = 'MyImage_11'
+        emu4M = {
+            'magnitude': 4000000,
+            'unit': 'EMU'
+        }
+        requests = [{
+            'createImage': {
+                'objectId': image_id,
+                'url': img_addr,
+                'elementProperties': {
+                    'pageObjectId': page_id,
+                    'size': {
+                        'height': emu4M,
+                        'width': emu4M
+                    },
+                    'transform': {
+                        'scaleX': 1,
+                        'scaleY': 1,
+                        'translateX': 100000,
+                        'translateY': 100000,
+                        'unit': 'EMU'
+                    }
+                }
+            }
+        }]
+
+        body = {
+                    'requests': requests
+                }
+        response = service.presentations() \
+            .batchUpdate(presentationId=presentation_id, body=body).execute()
+        create_image_response = response.get('replies')[0].get('createImage')
+        return create_image_response
+        
+    def success(response):
+        print("successfully added image to slide with response", response)
+        return response
+
+    error = "failed to inject image"
+
+    request = create_request_dict(func, success, error)
+    response = service_helper(request, creds)
+    return response
+
 
 
 def main():
@@ -273,6 +317,8 @@ def main():
                                         page_id + "textbox", Rect(0, 0, 100, 100), "Ankit is a savage", creds)
     textbox_id = response["objectId"]
     make_textbox_bullets(PRESENTATION_ID, textbox_id, creds)
+    add_image_to_slide(PRESENTATION_ID, page_id, None, 
+                       "https://cdn2.stablediffusionapi.com/generations/3c617436-bd0f-4c3c-8782-f0f02c9d1254-0.png", creds)
     print(response)
 
 
