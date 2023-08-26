@@ -23,7 +23,7 @@ def process_prompt():
     
     out = call_api(prompt_text)
     
-    print(prompt_text, out, sep='\n')
+    print(prompt_text, out, "\n", sep='\n')
 
     response = {
         "status": "OK",

@@ -62,7 +62,7 @@ def generate_image(my_prompt: str, neg_prompt: str):
     }
 
     response = requests.request("POST", url, headers=headers, data=payload)
-    return response.json()['output'][0]
+    return response.json()['output']
 
 
 def set_json(output):
@@ -81,8 +81,14 @@ def get_images():
         print(f"Slide {i + 1}: {slide['title']}")
         
         # Iterate through each image_prompt item
-        for j, item in enumerate(slide['image_prompts']):
-            slide['image_prompts'][j] = generate_image(slide['image_prompts'][j], "")
+        ip = 'image_prompts'
+        if ip in slide:
+            for j, item in enumerate(slide[ip]):
+                slide[ip][j] = generate_image(slide[ip][j], "")
+                print(f"{j}: {slide[ip][j]}")
+            
+                print("--------")
+        print("\n----------------\n")
             
 
     # Save the modified data back to the JSON file

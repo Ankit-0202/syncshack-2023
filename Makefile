@@ -6,6 +6,15 @@ backend:
 
 install:
 	pip3 install -r requirements.txt
+	npm install
+
+
+
+
+
+###############
+##### GIT #####
+###############
 
 a:
 	git add -A

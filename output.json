@@ -1,53 +1,98 @@
 {
   "title_slide": {
-    "title": "The World of Chocolate",
-    "subtitle": "Exploring the History, Varieties, and Health Benefits of Chocolate"
+    "title": "Squirrels",
+    "subtitle": "A Presentation on the Fascinating World of Squirrels"
   },
   "slides": [
     {
       "title": "Introduction",
-      "content": "Welcome to the fascinating world of chocolate! In this presentation, we will delve into the rich history of chocolate, explore its various forms and flavors, and discover the surprising health benefits it offers.",
+      "content": "Welcome to the presentation on squirrels! In this presentation, we will explore the fascinating world of squirrels, their behavior, habitats, and some interesting facts about them.",
+      "image_prompts": []
+    },
+    {
+      "title": "Types of Squirrels",
+      "content": "Squirrels are a diverse group of rodents that are found all around the world. There are more than 200 different species of squirrels, but some of the most common types include:",
+      "bullets": [
+        "Eastern Gray Squirrel",
+        "Red Squirrel",
+        "Fox Squirrel"
+      ],
       "image_prompts": [
-        "https://cdn2.stablediffusionapi.com/generations/155222fe-fb6c-4129-9713-b751a5b48750-0.png",
-        "https://cdn2.stablediffusionapi.com/generations/2030eb4f-a372-4b98-9de6-3a617c938d7a-0.png",
-        "https://cdn2.stablediffusionapi.com/generations/7e4cfcb2-3d30-4139-bd49-1802a4874b36-0.png"
+        [
+          "https://cdn2.stablediffusionapi.com/generations/609fe958-65c1-47b2-a447-d3d555d272b8-0.png"
+        ],
+        [
+          "https://cdn2.stablediffusionapi.com/generations/8808c5ef-dddf-46d7-9194-27025ddb93b1-0.png"
+        ],
+        [
+          "https://cdn2.stablediffusionapi.com/generations/a16eddaa-e53c-4d22-9fb1-3b8f12563c91-0.png"
+        ]
       ]
     },
     {
-      "title": "A Brief History of Chocolate",
-      "content": "Chocolate has a long and intriguing history. It was first consumed by ancient civilizations in Mesoamerica as a bitter beverage. The Mayans and Aztecs believed that cacao beans had magical properties and used them in religious ceremonies. The chocolate we know today underwent a transformation when it was introduced to Europe in the 16th century.",
+      "title": "Habitats and Diet",
+      "content": "Squirrels can adapt to various environments and can be found in forests, woodlands, urban areas, and even deserts. They build nests called dreys in trees or construct burrows in the ground. When it comes to their diet, squirrels are known for being omnivorous. Some common food sources for squirrels include:",
+      "bullets": [
+        "Nuts (acorns, walnuts, etc.)",
+        "Seeds",
+        "Fruits and berries"
+      ],
       "image_prompts": [
-        "https://cdn2.stablediffusionapi.com/generations/3dacf3bf-72b4-4223-b393-921ad905ddc3-0.png",
-        "https://cdn2.stablediffusionapi.com/generations/d6568668-30c5-42e0-876d-e1b561c235b5-0.png",
-        "https://cdn2.stablediffusionapi.com/generations/3c5bdfe7-d999-4599-9a6b-c589653544d8-0.png"
+        [
+          "https://cdn2.stablediffusionapi.com/generations/605da97e-3b2f-4ca0-b982-00b5b71b9894-0.png"
+        ],
+        [
+          "https://cdn2.stablediffusionapi.com/generations/08e9906b-4664-4a42-b794-266a281dfc33-0.png"
+        ],
+        [
+          "https://cdn2.stablediffusionapi.com/generations/fbf4f08c-4311-4b71-90fb-f1e1ed2f9c39-0.png"
+        ]
       ]
     },
     {
-      "title": "Varieties of Chocolate",
-      "content": "Chocolate comes in many forms, each with its own unique characteristics. From dark chocolate, which contains a high percentage of cocoa solids, to milk chocolate, which is sweeter and creamier, and white chocolate, which lacks cocoa solids but is made from cocoa butter, there is a type of chocolate to suit every taste.",
+      "title": "Squirrel Behavior",
+      "content": "Squirrels are known for their agile and acrobatic behavior. Some interesting behaviors exhibited by squirrels include:",
+      "bullets": [
+        "Tree jumping and climbing",
+        "Buried food caching (hoarding)",
+        "Tail flicking and vocalizations"
+      ],
       "image_prompts": [
-        "https://cdn2.stablediffusionapi.com/generations/4e4b7aee-2b79-4c07-a6dc-dc5437f1218f-0.png",
-        "https://cdn2.stablediffusionapi.com/generations/2a42838a-7651-4760-964b-d971dbdddf84-0.png",
-        "https://cdn2.stablediffusionapi.com/generations/69f4be74-fa07-4334-ab69-7610ad735302-0.png"
+        [
+          "https://cdn2.stablediffusionapi.com/generations/508fdf8d-4b74-495a-9659-4254c2b7b046-0.png"
+        ],
+        [
+          "https://cdn2.stablediffusionapi.com/generations/5b23ff27-c526-4aaf-a4aa-e185cc762917-0.png"
+        ],
+        [
+          "https://cdn2.stablediffusionapi.com/generations/40d259a4-90d1-4871-9e41-2dd5990e0b6d-0.png"
+        ]
       ]
     },
     {
-      "title": "Health Benefits of Chocolate",
-      "content": "Contrary to popular belief, chocolate can have a positive impact on our health when consumed in moderation. Dark chocolate, in particular, is rich in antioxidants and flavonoids, which can help reduce the risk of heart disease and improve brain function. It also contains minerals like iron, magnesium, and zinc.",
+      "title": "Fun Facts about Squirrels",
+      "content": "Here are some fun facts about squirrels:",
+      "bullets": [
+        "Squirrels have excellent memory and can remember where they have buried thousands of nuts.",
+        "Some squirrels can glide through the air using the skin between their legs, allowing them to travel long distances.",
+        "Squirrels play an important role in seed dispersal and tree regeneration."
+      ],
       "image_prompts": [
-        "https://cdn2.stablediffusionapi.com/generations/dc0ab886-f684-44bf-aef2-9536fdf5954a-0.png",
-        "https://cdn2.stablediffusionapi.com/generations/3d9ca81d-a8e5-45f1-8d1f-84233ef473c3-0.png",
-        "https://cdn2.stablediffusionapi.com/generations/895f759e-2005-4759-a849-88c59d7e6662-0.png"
+        [
+          "https://cdn2.stablediffusionapi.com/generations/083ddaca-ff70-481d-8ab8-f4e80dcf7622-0.png"
+        ],
+        [
+          "https://cdn2.stablediffusionapi.com/generations/7728139c-43ed-4bdc-be36-77ed2ce0639b-0.png"
+        ],
+        [
+          "https://cdn2.stablediffusionapi.com/generations/1b658dd0-3e98-4044-ade7-b631d2e94017-0.png"
+        ]
       ]
     },
     {
       "title": "Conclusion",
-      "content": "Chocolate is not just a delicious treat; it is also steeped in history and offers numerous health benefits. So the next time you indulge in a piece of chocolate, remember its fascinating journey from ancient civilizations to modern-day confectioneries.",
-      "image_prompts": [
-        "https://cdn2.stablediffusionapi.com/generations/d38056a4-6a3b-405e-852e-0ab9962bcb1f-0.png",
-        "https://cdn2.stablediffusionapi.com/generations/bc5d6f66-3bcb-432c-ad38-b0332095e88b-0.png",
-        "https://cdn2.stablediffusionapi.com/generations/4845c9b3-e1e2-4a89-8563-930826e356f3-0.png"
-      ]
+      "content": "Squirrels are fascinating creatures that have adapted to various environments and have unique behaviors. Their ability to climb, jump, and store food makes them remarkable animals. Next time you spot a squirrel, take a moment to appreciate their presence in our ecosystem.",
+      "image_prompts": []
     }
   ]
 }
