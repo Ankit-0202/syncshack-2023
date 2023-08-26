@@ -1,3 +1,9 @@
+all:
+	npm run dev
+
+install:
+	pip3 install -r requirements.txt
+
 a:
 	git add -A
 	git commit -m 'Ankit made changes'
