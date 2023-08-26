@@ -17,7 +17,6 @@
   },
   "homepage": "https://github.com/Ankit-0202/syncshack-2023#readme",
   "dependencies": {
-    "chrome-types": "^0.1.227",
-    "typescript": "^5.2.2"
+    "chrome-types": "^0.1.227"
   }
 }
