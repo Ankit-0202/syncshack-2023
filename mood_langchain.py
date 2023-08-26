@@ -12,7 +12,7 @@ class RawOutputParser(BaseOutputParser):
     def parse(self, text:str):
         return text
 
-chat = ChatOpenAI() # max_tokens=500
+chat = ChatOpenAI(max_tokens=1000) # max_tokens=500
 
 def langchainApply(template: str, humanPrompt: str):
     
