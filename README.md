@@ -15,11 +15,11 @@ A Chrome extension for presentations made using Google Slides that leverages the
 
 ## Problem Statement
 
-In an era marked by the constant emergence of new ideas and concepts, effective presentation of knowledge holds paramount importance. However, the process of creating engaging presentations remains a daunting and time-intensive task, diverting valuable efforts and resources away from other productive endeavors.
+In an era marked by the constant emergence of new ideas and concepts, effective presentation of knowledge holds paramount importance. However, the process of creating engaging presentations remains a daunting and time-intensive task, diverting valuable efforts and resources away from other productive endeavours.
 
 ## Introducing Slidey: Simplifying Presentation Production
 
-**Slidey** addresses the challenge of presentation creation head-on. By harnessing the capabilities of Language Models (LLMs) and text-to-image generation, Slidey revolutionizes the way presentations are crafted. Gone are the days of intricate and laborious slide design processes. With Slidey, producing captivating slides for demonstrations and research becomes effortlessly efficient.
+**Slidey** addresses the challenge of presentation creation head-on. By harnessing the capabilities of Language Models (LLMs), quantum bits and text-to-image generation, Slidey revolutionises the way presentations are crafted. Gone are the days of intricate and laborious slide design processes. With Slidey, producing captivating slides for demonstrations and research becomes effortlessly efficient.
 
 ## How does Slidey work?
 
