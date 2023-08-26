@@ -1,4 +1,4 @@
-#pip install langchain openai
+import os
 from langchain.chat_models import ChatOpenAI
 from langchain.prompts.chat import (
     ChatPromptTemplate,
@@ -12,7 +12,7 @@ class RawOutputParser(BaseOutputParser):
     def parse(self, text:str):
         return text
 
-chat = ChatOpenAI()
+chat = ChatOpenAI() # max_tokens=500
 
 def langchainApply(template: str, humanPrompt: str):
     

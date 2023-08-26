@@ -5,7 +5,8 @@
   "scripts": {
     "dev": "vite",
     "build": "vite build",
-    "preview": "vite preview"
+    "preview": "vite preview",
+    "api": "flask --app app run"
   },
   "dependencies": {
     "@emotion/react": "^11.11.1",
@@ -13,7 +14,8 @@
     "@fontsource/roboto": "^5.0.8",
     "@mui/material": "^5.14.6",
     "react": "^18.0.0",
-    "react-dom": "^18.0.0"
+    "react-dom": "^18.0.0",
+    "typechat": "^0.0.10"
   },
   "devDependencies": {
     "@crxjs/vite-plugin": "^1.0.14",

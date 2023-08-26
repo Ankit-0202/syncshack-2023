@@ -25,7 +25,7 @@ SCOPES = ['https://www.googleapis.com/auth/presentations.readonly',
           "https://www.googleapis.com/auth/presentations"]
 
 # The ID of a sample presentation.
-PRESENTATION_ID = '1IlA5ES-gKdA_ySNXK3SsiQD3D0Oo8NhCSqby7VGrqPQ'
+PRESENTATION_ID = '15hsTvmzWSGCZFfY_mbFEZxAc7ZIzNsn0tpAPrrhRe-g'
 
 
 class Layout():
