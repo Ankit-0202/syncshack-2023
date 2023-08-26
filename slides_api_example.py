@@ -7,12 +7,55 @@ from google_auth_oauthlib.flow import InstalledAppFlow
 from googleapiclient.discovery import build
 from googleapiclient.errors import HttpError
 import google
+from enum import Enum
+from dataclasses import dataclass
+
+
+@dataclass
+class Rect():
+    x: int
+    y: int
+    height: int
+    width: int
+
+
 # If modifying these scopes, delete the file token.json.
-# List of permissions that google asks you to authenticate for 
-SCOPES = ['https://www.googleapis.com/auth/presentations.readonly', "https://www.googleapis.com/auth/presentations"]
+# List of permissions that google asks you to authenticate for
+SCOPES = ['https://www.googleapis.com/auth/presentations.readonly',
+          "https://www.googleapis.com/auth/presentations"]
 
 # The ID of a sample presentation.
 PRESENTATION_ID = '1IlA5ES-gKdA_ySNXK3SsiQD3D0Oo8NhCSqby7VGrqPQ'
+
+
+class Layout():
+    TITLE_AND_BODY = "TITLE_AND_BODY"
+    BLANK = "BLANK"
+
+
+def service_helper(request: dict, creds: str):
+    """
+        Request object is a dict with keys
+        request: function with params "func(service_obj) -> response"
+        error_message: string containing error message
+        success_message: func with params "success(request response obj) -> None"
+    """
+    try:
+        service = build('slides', 'v1', credentials=creds)
+
+        # Request logic
+        func = request["request"]
+        error_msg = request["error"]
+        success = request["success"]
+
+        response = func(service)
+        success(response)
+    except HttpError as error:
+        print(f"An error occurred: {error}")
+        print(error_msg)
+        return error
+
+    return response
 
 
 def get_credentials():
@@ -36,78 +79,201 @@ def get_credentials():
     return creds
 
 
-def create_slide(presentation_id, page_id, creds):
+def create_request_dict(func, success_func, error_msg):
+    return {"request": func, "success": success_func, "error": error_msg}
+
+
+def list_slides(presentation_id, creds):
+    """Shows basic usage of the Slides API.
+    Prints the number of slides and elements in a sample presentation.
     """
-    Creates the Presentation the user has access to.
-    Load pre-authorized user credentials from the environment.
-    TODO(developer) - See https://developers.google.com/identity
-    for guides on implementing OAuth2 for the application.\n
+    def func(service):
+        presentation = service.presentations().get(
+            presentationId=PRESENTATION_ID).execute()
+
+        slides = presentation.get('slides')
+        return slides
+
+    def success(response):
+        print('The presentation contains {} slides:'.format(len(response)))
+        for i, slide in enumerate(response):
+            print('- Slide #{} contains {} elements.'.format(
+                i + 1, len(slide.get('pageElements'))))
+
+    error = "failed to list slides"
+
+    request = create_request_dict(func, success, error)
+    response = service_helper(request, creds)
+    return response
+
+
+def create_slide(presentation_id, page_id, layout, index, creds):
+    """
+    Specify index = None to append to end of slide
+    Specify page_id = None to generate random page_id
+
+    page_id = None -> {'objectId': 'SLIDES_API1335420809_0'}
     """
     # pylint: disable=maybe-no-member
-    try:
-        service = build('slides', 'v1', credentials=creds)
-        # Add a slide at index 1 using the predefined
-        # 'TITLE_AND_TWO_COLUMNS' layout and the ID page_id.
+    def func(service):
         requests = [
             {
                 'createSlide': {
                     'objectId': page_id,
-                    'insertionIndex': '1',
+                    'insertionIndex': index,
                     'slideLayoutReference': {
-                        'predefinedLayout': 'TITLE_AND_TWO_COLUMNS'
+                        'predefinedLayout': layout
                     }
                 }
             }
         ]
 
-        # If you wish to populate the slide with elements,
-        # add element create requests here, using the page_id.
+        body = {
+            'requests': requests
+        }
+
+        response = service.presentations() \
+            .batchUpdate(presentationId=presentation_id, body=body).execute()
+        create_slide_response = response.get('replies')[0].get('createSlide')
+        return create_slide_response
+
+    def success(response):
+        print(f"Created slide with ID:"
+              f"{(response.get('objectId'))}")
+
+    error = "failed to create slide"
+
+    request = create_request_dict(func, success, error)
+    response = service_helper(request, creds)
+    return response
+
+
+def create_textbox_with_text(presentation_id, page_id, textbox_id, rect, text, creds):
+    """
+    Creates the textbox with text, the user has access to.
+    Load pre-authorized user credentials from the environment.
+    TODO(developer) - See https://developers.google.com/identity
+    for guides on implementing OAuth2 for the application.
+    """
+
+    def func(service):
+        # Create a new square textbox, using the supplied element ID.
+
+        # Font size
+        def getptobj(scalar):
+            return {
+                'magnitude': scalar,
+                'unit': 'PT'
+            }
+
+        requests = [
+            {
+                'createShape': {
+                    'objectId': textbox_id,
+                    'shapeType': 'TEXT_BOX',
+                    'elementProperties': {
+                        'pageObjectId': page_id,
+                        'size': {
+                            'height': getptobj(rect.height),
+                            'width': getptobj(rect.width),
+                        },
+                        'transform': {
+                            'scaleX': 1,
+                            'scaleY': 1,
+                            'translateX': rect.x,
+                            'translateY': rect.y,
+                            'unit': 'PT'
+                        }
+                    }
+                }
+            },
+
+            # Insert text into the box, using the supplied element ID.
+            {
+                'insertText': {
+                    'objectId': textbox_id,
+                    'insertionIndex': 0,
+                    'text': text
+                }
+            }
+        ]
 
         # Execute the request.
         body = {
             'requests': requests
         }
+
         response = service.presentations() \
             .batchUpdate(presentationId=presentation_id, body=body).execute()
-        create_slide_response = response.get('replies')[0].get('createSlide')
-        print(f"Created slide with ID:"
-              f"{(create_slide_response.get('objectId'))}")
-    except HttpError as error:
-        print(f"An error occurred: {error}")
-        print("Slides not created")
-        return error
+        create_shape_response = response.get('replies')[0].get('createShape')
+        return create_shape_response
 
+    def success(response):
+        print("Successfully created a text box with response ",
+              response)
+        return response
+
+    def error():
+        print("Failed to create a textbox with given text")
+
+    error = "failed to create slide"
+
+    request = create_request_dict(func, success, error)
+    response = service_helper(request, creds)
     return response
+
+
+def make_textbox_bullets(presentation_id, textbox_id, creds):
+    def func(service):
+        range = {
+            "type": "ALL"
+        }
+
+        requests = [{
+            "createParagraphBullets": {
+                "objectId": textbox_id,
+                "textRange": range,
+                "bulletPreset": "BULLET_DISC_CIRCLE_SQUARE"
+            }
+        }]
+
+        # Execute the request.
+        body = {
+            'requests': requests
+        }
+
+        response = service.presentations() \
+            .batchUpdate(presentationId=presentation_id, body=body).execute()
+        return response
+    
+    def success(response):
+        print("Succesfully made textbox bullets")
+        return response
+    
+    error = "failed to make textbox bullets"
+    
+    request = create_request_dict(func, success, error)
+    response = service_helper(request, creds)
+    return response
+
 
 def add_image_to_slide(image, creds):
     pass
 
-def list_slides(creds):
-    """Shows basic usage of the Slides API.
-    Prints the number of slides and elements in a sample presentation.
-    """
-
-    try:
-        service = build('slides', 'v1', credentials=creds)
-
-        # Call the Slides API
-        presentation = service.presentations().get(
-            presentationId=PRESENTATION_ID).execute()
-       
-        slides = presentation.get('slides')
-
-        print('The presentation contains {} slides:'.format(len(slides)))
-        for i, slide in enumerate(slides):
-            print('- Slide #{} contains {} elements.'.format(
-                i + 1, len(slide.get('pageElements'))))
-    except HttpError as err:
-        print(err)
-
 
 def main():
-    creds = get_credentials();
-    #NB: Object id for slide must have length >= 5
-    create_slide(PRESENTATION_ID, "sample", creds);
+    creds = get_credentials()
+    # NB: Object id for slide must have length >= 5
+    list_slides(PRESENTATION_ID, creds)
+
+    new_page = create_slide(PRESENTATION_ID, None,
+                            Layout.TITLE_AND_BODY, None, creds)
+    page_id = new_page["objectId"]
+    response = create_textbox_with_text(PRESENTATION_ID, page_id,
+                                        page_id + "textbox", Rect(0, 0, 100, 100), "Ankit is a savage", creds)
+    textbox_id = response["objectId"]
+    make_textbox_bullets(PRESENTATION_ID, textbox_id, creds)
+    print(response)
 
 
 main()
