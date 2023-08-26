@@ -2,7 +2,7 @@ import { useEffect, useState } from 'react';
 import { Button, Grid, TextField } from '@mui/material';
 
 const GOOGLE_SLIDES_URL_REGEX =
-    /https:\/\/docs\.google\.com\/presentation\/d\/([a-zA-Z0-9_-]+)/;
+    /https:\/\/docs\.google\.com\/presentation\/d\/([a-zA-Z0-9_-]+)\/edit#slide=id.([a-zA-Z0-9_-]+)/;
 
 export default function PromptForm() {
   const [prompt, setPrompt] = useState("");
@@ -18,19 +18,23 @@ export default function PromptForm() {
 
     chrome.tabs.query({active: true, currentWindow: true})
         .then(([tab]) => {
-          const [, presentationID] = GOOGLE_SLIDES_URL_REGEX.exec(tab.url);
-          if (presentationID) {
+          const [, presentationID, slidePageID] = GOOGLE_SLIDES_URL_REGEX.exec(tab.url);
+          if (presentationID && slidePageID) {
             console.log("matched");
             return chrome.scripting.executeScript({
               target: {tabId: tab.id},
-              func: (paramPresentationID) => {
+              func: (paramPresentationID, paramSlidePageID) => {
                 const SELECTED_ELEMENT_COLOUR = "#8ab4f8";
                 const selectedElementDOMElement =
                     document.querySelector(`path[stroke="${SELECTED_ELEMENT_COLOUR}"]`);
 
                 // If no element is selected, return null
                 if (selectedElementDOMElement === null) {
-                  return {presentationID: paramPresentationID, objectID: null};
+                  return {
+                    presentationID: paramPresentationID,
+                    pageID: paramSlidePageID,
+                    paramSlidePageIDobjectID: null,
+                  };
                 }
 
                 // Parent is 3 nodes above
@@ -41,9 +45,13 @@ export default function PromptForm() {
 
                 // Now, get the object ID from the `id` attribute
                 const objectID = targetElement.id;
-                return {presentationID: paramPresentationID, objectID};
+                return {
+                  presentationID: paramPresentationID,
+                  pageID: paramSlidePageID,
+                  objectID,
+                };
               },
-              args: [presentationID],
+              args: [presentationID, slidePageID],
             });
           } else {
             return null;
@@ -56,11 +64,13 @@ export default function PromptForm() {
           };
 
           if (selectedObjectID) {
-            const {presentationID, objectID} = selectedObjectID;
+            const {presentationID, pageID, objectID} = selectedObjectID;
             jsonData.presentationID = presentationID;
+            jsonData.pageID = pageID;
             jsonData.objectID = objectID;
           }
           
+          clearForm();
           return jsonData;
         }).then((jsonData) => {
           return fetch("http://localhost:5000/prompt-processing", {
@@ -76,8 +86,6 @@ export default function PromptForm() {
           if (jsonResponseData.status != "OK") {
             throw new Error("bad status");
           }
-        }).then(() => {
-          clearForm();
         }).catch((error) => {
           console.error(error);
         });

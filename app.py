@@ -35,7 +35,6 @@ def process_prompt():
 
     response = {
         "status": "OK",
-        "response": out
     }
     return response
 
