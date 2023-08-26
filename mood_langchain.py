@@ -1,4 +1,4 @@
-#pip install langchain openai
+import os
 from langchain.chat_models import ChatOpenAI
 from langchain.prompts.chat import (
     ChatPromptTemplate,
@@ -12,7 +12,7 @@ class RawOutputParser(BaseOutputParser):
     def parse(self, text:str):
         return text
 
-chat = ChatOpenAI()
+chat = ChatOpenAI(model="gpt-4", openai_api_key=os.getenv("OPENAI_API_KEY"))
 
 def langchainApply(template: str, humanPrompt: str):
     
