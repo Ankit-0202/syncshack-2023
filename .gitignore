@@ -26,3 +26,9 @@ dist-ssr
 *.njsproj
 *.sln
 *.sw?
+
+#secrets
+credentials.json
+.venv
+token.json
+syncshack/package-lock.json

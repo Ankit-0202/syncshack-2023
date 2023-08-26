@@ -2,6 +2,8 @@ import os
 import openai
 import json
 import requests 
+import os.path
+
 
 OPENAI_API_KEY = os.getenv("OPENAI_API_KEY")
 SD_API_KEY = os.getenv("SD_API_KEY")
