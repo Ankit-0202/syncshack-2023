@@ -120,14 +120,11 @@ def get_images():
     with open('output.json', 'w') as json_file:
         json.dump(json_output, json_file, indent=2)
 
-
-
-
-
-
-
-
-
+def generate_json(prompt):
+    out = generate_text(prompt)
+    print(out)
+    set_json(out)
+    get_images()
 
 if __name__ == "__main__":
     option = input("Choose an option (A) generate text (B) generate image: ")

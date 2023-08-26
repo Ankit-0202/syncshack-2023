@@ -57,8 +57,8 @@ def service_helper(request: dict, creds: str):
         response = func(service)
         success(response)
     except HttpError as error:
-        print(f"An error occurred: {error}")
-        print(error_msg)
+        print(f"An error occurred: {error}", flush=True)
+        print(error_msg, flush=True)
         return error
 
     return response
@@ -300,11 +300,12 @@ def add_image_to_slide(presentation_id, page_id, image_id, img_addr, img_rect, c
     response = service_helper(request, creds)
     return response
 
-def populate_slides(filename: str, presentation_id: str):
-    json_file = open(filename, 'r')
+def populate_slides(json_file: str, presentation_id: str):
+    creds = get_credentials()
+
+    json_file = open('output.json', 'r')
     json_output = json.load(json_file)
     json_file.close()
-    creds = get_credentials()
     # list_slides(presentation_id, creds)
 
     slide_info = json_output["slides"]
@@ -321,7 +322,9 @@ def populate_slides(filename: str, presentation_id: str):
         page_id = create_slide(presentation_id, None, Layout.BLANK, None, creds)["objectId"]
         print(page_id)
         create_textbox_with_text(presentation_id, page_id, page_id+"textbox", title_box_rect, slide["title"], creds)
-        create_textbox_with_text(presentation_id, page_id, page_id+"bodybox", content_box_rect, slide["content"], creds)
+        dotpoints = "\t" + "\n\t".join(slide["content"])
+        create_textbox_with_text(presentation_id, page_id, page_id+"bodybox", content_box_rect, dotpoints, creds)
+        make_textbox_bullets(presentation_id, page_id+"bodybox", creds)
         if len(slide["image_prompts"]) > 0:
             image_url = slide["image_prompts"][0][0]
             add_image_to_slide(presentation_id, page_id, page_id+str(image_counter), image_url, image_box_rect, creds)

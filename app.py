@@ -5,6 +5,8 @@ from logging import Logger
 import sys
 from logging.config import dictConfig
 from flask_cors import CORS
+from slides_api_example import populate_slides
+import json
 
 
 app = Flask(__name__)
@@ -25,22 +27,17 @@ def process_prompt():
     if selected_object_id is not None:
         session["selected_object_id"] = selected_object_id
     
-    print(json_data)
+    # print(prompt_text, out, "\n", sep='\n')
     
-    out = generate_text(prompt_text)
-    
-    print(prompt_text, out, "\n", sep='\n')
+    generate_json(prompt_text);
+    json_output = json.load(open("output.json", "r"))
+    populate_slides(json_output, '1IlA5ES-gKdA_ySNXK3SsiQD3D0Oo8NhCSqby7VGrqPQ')
 
     response = {
         "status": "OK",
         "response": out
     }
-    
-    set_json(out)
-    get_images()
-
     return response
-
 
 @app.before_request
 def initialise_session():
