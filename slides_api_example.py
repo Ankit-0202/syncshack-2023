@@ -303,6 +303,16 @@ def add_image_to_slide(presentation_id, page_id, image_id, img_addr, img_rect, c
     response = service_helper(request, creds)
     return response
 
+def populate_slides(filename: str, presentation_id: str):
+    json_file = open(filename, 'r')
+    json_output = json.load(json_file)
+    json_file.close()
+    creds = get_credentials()
+    list_slides(presentation_id, creds)
+    create_slide(presentation_id, None, layout, None, creds)
+    
+    #hardcoded textbox locations: title, content, images
+
 
 
 def main():
@@ -321,5 +331,5 @@ def main():
                        "https://cdn2.stablediffusionapi.com/generations/3c617436-bd0f-4c3c-8782-f0f02c9d1254-0.png", creds)
     print(response)
 
-
-main()
+if __name__ == "__main__":
+    main()
