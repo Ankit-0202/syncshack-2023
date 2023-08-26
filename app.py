@@ -23,12 +23,19 @@ def process_prompt():
     
     out = call_api(prompt_text)
     
-    print(prompt_text)
-    print(out)
+    print(prompt_text, out, sep='\n')
 
     response = {
         "status": "OK",
         "response": out
     }
+    
+    set_json(out)
 
     return response
+
+
+
+def set_json(output):
+    with open('output.json', 'w') as json_file:
+        json_file.write(output)
