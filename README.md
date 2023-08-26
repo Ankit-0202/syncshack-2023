@@ -4,13 +4,7 @@ A Chrome extension for presentations made using Google Slides that leverages the
 
 ## Table of Contents
 
-- [Problem Statement](#problem-statement)
-- [Introducing Slidey: Simplifying Presentation Production](#introducing-slidey-simplifying-presentation-production)
-- [Seamless User Experience](#how-does-slidey-work?)
-- [Who Can Use Slidey?](#who-can-use-slidey)
-- [Prototype Overview](#prototype-overview)
-- [How Slidey Operates](#how-slidey-operates)
-- [Experience Slidey For Yourself!](#experience-slidey-for-yourself)
+
 
 
 ## Problem Statement
@@ -57,3 +51,53 @@ Slidey operates through an amalgamation of AI technologies:
 Ready to transform your presentation creation process? Clone our Git repository and access Slidey today:
 
 [Slidey Repository](https://github.com/Ankit-0202/syncshack-2023.git)
+
+### Installation Guide
+
+Once you've pulled the repository, follow these steps to use Slidey:
+
+### Installation Guide
+
+Once you've pulled the repository, follow these steps to use Slidey:
+
+1. Enter the directory and install all of the necessary dependencies.
+
+    ```bash
+    # Change directory and install dependencies using pip3 and npm
+    cd syncshack-2023
+    make install      # command installs all dependencies for you
+    ```
+
+2. Build the backend and frontend in separate terminals.
+
+    In one directory:
+
+    ```bash
+    cd syncshack-2023
+    make backend
+    ```
+
+    and in another:
+
+    ```bash
+    cd syncshack-2023
+    make frontend
+    ```
+
+    You will need to have both terminals running in order to use Slidey.
+
+3. Load the extension into Chrome.
+
+    3.1. Open Google Chrome and go to [chrome://extensions/](chrome://extensions/).
+
+    3.2. Enable "Developer mode" at the top right corner.
+
+    3.3. Click the "Load unpacked" button.
+
+    3.4. Select the `dist` directory in the `syncshack-2023` repository.
+
+4. Open Slidey.
+
+    You should now see your extension icon in the Chrome extension toolbar.
+
+We hope you enjoy using Slidey!
