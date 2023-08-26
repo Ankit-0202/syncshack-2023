@@ -99,7 +99,7 @@ def get_images():
     
     print("---GENERATING IMAGES---")
     for i, slide in enumerate(json_output['slides']):
-        print(f"Slide {i + 1}: {slide['title']}\n")
+        print(f"Slide {i + 1}: {slide['content']}\n")
         
         # Iterate through each image_prompt item
         ip = 'image_prompts'

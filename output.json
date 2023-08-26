@@ -1,74 +1,134 @@
 {
   "title_slide": {
-    "content": "Exploring Ghana: A Journey into West Africa",
-    "image_prompts": [
-      "Ghana landscape",
-      "Ghanaian culture",
-      "Traditional Ghanaian clothing"
-    ],
-    "speaker_notes": "Introduction to the presentation about Ghana, highlighting its location in West Africa and its rich cultural heritage."
+    "title": "Chillies",
+    "subtitle": "A presentation on the different types and uses of chillies"
   },
-  "slide_1": {
-    "content": "Location and Geography",
-    "image_prompts": [
-      "Map of Ghana",
-      "Ghana coastline",
-      "Ghanaian rainforest"
-    ],
-    "speaker_notes": "- Ghana is located on the west coast of Africa\n- It is bordered by Cote d'Ivoire to the west, Burkina Faso to the north, and Togo to the east\n- The country has a diverse geography, including coastal plains, hilly areas, and tropical rainforests"
-  },
-  "slide_2": {
-    "content": "Rich Cultural Heritage",
-    "image_prompts": [
-      "Ghanaian traditional dance",
-      "Ghanaian drummers",
-      "Adinkra symbols"
-    ],
-    "speaker_notes": "- Ghana is known for its vibrant and diverse culture\n- Traditional music, dance, and art are integral parts of Ghanaian society\n- Adinkra symbols, representing concepts and values, are widely used in clothing and crafts"
-  },
-  "slide_3": {
-    "content": "Historical Significance",
-    "image_prompts": [
-      "Elmina Castle",
-      "Kwame Nkrumah Memorial Park",
-      "Cape Coast Castle"
-    ],
-    "speaker_notes": "- Ghana played a significant role in the transatlantic slave trade\n- Historic sites like Elmina Castle and Cape Coast Castle are reminders of this dark period in history\n- Kwame Nkrumah, Ghana's first president, led the country to independence in 1957"
-  },
-  "slide_4": {
-    "content": "Natural Wonders",
-    "image_prompts": [
-      "Mole National Park",
-      "Wli Waterfalls",
-      "Lake Volta"
-    ],
-    "speaker_notes": "- Ghana is blessed with diverse natural landscapes and wildlife\n- Mole National Park is home to elephants, antelopes, and other animals\n- Wli Waterfalls, the highest waterfall in West Africa, is a popular tourist attraction\n- Lake Volta, the largest man-made lake in the world, offers opportunities for water sports and fishing"
-  },
-  "slide_5": {
-    "content": "Gastronomy",
-    "image_prompts": [
-      "Jollof rice",
-      "Banku and tilapia",
-      "Kelewele"
-    ],
-    "speaker_notes": "- Ghanaian cuisine is known for its rich flavors and diverse ingredients\n- Jollof rice, a popular West African dish, is a must-try\n- Banku and tilapia, a traditional Ghanaian meal, is a favorite among locals\n- Kelewele, a spicy fried plantain snack, is a popular street food"
-  },
-  "slide_6": {
-    "content": "Tourism and Economy",
-    "image_prompts": [
-      "Kakum National Park canopy walkway",
-      "Craft market in Accra",
-      "Ghanaian cocoa farm"
-    ],
-    "speaker_notes": "- Tourism plays a significant role in Ghana's economy\n- Kakum National Park, with its canopy walkway, is a major tourist attraction\n- Craft markets in Accra offer a wide range of traditional crafts and souvenirs\n- Ghana is one of the world's largest producers of cocoa, contributing to its economy"
-  },
-  "slide_7": {
-    "content": "Conclusion",
-    "image_prompts": [
-      "Ghanaian flag",
-      "Ghanaian dancers",
-      "Ghanaian art and crafts"
-    ],
-    "speaker_notes": "Wrap up the presentation, emphasizing the beauty and cultural richness of Ghana. Highlight the importance of preserving and celebrating Ghana's heritage."
-  }
+  "slides": [
+    {
+      "title": "Introduction",
+      "content": [
+        "Chillies are a type of fruit from the Capsicum family",
+        "They are commonly used as a spice to add heat and flavor to dishes",
+        "Chillies come in a variety of shapes, sizes, and levels of spiciness"
+      ],
+      "image_prompts": [
+        [
+          "https://cdn2.stablediffusionapi.com/generations/edb29805-164a-4af0-a295-d33befdc81c8-0.png"
+        ],
+        [
+          "https://cdn2.stablediffusionapi.com/generations/ff02f4f1-8ede-4d12-95e6-11def60e1e0f-0.png"
+        ],
+        [
+          "https://cdn2.stablediffusionapi.com/generations/e5446774-f42e-4170-bb17-9f299643b2f3-0.png"
+        ]
+      ],
+      "notes": "In this slide, we will introduce the topic of chillies, highlighting their classification as a fruit from the Capsicum family. We will mention their common use as a spice and the wide range of options available in terms of shape, size, and spiciness."
+    },
+    {
+      "title": "Scoville Scale",
+      "content": [
+        "The Scoville scale measures the spiciness of chillies",
+        "It is named after American pharmacist Wilbur Scoville",
+        "The scale ranges from 0 (no heat) to over 2 million (extremely hot)"
+      ],
+      "image_prompts": [
+        [
+          "https://cdn2.stablediffusionapi.com/generations/c35bef06-78ea-4de4-aa58-e76d86346991-0.png"
+        ],
+        [
+          "https://cdn2.stablediffusionapi.com/generations/dbfe0a8e-1b5d-4aa4-95d5-baf87882c59d-0.png"
+        ],
+        [
+          "https://cdn2.stablediffusionapi.com/generations/0ed1a8cb-5d50-47ab-9045-fa90ce3f0f4f-0.png"
+        ]
+      ],
+      "notes": "In this slide, we will discuss the Scoville scale, which is used to measure the spiciness of chillies. We will mention its origin and the range of values it encompasses, from no heat to extremely hot."
+    },
+    {
+      "title": "Types of Chillies",
+      "content": [
+        "Jalapeno: Medium spiciness, commonly used in Mexican cuisine",
+        "Habanero: Very hot, often used in Caribbean dishes",
+        "Thai Bird's Eye: Extremely spicy, popular in Thai cuisine",
+        "Poblano: Mild, often used for stuffing in dishes like chiles rellenos",
+        "Ghost Pepper: One of the hottest chillies in the world"
+      ],
+      "image_prompts": [
+        [
+          "https://cdn2.stablediffusionapi.com/generations/78d7b774-0a50-409b-b037-c26370ad84f1-0.png"
+        ],
+        [
+          "https://cdn2.stablediffusionapi.com/generations/99654552-ae6c-4bbb-8af6-af28f1b6b367-0.png"
+        ],
+        [
+          "https://cdn2.stablediffusionapi.com/generations/c5ecef14-c88c-401b-a0a7-a9a61009a5ee-0.png"
+        ]
+      ],
+      "notes": "In this slide, we will explore different types of chillies and their characteristics. We will mention their level of spiciness and their common usage in various cuisines, such as Mexican, Caribbean, and Thai. We will also highlight the Ghost Pepper as one of the hottest chillies in the world."
+    },
+    {
+      "title": "Culinary Uses",
+      "content": [
+        "Adding heat to dishes: Chillies are commonly used to spice up various recipes",
+        "Sauces and condiments: Chillies are used to make hot sauces, salsas, and chutneys",
+        "Drying and powdering: Some chillies are dried and ground into chili powder",
+        "Marinades and rubs: Chillies can be used in marinades for meat or as rubs for grilling",
+        "Pickling: Chillies can be pickled to preserve their flavor and add a tangy kick"
+      ],
+      "image_prompts": [
+        [
+          "https://cdn2.stablediffusionapi.com/generations/e9affe50-64d4-47d5-a33f-01a06b4e250a-0.png"
+        ],
+        [
+          "https://cdn2.stablediffusionapi.com/generations/d9ee819f-1442-4bfb-b511-1071b8f3cbc9-0.png"
+        ],
+        [
+          "https://cdn2.stablediffusionapi.com/generations/8f4bacdd-7e46-4981-800c-6dbe2d2d3abf-0.png"
+        ]
+      ],
+      "notes": "In this slide, we will discuss the various culinary uses of chillies. We will mention their role in adding heat to dishes, as well as their presence in sauces, condiments, and spices like chili powder. We will also touch upon their usage in marinades, rubs, and pickling."
+    },
+    {
+      "title": "Health Benefits",
+      "content": [
+        "Rich in vitamins: Chillies are a good source of vitamins A, C, and E",
+        "Boosts metabolism: The capsaicin in chillies can increase metabolism",
+        "Pain relief: Capsaicin is also known for its analgesic properties",
+        "Heart health: Chillies may help lower blood pressure and cholesterol levels",
+        "Digestive benefits: Chillies may aid digestion and reduce stomach issues"
+      ],
+      "image_prompts": [
+        [
+          "https://cdn2.stablediffusionapi.com/generations/d90f414e-fde6-40ae-befd-962afcba3648-0.png"
+        ],
+        [
+          "https://cdn2.stablediffusionapi.com/generations/88f6def1-d53f-4911-b4de-36082571553d-0.png"
+        ],
+        [
+          "https://cdn2.stablediffusionapi.com/generations/27cbe5eb-a2d7-4ecd-8260-8b05e4b43f29-0.png"
+        ]
+      ],
+      "notes": "In this slide, we will highlight the potential health benefits of consuming chillies. We will mention their vitamin content, their role in boosting metabolism, and their potential pain-relieving properties. We will also touch upon their impact on heart health and digestion."
+    },
+    {
+      "title": "Conclusion",
+      "content": [
+        "Chillies are versatile and widely used in various cuisines",
+        "They add heat, flavor, and health benefits to dishes",
+        "Explore different types of chillies to find your preferred level of spiciness"
+      ],
+      "image_prompts": [
+        [
+          "https://cdn2.stablediffusionapi.com/generations/657a3e47-e0e5-4f05-986a-0bea3489a6a6-0.png"
+        ],
+        [
+          "https://cdn2.stablediffusionapi.com/generations/6105ba1b-0a58-485a-83d1-f0c2fb410f75-0.png"
+        ],
+        [
+          "https://cdn2.stablediffusionapi.com/generations/053f2394-3416-474d-9382-64d161bff567-0.png"
+        ]
+      ],
+      "notes": "In this final slide, we will summarize the key points about chillies. We will mention their versatility, their role in enhancing flavor, and their potential health benefits. We will encourage the audience to explore different types of chillies to discover their preferred level of spiciness."
+    }
+  ]
 }
