@@ -48,7 +48,7 @@ def get_images():
         
     # Loop through each slide and modify image prompts
     for slide_index, slide in enumerate(json_output['slides']):
-        image_prompts = slide['prompts']
+        image_prompts = slide[prompt]
         
         for image_index, prompt in enumerate(image_prompts):
             json_output[slide][image_index] = generate_image(prompt, "")
