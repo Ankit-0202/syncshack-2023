@@ -9,7 +9,6 @@ def openai_prompt(my_prompt: str):
         prompt=my_prompt,
         max_tokens=10
     )
-    
     return response.choices[0].text.strip()
 
 
