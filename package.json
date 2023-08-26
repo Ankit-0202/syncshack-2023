@@ -1,0 +1,23 @@
+{
+  "name": "syncshack-2023",
+  "version": "1.0.0",
+  "description": "",
+  "main": "index.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/Ankit-0202/syncshack-2023.git"
+  },
+  "author": "",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/Ankit-0202/syncshack-2023/issues"
+  },
+  "homepage": "https://github.com/Ankit-0202/syncshack-2023#readme",
+  "dependencies": {
+    "chrome-types": "^0.1.227",
+    "typescript": "^5.2.2"
+  }
+}
