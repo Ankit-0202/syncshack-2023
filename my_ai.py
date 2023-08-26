@@ -113,7 +113,7 @@ def get_images():
                     print(f"Image {num_images}: {slide[ip][j]}")
                     print("--------")
                     
-        print("\n---------------------\n")
+        print("\n----------------------\n")
             
 
     # Save the modified data back to the JSON file

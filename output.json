@@ -1,85 +1,155 @@
 {
   "title_slide": {
-    "title": "Indian Culture",
-    "subtitle": "A Rich Tapestry of Traditions and Diversity"
+    "title": "Exploring Nigerian Culture",
+    "subtitle": "A Journey into the Rich and Diverse Traditions of Nigeria"
   },
   "slides": [
     {
-      "title": "Introduction to Indian Culture",
+      "title": "Introduction",
       "content": [
-        "India is known for its rich and diverse culture, which is a blend of various traditions, languages, religions, and art forms.",
-        "Indian culture has a history of thousands of years, with influences from ancient civilizations like the Indus Valley Civilization and the Vedic period.",
-        "The cultural diversity of India is reflected in its festivals, music, dance, literature, cuisine, and clothing styles."
+        "Overview of Nigeria - the most populous country in Africa",
+        "Nigeria's cultural diversity and vibrant traditions",
+        "Importance of preserving and celebrating Nigerian culture"
       ],
       "image_prompts": [
-        "Colorful traditional Indian clothing",
-        "Vibrant Indian festivals",
-        "Classical Indian dance performances"
+        [
+          "https://cdn2.stablediffusionapi.com/generations/4fd2e1b9-fbbe-4167-af9d-1e088152e404-0.png"
+        ],
+        "Traditional Nigerian attire",
+        [
+          "https://cdn2.stablediffusionapi.com/generations/2e7134a1-827c-4a53-af99-d4d81e97121a-0.png"
+        ]
       ]
     },
     {
-      "title": "Religion and Spirituality",
+      "title": "Ethnic Groups",
       "content": [
-        "India is the birthplace of major religions like Hinduism, Buddhism, Jainism, and Sikhism.",
-        "Hinduism is the dominant religion in India, with a wide range of gods and goddesses worshipped across the country.",
-        "Spirituality plays a significant role in Indian culture, with many people practicing meditation, yoga, and other spiritual disciplines."
+        "Over 250 ethnic groups in Nigeria",
+        "Major ethnic groups include Hausa-Fulani, Yoruba, and Igbo",
+        "Unique languages, customs, and traditions of each group"
       ],
       "image_prompts": [
-        "Hindu temple with intricate carvings",
-        "Buddhist monastery in the mountains",
-        "People practicing yoga on a serene beach"
+        [
+          "https://cdn2.stablediffusionapi.com/generations/5edf77d8-5d84-492f-8981-9a6ffa7e889d-0.png"
+        ],
+        [
+          "https://cdn2.stablediffusionapi.com/generations/7c488d97-a54d-4974-aa11-5491c50e1bfa-0.png"
+        ],
+        [
+          "https://cdn2.stablediffusionapi.com/generations/7e570621-2166-4de1-b8f1-5d51280f9b2c-0.png"
+        ]
       ]
     },
     {
-      "title": "Art and Architecture",
+      "title": "Music and Dance",
       "content": [
-        "Indian art and architecture showcase intricate craftsmanship and a blend of various styles.",
-        "Ancient temples and palaces feature detailed carvings, sculptures, and vibrant paintings.",
-        "Famous examples of Indian architecture include the Taj Mahal, Ajanta and Ellora Caves, and the temples of Khajuraho."
+        "Variety of music genres - Afrobeat, Highlife, Juju, and more",
+        "Traditional musical instruments like talking drums and shekere",
+        "Energetic and expressive traditional dances"
       ],
       "image_prompts": [
-        "Intricate carvings on a temple wall",
-        "Colorful mural painting in a traditional Indian style",
-        "The majestic Taj Mahal at sunrise"
+        [
+          "https://cdn2.stablediffusionapi.com/generations/4bbf60ba-36ec-4cee-b279-3354c1bac61d-0.png"
+        ],
+        [
+          "https://cdn2.stablediffusionapi.com/generations/8f8be759-ae9f-464d-832a-9acb26814a8a-0.png"
+        ],
+        [
+          "https://cdn2.stablediffusionapi.com/generations/4e3da090-7624-4a0f-b945-97bac9690cda-0.png"
+        ]
       ]
     },
     {
-      "title": "Cuisine and Festivals",
+      "title": "Cuisine",
       "content": [
-        "Indian cuisine is diverse and known for its rich flavors and aromatic spices.",
-        "Each region in India has its own unique culinary traditions and specialties.",
-        "Indian festivals like Diwali, Holi, and Eid are celebrated with great enthusiasm and showcase the cultural vibrancy of the country."
+        "Diverse Nigerian cuisine with regional specialties",
+        "Staple foods like jollof rice, pounded yam, and egusi soup",
+        "Flavorful spices and ingredients unique to Nigerian dishes"
       ],
       "image_prompts": [
-        "Plate of delicious Indian food with various dishes",
-        "Traditional sweets and snacks for Diwali",
-        "Colorful celebration during Holi festival"
+        [
+          "https://cdn2.stablediffusionapi.com/generations/70ff44ba-d825-4caf-bcd8-9afe303773c8-0.png"
+        ],
+        [
+          "https://cdn2.stablediffusionapi.com/generations/f41737ca-4371-4565-b72a-2d631c36c598-0.png"
+        ],
+        [
+          "https://cdn2.stablediffusionapi.com/generations/6168bbe9-fe53-4c7a-a643-ae74eb246228-0.png"
+        ]
       ]
     },
     {
-      "title": "Traditional Clothing and Dance",
+      "title": "Fashion and Attire",
       "content": [
-        "Indian clothing varies across different regions, with saree, salwar kameez, and dhoti being popular traditional attire.",
-        "Indian classical dance forms like Bharatanatyam, Kathak, and Odissi are known for their intricate footwork, expressions, and storytelling.",
-        "These dance forms are often performed during religious ceremonies, festivals, and cultural events."
+        "Beautiful and diverse traditional Nigerian attire",
+        "Popular fabrics like Ankara and Aso-oke",
+        "Significance of clothing in Nigerian culture"
       ],
       "image_prompts": [
-        "Elegant woman wearing a traditional Indian saree",
-        "Dancers in colorful costumes performing Kathak",
-        "Traditional Indian dance pose with intricate hand gestures"
+        [
+          "https://cdn2.stablediffusionapi.com/generations/d7158f47-a596-48f6-bdb7-8fc48c74c66e-0.png"
+        ],
+        [
+          "https://cdn2.stablediffusionapi.com/generations/1d10753f-2b03-4524-9134-937dafeae296-0.png"
+        ],
+        [
+          "https://cdn2.stablediffusionapi.com/generations/3d5f2dca-fc94-452a-910a-2b26bc0bbf77-0.png"
+        ]
       ]
     },
     {
-      "title": "Literature and Languages",
+      "title": "Art and Crafts",
       "content": [
-        "Indian literature has a rich heritage dating back to ancient texts like the Vedas, Mahabharata, and Ramayana.",
-        "Prominent Indian authors like Rabindranath Tagore, R.K. Narayan, and Arundhati Roy have made significant contributions to world literature.",
-        "India is known for its diverse languages, with Hindi, Bengali, Tamil, and Urdu being some of the widely spoken languages."
+        "Rich artistic heritage in Nigeria",
+        "Famous Nigerian artists and their contributions",
+        "Traditional crafts like pottery, weaving, and wood carving"
       ],
       "image_prompts": [
-        "Stack of ancient Indian manuscripts",
-        "Bust of Rabindranath Tagore, Nobel laureate in Literature",
-        "People reading books in different Indian languages"
+        [
+          "https://cdn2.stablediffusionapi.com/generations/b88eeca3-00dc-48ec-a1f4-eb5d98c9113c-0.png"
+        ],
+        [
+          "https://cdn2.stablediffusionapi.com/generations/894af8f6-6fef-4196-8fd2-cc75ce268711-0.png"
+        ],
+        [
+          "https://cdn2.stablediffusionapi.com/generations/f797b2d3-1a66-489b-acd4-c6db282387ad-0.png"
+        ]
+      ]
+    },
+    {
+      "title": "Festivals and Celebrations",
+      "content": [
+        "Vibrant festivals and celebrations throughout the year",
+        "Cultural events like the Eyo Festival and Durbar Festival",
+        "Importance of festivals in promoting cultural identity"
+      ],
+      "image_prompts": [
+        [
+          "https://cdn2.stablediffusionapi.com/generations/b0a75380-6899-4e19-8b41-53ad5a7f87a8-0.png"
+        ],
+        [
+          "https://cdn2.stablediffusionapi.com/generations/f68e3b35-f011-477e-9532-dcced51c13a0-0.png"
+        ],
+        "Colorful Nigerian festival decorations"
+      ]
+    },
+    {
+      "title": "Conclusion",
+      "content": [
+        "Nigerian culture - a treasure trove of traditions and heritage",
+        "The importance of cultural preservation and appreciation",
+        "Inviting everyone to explore and experience Nigerian culture"
+      ],
+      "image_prompts": [
+        [
+          "https://cdn2.stablediffusionapi.com/generations/ff71a1dc-8596-40e0-a43a-3222a0a71fe6-0.png"
+        ],
+        [
+          "https://cdn2.stablediffusionapi.com/generations/1fbbe62b-66b8-46a1-806d-79aaa7a66cfe-0.png"
+        ],
+        [
+          "https://cdn2.stablediffusionapi.com/generations/8b6589bf-f4c5-41f6-8f3b-985e1c40522d-0.png"
+        ]
       ]
     }
   ]
