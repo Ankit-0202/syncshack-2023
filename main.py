@@ -1,1 +1,1 @@
-import my_openai
+import my_ai
