@@ -1,5 +1,8 @@
-all:
+frontend:
 	npm run dev
+
+backend:
+	flask --app app run
 
 install:
 	pip3 install -r requirements.txt

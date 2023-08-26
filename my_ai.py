@@ -11,7 +11,7 @@ SD_API_KEY = os.getenv("SD_API_KEY")
 openai.api_key = os.getenv("OPENAI_API_KEY")
 print(openai.api_key)
 
-def openai_prompt(my_prompt: str):
+def generate_text(my_prompt: str):
     response = openai.Completion.create(
         engine="text-davinci-003",
         prompt=my_prompt,
@@ -19,7 +19,7 @@ def openai_prompt(my_prompt: str):
     )
     return response.choices[0].text.strip()
 
-def generate_image(my_prompt: str, neg_prompt:str):
+def generate_image(my_prompt: str, neg_prompt: str):
     url = "https://stablediffusionapi.com/api/v3/text2img"
 
     payload = json.dumps({
@@ -46,7 +46,7 @@ def generate_image(my_prompt: str, neg_prompt:str):
     }
 
     response = requests.request("POST", url, headers=headers, data=payload)
-    print("Please find your image at", response.json())
+    return response.json()
 
 
 if __name__ == "__main__":
@@ -57,8 +57,9 @@ if __name__ == "__main__":
         exit()
     
     prompt = input("Please enter a prompt: ")
-    if (option == "B"):
+    
+    if (option == "A"):
+        print(generate_text(prompt))
+    elif (option == "B"):
         neg_prompt = input("Please enter a negative prompt (leave empty for nothing): ")
-        generate_image(prompt, neg_prompt)
-    elif (option == "A"):
-        print(openai_prompt(prompt))
+        print(generate_image(prompt, neg_prompt))
