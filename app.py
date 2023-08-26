@@ -31,7 +31,7 @@ def process_prompt():
     }
     
     set_json(out)
-    
+    get_images()
 
     return response
 
