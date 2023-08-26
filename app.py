@@ -31,11 +31,18 @@ def process_prompt():
     }
     
     set_json(out)
+    
 
     return response
 
 
-
 def set_json(output):
-    with open('output.json', 'w') as json_file:
+    with open('output.json', 'w+') as json_file:
         json_file.write(output)
+        
+
+def get_images():
+    with open('output.json', 'a+') as json_file:
+        output = json.load(json_file)
+        
+        
