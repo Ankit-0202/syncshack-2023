@@ -65,6 +65,39 @@ def generate_image(my_prompt: str, neg_prompt: str):
     return response.json()['output'][0]
 
 
+def set_json(output):
+    with open('output.json', 'w+') as json_file:
+        json_file.write(output)
+        
+
+def get_images():
+    json_file = open('output.json', 'r')
+    json_output = json.load(json_file)
+    json_file.close()
+        
+    # Loop through each slide and modify image prompts
+    # Iterate through each slide
+    for i, slide in enumerate(json_output['slides']):
+        print(f"Slide {i + 1}: {slide['title']}")
+        
+        # Iterate through each image_prompt item
+        for j, item in enumerate(slide['image_prompts']):
+            slide['image_prompts'][j] = generate_image(slide['image_prompts'][j], "")
+            
+
+    # Save the modified data back to the JSON file
+    with open('output.json', 'w') as json_file:
+        json.dump(json_output, json_file, indent=2)
+
+
+
+
+
+
+
+
+
+
 if __name__ == "__main__":
     option = input("Choose an option (A) generate text (B) generate image: ")
     option = option.upper()
@@ -75,7 +108,11 @@ if __name__ == "__main__":
     prompt = input("Please enter a prompt: ")
     
     if (option == "A"):
-        print(generate_text(prompt))
+        out = generate_text(prompt)
+        print(out)
+        set_json(out)
+        get_images()
+        
     elif (option == "B"):
         neg_prompt = input("Please enter a negative prompt (leave empty for nothing): ")
         print(generate_image(prompt, neg_prompt))

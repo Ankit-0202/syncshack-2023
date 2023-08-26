@@ -1,8 +1,16 @@
 from flask import Flask, request
 from my_ai import *
+from json import *
 
 
 app = Flask(__name__)
+
+def call_api(prompt_text):
+    # Check if requesting image
+    if 'image' in prompt_text:
+        return generate_image(prompt_text, "")
+    else:
+        return generate_text(prompt_text)
 
 
 @app.post("/prompt-processing")
@@ -13,21 +21,16 @@ def process_prompt():
     # Access prompt data (under "prompt" key)
     prompt_text = json_data["prompt"] # type: ignore
     
-    out = ""
+    out = call_api(prompt_text)
     
-    # Check if requesting image
-    if 'image' in prompt_text:
-        out = generate_image(prompt_text, "")
-    
-    else:
-        out = generate_text(prompt_text)
-    
-    print(prompt_text)
-    print(out)
+    print(prompt_text, out, sep='\n')
 
     response = {
         "status": "OK",
         "response": out
     }
+    
+    set_json(out)
+    get_images()
 
     return response
