@@ -27,13 +27,14 @@ def process_prompt():
         out = generate_text(prompt_text)
     
     
-    
+    print(out)
     
     
     
 
     response = {
         "status": "OK",
+        "response": out
     }
 
     return response
