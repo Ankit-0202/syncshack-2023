@@ -57,7 +57,7 @@ def generate_image(my_prompt: str, neg_prompt: str):
     }
 
     response = requests.request("POST", url, headers=headers, data=payload)
-    return response.json()
+    return response.json()['output'][0]
 
 
 if __name__ == "__main__":
