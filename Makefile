@@ -2,7 +2,7 @@ frontend:
 	npm run dev
 
 backend:
-	flask --app app run
+	flask --app app run --debug
 
 install:
 	pip3 install -r requirements.txt

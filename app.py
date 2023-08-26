@@ -1,9 +1,14 @@
 from flask import Flask, request
 from my_ai import *
 from json import *
+from logging import Logger
+import sys
+from logging.config import dictConfig
+from flask_cors import CORS
 
 
 app = Flask(__name__)
+CORS(app)
 
 def call_api(prompt_text):
     # Check if requesting image
@@ -22,8 +27,11 @@ def process_prompt():
     prompt_text = json_data["prompt"] # type: ignore
     
     out = call_api(prompt_text)
-    
-    print(prompt_text, out, "\n", sep='\n')
+
+    print(prompt_text, out, "\n", sep='\n', flush=True)
+    # print(prompt_text, out, "\n", sep='\n', flush=True, file=sys.stderr)
+    # print(prompt_text, out, "\n", sep='\n', flush=True, file=file)
+    file = open("output.txt", "w+")
 
     response = {
         "status": "OK",

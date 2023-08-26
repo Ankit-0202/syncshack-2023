@@ -21,6 +21,7 @@ export default function PromptForm() {
       },
       body: JSON.stringify(jsonData),
     }).then((data) => {
+      console.log(data.json())
       return data.json();
     }).then((jsonResponseData) => {
       if (jsonResponseData.status != "OK") {

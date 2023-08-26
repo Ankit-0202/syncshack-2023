@@ -1,112 +1,95 @@
 {
   "title_slide": {
-    "title": "The Evolution of Shoes",
-    "subtitle": "From Functionality to Fashion",
-    "image": "shoes"
+    "title": "The Impact of Climate Change on Biodiversity",
+    "subtitle": "Understanding the Threat to Earth's Ecosystems",
+    "image_prompts": [
+      "Climate change",
+      "Biodiversity",
+      "Earth's ecosystems"
+    ]
   },
-  "slides": [
-    {
-      "title": "Introduction",
-      "content": "Shoes have come a long way throughout history, evolving from simple protective coverings to stylish fashion statements. Let's explore the fascinating journey of shoes!",
-      "image_prompts": [
-        [
-          "https://cdn2.stablediffusionapi.com/generations/3cefa178-3cd6-4280-84be-932e3dbdfdb6-0.png"
-        ],
-        [
-          "https://cdn2.stablediffusionapi.com/generations/6e64fe11-696b-49a3-8bc5-a61d7ad8e10c-0.png"
-        ],
-        [
-          "https://cdn2.stablediffusionapi.com/generations/00d5b992-a284-4605-a053-bd142877f427-0.png"
-        ]
-      ],
-      "speaker_notes": "Introduce the topic of shoes and their evolution. Highlight the importance of footwear in human history and how it has transformed over time."
-    },
-    {
-      "title": "Ancient Footwear",
-      "content": "The earliest known shoes date back to around 7,000-8,000 BCE. They were made from natural materials such as animal hides and plant fibers.",
-      "image_prompts": [
-        [
-          "https://cdn2.stablediffusionapi.com/generations/4dafaa48-599c-47af-8911-5f6a16fafaf2-0.png"
-        ],
-        [
-          "https://cdn2.stablediffusionapi.com/generations/8c712657-a468-4457-a62e-ca383facf2fc-0.png"
-        ],
-        [
-          "https://cdn2.stablediffusionapi.com/generations/38ef42ac-e137-478b-838a-f0e7fca977b3-0.png"
-        ]
-      ],
-      "speaker_notes": "Discuss the archaeological evidence of ancient shoes and their construction. Mention the materials used and their basic designs."
-    },
-    {
-      "title": "Functional Footwear",
-      "content": "As civilizations developed, shoes became more than just protective coverings. They were designed for specific purposes, such as:",
-      "bullets": [
-        "Hunting and outdoor activities",
-        "Warfare and military footwear",
-        "Working and occupational shoes"
-      ],
-      "image_prompts": [
-        [
-          "https://cdn2.stablediffusionapi.com/generations/cea78d56-2a9e-48c8-b88d-0024da8d7c27-0.png"
-        ],
-        [
-          "https://cdn2.stablediffusionapi.com/generations/64c1b568-5e4c-42cf-b397-81d77f6fd572-0.png"
-        ],
-        [
-          "https://cdn2.stablediffusionapi.com/generations/dbb3ee88-eac5-442c-b25e-88dfd6e3c372-0.png"
-        ]
-      ],
-      "speaker_notes": "Explain how shoes started serving functional purposes beyond basic protection. Mention specific types of functional footwear and their uses."
-    },
-    {
-      "title": "Fashion and Style",
-      "content": "With the rise of social status and the desire for self-expression, shoes began to reflect fashion trends and personal style. Notable shoe fashion milestones include:",
-      "bullets": [
-        "High-heeled shoes in the 16th century",
-        "Victorian era's extravagant footwear",
-        "The rise of sneakers and athletic shoes"
-      ],
-      "image_prompts": [
-        [
-          "https://cdn2.stablediffusionapi.com/generations/d0cb7802-b16e-4ccd-882b-e3e6c85506a7-0.png"
-        ],
-        [
-          "https://cdn2.stablediffusionapi.com/generations/64bf593a-d38b-4d7c-a197-2e14a49f234e-0.png"
-        ],
-        [
-          "https://cdn2.stablediffusionapi.com/generations/ece90c8e-06d8-4e98-9527-c44ed68d944e-0.png"
-        ]
-      ],
-      "speaker_notes": "Discuss the shift of shoes from functionality to fashion. Highlight significant fashion trends and styles throughout history, showcasing iconic examples."
-    },
-    {
-      "title": "Innovation and Technology",
-      "content": "Advancements in technology have revolutionized the shoe industry, leading to innovative designs and improved comfort. Some notable innovations include:",
-      "bullets": [
-        "Mass production and assembly line techniques",
-        "Development of specialized sports shoes",
-        "Introduction of sustainable and eco-friendly materials"
-      ],
-      "image_prompts": [
-        [
-          "https://cdn2.stablediffusionapi.com/generations/7215278d-dcd9-4d1b-aec9-6fa34e77d9d3-0.png"
-        ],
-        [
-          "https://cdn2.stablediffusionapi.com/generations/d1c0fb68-29e2-499a-af04-a29b234f0796-0.png"
-        ],
-        "sustainable footwear"
-      ],
-      "speaker_notes": "Explore how technology has transformed the shoe industry. Discuss key advancements and their impact on design, performance, and sustainability."
-    },
-    {
-      "title": "Conclusion",
-      "content": "Shoes have evolved from basic protective coverings to fashion statements and technological marvels. They not only serve practical purposes but also reflect our culture, style, and aspirations.",
-      "image_prompts": [
-        "modern shoe collection",
-        "diverse shoe styles",
-        "shoes as self-expression"
-      ],
-      "speaker_notes": "Summarize the evolution of shoes and their significance in society. Emphasize the multifaceted role of shoes as both functional and fashionable items."
-    }
-  ]
+  "slide_1": {
+    "title": "Introduction",
+    "content": [
+      "Brief explanation of climate change",
+      "Importance of biodiversity in maintaining ecosystem balance",
+      "Overview of the presentation's focus"
+    ],
+    "image_prompts": [
+      "Climate change effects",
+      "Biodiversity illustration",
+      "Ecosystem balance"
+    ],
+    "notes": "Welcome everyone! Today, we will be discussing the impact of climate change on biodiversity. We'll begin by providing a brief introduction to climate change and explaining the significance of biodiversity in maintaining the balance of Earth's ecosystems."
+  },
+  "slide_2": {
+    "title": "What is Climate Change?",
+    "content": [
+      "Definition of climate change",
+      "Causes of climate change",
+      "Examples of climate change effects"
+    ],
+    "image_prompts": [
+      "Rising temperatures",
+      "Melting ice caps",
+      "Extreme weather events"
+    ],
+    "notes": "Let's start by defining climate change. Climate change refers to long-term shifts in temperature and weather patterns caused primarily by human activities. The main causes of climate change include greenhouse gas emissions and deforestation. Some examples of climate change effects are rising temperatures, melting ice caps, and an increase in extreme weather events."
+  },
+  "slide_3": {
+    "title": "The Importance of Biodiversity",
+    "content": [
+      "Definition of biodiversity",
+      "Key components of biodiversity",
+      "Role of biodiversity in ecosystem functioning"
+    ],
+    "image_prompts": [
+      "Diverse forest ecosystem",
+      "Variety of plant and animal species",
+      "Interconnected food web"
+    ],
+    "notes": "Now, let's shift our focus to biodiversity. Biodiversity refers to the variety of living organisms in a particular habitat or ecosystem. It includes genetic diversity, species diversity, and ecosystem diversity. Biodiversity plays a crucial role in ecosystem functioning, such as providing essential ecosystem services, maintaining a stable climate, and supporting the food web."
+  },
+  "slide_4": {
+    "title": "Climate Change Threats to Biodiversity",
+    "content": [
+      "Explanation of how climate change affects biodiversity",
+      "Examples of climate change impacts on different ecosystems",
+      "Loss of habitats and species extinction"
+    ],
+    "image_prompts": [
+      "Coral bleaching",
+      "Forest fires",
+      "Polar bear on melting ice"
+    ],
+    "notes": "Now, let's explore how climate change poses threats to biodiversity. Climate change disrupts ecosystems and habitats, leading to changes in temperature, precipitation patterns, and sea levels. These changes can cause coral bleaching, forest fires, and the loss of ice habitats for species like polar bears. Ultimately, climate change accelerates species extinction and reduces overall biodiversity."
+  },
+  "slide_5": {
+    "title": "Conservation Efforts and Adaptation",
+    "content": [
+      "Importance of conservation in mitigating climate change impacts",
+      "Examples of conservation strategies",
+      "Adaptation measures for biodiversity"
+    ],
+    "image_prompts": [
+      "Protected area",
+      "Reforestation",
+      "Habitat restoration"
+    ],
+    "notes": "Despite the challenges, conservation efforts play a vital role in mitigating the impacts of climate change on biodiversity. Examples of conservation strategies include establishing protected areas, implementing reforestation projects, and restoring degraded habitats. Additionally, adaptation measures for biodiversity, such as assisted migration and habitat connectivity, can help species cope with changing environmental conditions."
+  },
+  "slide_6": {
+    "title": "Conclusion",
+    "content": [
+      "Recap of key points",
+      "Importance of addressing climate change for biodiversity conservation",
+      "Call to action for individuals and policymakers"
+    ],
+    "image_prompts": [
+      "Recap of key points",
+      "Individuals taking action",
+      "Policymakers discussing climate change"
+    ],
+    "notes": "To summarize, climate change poses a significant threat to biodiversity and Earth's ecosystems. It is crucial to address climate change to ensure the conservation of biodiversity and maintain the balance of our planet's ecosystems. We must all take action, both as individuals and as policymakers, to reduce greenhouse gas emissions, protect habitats, and support conservation efforts."
+  }
 }
