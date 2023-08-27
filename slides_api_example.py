@@ -452,6 +452,16 @@ def main():
     #                    "https://cdn2.stablediffusionapi.com/generations/3c617436-bd0f-4c3c-8782-f0f02c9d1254-0.png", creds)
     # print(response)
 
+def get_slide_pageElement(presentationId: str, pageObjectId: str, objectId: str):
+    creds = get_credentials()
+    service = build('slides', 'v1', credentials=creds)
+    page = service.presentations().pages().get(presentationId=presentationId, pageObjectId=pageObjectId).execute()
+    elements = page.get("pageElements")
+    for elem in elements:
+        #print(elem.get("objectId"), objectId)
+        if ("editor-" + elem.get("objectId") == objectId):
+            return elem
+    return None
 
 if __name__ == "__main__":
     main()

@@ -1,10 +1,12 @@
 import { useEffect, useState } from 'react';
-import { Button, Grid, TextField } from '@mui/material';
+import { Box, Button, CircularProgress, Grid, TextField } from '@mui/material';
 
 const GOOGLE_SLIDES_URL_REGEX =
-    /https:\/\/docs\.google\.com\/presentation\/d\/([a-zA-Z0-9_-]+)/;
+    /https:\/\/docs\.google\.com\/presentation\/d\/([a-zA-Z0-9_-]+)\/edit#slide=id.([a-zA-Z0-9_-]+)/;
 
 export default function PromptForm() {
+  const [generating, setGenerating] = useState(false);
+  const [generateSuccessful, setGenerateSuccessful] = useState(false);
   const [prompt, setPrompt] = useState("");
   const [mood, setMood] = useState("");
 
@@ -16,20 +18,30 @@ export default function PromptForm() {
   function submitPrompt(event) {
     event.preventDefault();
 
+    if (!generating) {
+      setGenerateSuccessful(false);
+      setGenerating(true);
+    }
+
     chrome.tabs.query({active: true, currentWindow: true})
         .then(([tab]) => {
-          if (GOOGLE_SLIDES_URL_REGEX.test(tab.url)) {
+          const [, presentationID, slidePageID] = GOOGLE_SLIDES_URL_REGEX.exec(tab.url);
+          if (presentationID && slidePageID) {
             console.log("matched");
             return chrome.scripting.executeScript({
               target: {tabId: tab.id},
-              func: () => {
+              func: (paramPresentationID, paramSlidePageID) => {
                 const SELECTED_ELEMENT_COLOUR = "#8ab4f8";
                 const selectedElementDOMElement =
                     document.querySelector(`path[stroke="${SELECTED_ELEMENT_COLOUR}"]`);
 
                 // If no element is selected, return null
                 if (selectedElementDOMElement === null) {
-                  return null;
+                  return {
+                    presentationID: paramPresentationID,
+                    pageID: paramSlidePageID,
+                    paramSlidePageIDobjectID: null,
+                  };
                 }
 
                 // Parent is 3 nodes above
@@ -40,8 +52,13 @@ export default function PromptForm() {
 
                 // Now, get the object ID from the `id` attribute
                 const objectID = targetElement.id;
-                return objectID;
+                return {
+                  presentationID: paramPresentationID,
+                  pageID: paramSlidePageID,
+                  objectID,
+                };
               },
+              args: [presentationID, slidePageID],
             });
           } else {
             return null;
@@ -51,8 +68,14 @@ export default function PromptForm() {
           const jsonData = {
             prompt,
             mood,
-            objectID: selectedObjectID,
           };
+
+          if (selectedObjectID) {
+            const {presentationID, pageID, objectID} = selectedObjectID;
+            jsonData.presentationID = presentationID;
+            jsonData.pageID = pageID;
+            jsonData.objectID = objectID;
+          }
           
           return jsonData;
         }).then((jsonData) => {
@@ -70,6 +93,8 @@ export default function PromptForm() {
             throw new Error("bad status");
           }
         }).then(() => {
+          setGenerateSuccessful(true);
+          setGenerating(false);
           clearForm();
         }).catch((error) => {
           console.error(error);
@@ -91,6 +116,7 @@ export default function PromptForm() {
           fullWidth
           size="small"
           value={prompt}
+          disabled={generating}
           onChange={(e) => setPrompt(e.target.value)}
         />
       </Grid>
@@ -103,12 +129,33 @@ export default function PromptForm() {
           fullWidth
           size="small"
           value={mood}
+          disabled={generating}
           onChange={(e) => setMood(e.target.value)}
         />
       </Grid>
 
       <Grid item xs={12}>
-        <Button type="submit" variant="contained">Send Prompt</Button>
+        <Box sx={{m: 1, position: "relative"}}>
+          <Button
+            type="submit"
+            variant="contained"
+            disabled={generating}
+          >
+            Send Prompt
+          </Button>
+          {generating && (
+            <CircularProgress
+              size={24}
+              sx={{
+                position: "absolute",
+                top: "50%",
+                left: "50%",
+                marginTop: "-12px",
+                marginLeft: "-12px",
+              }}
+            />
+          )}
+        </Box>
       </Grid>
     </Grid>
   );

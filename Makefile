@@ -8,6 +8,10 @@ install:
 	pip3 install -r requirements.txt
 	npm install
 
+clean:
+	rm -f output.json
+	rm -rf __pycache__
+
 
 
 

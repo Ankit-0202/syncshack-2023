@@ -1,102 +1,80 @@
 {
-  "title": "The Wonderful World of Tissues",
+  "title": "How to Give an Effective Presentation",
   "slides": [
     {
-      "title": "Introduction to Tissues",
+      "title": "Introduction",
       "content": [
-        "Definition: Tissues are groups of cells that work together to perform a specific function.",
-        "Types of tissues: epithelial, connective, muscular, and nervous.",
-        "Importance of tissues: They form the building blocks of organs and contribute to the overall function of the body."
+        "Welcome",
+        "Introduce yourself",
+        "State the purpose of the presentation"
       ],
       "image_prompts": [
-        "Different types of tissues",
-        [
-          "https://cdn2.stablediffusionapi.com/generations/bca1d3f8-55db-407e-b79e-4f19060ef2bc-0.png"
-        ],
-        [
-          "https://cdn2.stablediffusionapi.com/generations/46149033-8a0c-4408-ac17-fa2fd14b6134-0.png"
-        ]
-      ]
+        "A person standing confidently and speaking in front of an audience - professional presentation style",
+        "A person giving a presentation with engaging visuals on a big screen - effective presentation techniques",
+        "A group of people listening attentively to a speaker - audience engagement in presentations"
+      ],
+      "speaker_notes": "In the introduction slide, it is important to capture the attention of the audience and establish your credibility as a speaker. Make sure to clearly state the purpose of the presentation and what the audience can expect to learn or gain from it."
     },
     {
-      "title": "Epithelial Tissue",
+      "title": "Outline",
       "content": [
-        "Function: Provides protection, secretion, absorption, and sensation.",
-        "Types of epithelial tissue: squamous, cuboidal, columnar.",
-        "Locations: skin, lining of organs, glands."
+        "Provide an overview of the presentation",
+        "Outline the main points or topics that will be covered",
+        "Briefly explain the structure or flow of the presentation"
       ],
       "image_prompts": [
-        [
-          "https://cdn2.stablediffusionapi.com/generations/cce58286-010a-46f9-895e-c6c0af404cbc-0.png"
-        ],
-        [
-          "https://cdn2.stablediffusionapi.com/generations/f65e9e1e-1018-48e8-b2b0-236c9483ed39-0.png"
-        ],
-        [
-          "https://cdn2.stablediffusionapi.com/generations/e295a5d2-e527-41b4-a47b-0e63eec1c21a-0.png"
-        ]
-      ]
+        "A road map with different destinations - outlining the main points of the presentation",
+        "A table of contents - visually representing the structure of the presentation",
+        "A puzzle with different pieces coming together - illustrating how the topics will be connected"
+      ],
+      "speaker_notes": "In the outline slide, you want to give the audience a clear roadmap of what will be covered in the presentation. This helps them understand the structure and flow of the content and mentally prepare for what's to come."
     },
     {
-      "title": "Connective Tissue",
+      "title": "Content Slide 1",
       "content": [
-        "Function: Supports, connects, and protects other tissues and organs.",
-        "Types of connective tissue: loose, dense, adipose, cartilage, bone, blood.",
-        "Locations: tendons, ligaments, bones, blood vessels."
+        "Present the first main point or topic",
+        "Provide relevant information or data",
+        "Include supporting examples or case studies"
       ],
       "image_prompts": [
-        [
-          "https://cdn2.stablediffusionapi.com/generations/0edf9c46-37a4-49bd-8141-ae3b436e0ea0-0.png"
-        ],
-        [
-          "https://cdn2.stablediffusionapi.com/generations/76a4dbf5-6bb7-49fd-ab06-dce4773a59cb-0.png"
-        ],
-        [
-          "https://cdn2.stablediffusionapi.com/generations/edbd1e0c-5cb1-48a3-8788-44a00d16b831-0.png"
-        ]
-      ]
+        "A graph showing an upward trend - illustrating positive results or growth",
+        "A person analyzing data on a computer screen - demonstrating the use of data in decision-making",
+        "A group of people collaborating in a meeting room - showcasing teamwork or problem-solving"
+      ],
+      "speaker_notes": "In this content slide, you will dive into the first main point or topic of your presentation. Make sure to provide valuable information, data, and examples that support your key message. This will help the audience understand the importance and relevance of the topic."
     },
     {
-      "title": "Muscular Tissue",
+      "title": "Content Slide 2",
       "content": [
-        "Function: Enables movement and generates force.",
-        "Types of muscular tissue: skeletal, smooth, cardiac.",
-        "Locations: skeletal muscles, walls of organs, heart."
+        "Present the second main point or topic",
+        "Highlight key findings or insights",
+        "Include visual aids or diagrams"
       ],
       "image_prompts": [
-        [
-          "https://cdn2.stablediffusionapi.com/generations/200276a8-91a6-4ed4-9051-4769c12332f0-0.png"
-        ],
-        [
-          "https://cdn2.stablediffusionapi.com/generations/98ae8600-2396-4b24-bf5a-9c5cf4dcea0f-0.png"
-        ],
-        [
-          "https://cdn2.stablediffusionapi.com/generations/d533b91f-ad0f-4b7e-be2b-1fd744a50210-0.png"
-        ]
-      ]
+        "A magnifying glass zooming in on details - emphasizing the importance of attention to detail",
+        "A lightbulb with gears inside - representing innovative ideas or problem-solving",
+        "A Venn diagram showing overlapping circles - illustrating the intersection of different concepts or ideas"
+      ],
+      "speaker_notes": "In this content slide, you will discuss the second main point or topic of your presentation. Focus on presenting key findings, insights, or ideas that are relevant to the topic. Visual aids can help enhance the audience's understanding and retention of the information."
     },
     {
-      "title": "Nervous Tissue",
+      "title": "Content Slide 3",
       "content": [
-        "Function: Receives, processes, and transmits information throughout the body.",
-        "Components of nervous tissue: neurons and neuroglial cells.",
-        "Locations: brain, spinal cord, nerves."
+        "Present the third main point or topic",
+        "Discuss potential challenges or obstacles",
+        "Offer solutions or recommendations"
       ],
       "image_prompts": [
-        [
-          "https://cdn2.stablediffusionapi.com/generations/2336fc51-19f3-4b17-a9fc-dfd240993833-0.png"
-        ],
-        [
-          "https://cdn2.stablediffusionapi.com/generations/c46ff818-e77b-45dd-bfb8-08d55616fcc2-0.png"
-        ],
-        [
-          "https://cdn2.stablediffusionapi.com/generations/ed000ffc-7fd9-4529-a48f-8fa484f639c1-0.png"
-        ]
-      ]
+        "A person climbing a mountain - symbolizing overcoming challenges",
+        "A toolbox with different tools - representing problem-solving or resourcefulness",
+        "A group of people brainstorming ideas - illustrating collaboration and creativity"
+      ],
+      "speaker_notes": "In this content slide, you will address the third main point or topic of your presentation. Identify potential challenges or obstacles related to the topic and provide practical solutions or recommendations. This shows the audience that you have thought through the complexities of the subject matter."
     },
     {
       "title": "Conclusion",
       "content": [
+<<<<<<< HEAD
         "Tissues are essential for the proper functioning of the body.",
         "Understanding the different types of tissues helps in diagnosing and treating various diseases and conditions.",
         "Appreciate the complexity and beauty of tissues!"
@@ -113,3 +91,20 @@
     }
   ]
 }
+=======
+        "Summarize the main points or topics covered",
+        "Reiterate the key message or takeaway",
+        "End with a memorable closing statement"
+      ],
+      "image_prompts": [
+        "A finish line with a winner crossing it - symbolizing the completion of the presentation",
+        "A person giving a thumbs-up - indicating success or approval",
+        "A group of people clapping - representing audience appreciation or applause"
+      ],
+      "speaker_notes": "In the conclusion slide, you want to reinforce the main points or topics discussed in the presentation. Restate the key message or takeaway that you want the audience to remember. End with a strong and memorable closing statement that leaves a lasting impression."
+    },
+    {
+      "title": "Q&A",
+      "content": [
+        "Encourage the
+>>>>>>> 5bcd88bcd1c56d0174f03840e897ba91963fded8
