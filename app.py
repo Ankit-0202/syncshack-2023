@@ -39,14 +39,14 @@ def process_prompt():
     if presentation_id is None:
         presentation_id = '1IlA5ES-gKdA_ySNXK3SsiQD3D0Oo8NhCSqby7VGrqPQ'
     
-    elem = get_slide_pageElement(presentation_id, json_data["pageID"], json_data["objectID"])
+    elem = get_slide_pageElement(presentation_id, json_data.get("pageID"), json_data.get("objectID"))
     if (elem is not None):
         #otherwise it's just normal page
         #only handle text and image for now
         if (elem.get('shape') is not None): #text
             #generate text
             new_text_out = generate_text(prompt_text, template_partial_txt)
-            replace_text_in_textbox(presentation_id, json_data["pageID"], json_data["objectID"], new_text=new_text_out)
+            replace_text_in_textbox(presentation_id, json_data.get("pageID"), json_data.get("objectID"), new_text=new_text_out)
         else: #image
             new_img_out = generate_image(prompt_text, '')
     else:
