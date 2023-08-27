@@ -1,88 +1,107 @@
 {
   "title_slide": {
-    "title": "Samurai",
-    "subtitle": "The Legendary Warriors of Japan"
+    "title": "The Joy of Horses",
+    "subtitle": "A Celebration of Equestrian Euphoria",
+    "image": "prompt:happy horse"
   },
   "slides": [
     {
-      "title": "Origins of the Samurai",
+      "title": "Introduction to Horses",
       "content": [
-        "Emergence in the 12th century",
-        "Derived from the word 'saburau', meaning 'to serve'",
-        "Originally tasked with protecting the estates of the noble class"
+        "Horses are majestic creatures that have captivated humans for centuries.",
+        "They have been our loyal companions, helping us in various activities such as transportation, agriculture, and sports.",
+        "Horses come in different breeds, each with its own unique characteristics and abilities."
       ],
       "image_prompts": [
-        "Samurai warrior on horseback",
-        "Traditional samurai armor",
-        "Samurai training in a dojo"
-      ]
+        [
+          "https://cdn2.stablediffusionapi.com/generations/4d409f8c-1a54-4816-a7b3-a5322f3c8220-0.png"
+        ],
+        [
+          "https://cdn2.stablediffusionapi.com/generations/5c932c64-118c-4808-b75f-6a4ed02bbf8b-0.png"
+        ],
+        [
+          "https://cdn2.stablediffusionapi.com/generations/738b5048-92b3-4a9e-a398-2fd0eb96a0b1-0.png"
+        ]
+      ],
+      "notes": "Speaker Notes: \n- Show an image of a happy horse to create a joyful atmosphere. \n- Introduce the topic of horses and their significance to humans. \n- Mention the various roles horses have played in our lives. \n- Highlight the diversity of horse breeds."
     },
     {
-      "title": "Code of Bushido",
+      "title": "The Bond Between Humans and Horses",
       "content": [
-        "Strict code of conduct followed by samurai",
-        "Emphasized loyalty, honor, and self-discipline",
-        "Included virtues such as courage, respect, and integrity"
+        "Horses have an incredible ability to form deep connections with humans.",
+        "They are intuitive creatures that can sense our emotions and respond to our needs.",
+        "The bond between a horse and its rider is built on trust, communication, and mutual understanding."
       ],
       "image_prompts": [
-        "Samurai meditating under a cherry blossom tree",
-        "Samurai performing a tea ceremony",
-        "Illustration of the seven virtues of Bushido"
-      ]
+        [
+          "https://cdn2.stablediffusionapi.com/generations/c096f853-d5de-4627-b3c4-7fb83e377ab5-0.png"
+        ],
+        [
+          "https://cdn2.stablediffusionapi.com/generations/d9cf3a8f-2147-4bde-8080-9a9f33ef8ed2-0.png"
+        ],
+        [
+          "https://cdn2.stablediffusionapi.com/generations/95f1d589-d99a-4334-ae0d-5d9c7411d489-0.png"
+        ]
+      ],
+      "notes": "Speaker Notes: \n- Use an image that depicts the affectionate interaction between a horse and a human. \n- Discuss the emotional intelligence of horses and their ability to connect with us. \n- Highlight the importance of trust, communication, and understanding in the horse-human relationship."
     },
     {
-      "title": "Weaponry and Fighting Techniques",
+      "title": "The Joy of Riding",
       "content": [
-        "Famous weapons: katana (longsword) and wakizashi (short sword)",
-        "Martial arts training: kenjutsu (swordsmanship) and kyujutsu (archery)",
-        "Strategies and tactics: 'Ichi-ryu' (one-strike school) and 'Niten-Ichi-ryu' (two-sword style)"
+        "Riding a horse brings immense joy and a sense of freedom.",
+        "The rhythmic motion of the horse, the wind in your hair, and the bond between rider and horse create an exhilarating experience.",
+        "Whether it's a leisurely trail ride or a thrilling jump over obstacles, riding a horse is an adventure like no other."
       ],
       "image_prompts": [
-        "Samurai wielding a katana in battle",
-        "Samurai practicing archery",
-        "Illustration of different samurai fighting stances"
-      ]
+        "happy rider galloping on a horse",
+        [
+          "https://cdn2.stablediffusionapi.com/generations/4d15de1b-38aa-4f6d-9f0e-bdd5ca27d4ae-0.png"
+        ],
+        [
+          "https://cdn2.stablediffusionapi.com/generations/1cbdd2c9-9aa8-4fde-b90c-02b48623d9e4-0.png"
+        ]
+      ],
+      "notes": "Speaker Notes: \n- Show an image that captures the joy and excitement of horseback riding. \n- Describe the sensations and emotions associated with riding a horse. \n- Emphasize the unique adventure that horse riding offers."
     },
     {
-      "title": "End of the Samurai Era",
+      "title": "Horses in Nature",
       "content": [
-        "Modernization and decline in the late 19th century",
-        "Samurai class abolished in 1873",
-        "Legacy and influence on Japanese culture and martial arts"
+        "Horses are not only magnificent creatures to interact with but also play a vital role in maintaining ecosystems.",
+        "As herbivores, they help control vegetation growth and disperse seeds through their grazing habits.",
+        "Their presence in the wild adds beauty and harmony to natural landscapes."
       ],
       "image_prompts": [
-        "Samurai armor displayed in a museum",
-        "Photograph of a group of samurai in the late 19th century",
-        "Modern martial artists practicing samurai techniques"
-      ]
-    },
-    {
-      "title": "Samurai in Popular Culture",
-      "content": [
-        "Depicted in numerous films, books, and video games",
-        "Famous examples: 'Seven Samurai', 'The Last Samurai', 'Ghost of Tsushima'",
-        "Symbol of honor, discipline, and legendary swordsmanship"
+        [
+          "https://cdn2.stablediffusionapi.com/generations/76d36dd5-73e5-4731-8c22-56378e003123-0.png"
+        ],
+        [
+          "https://cdn2.stablediffusionapi.com/generations/43096474-c0d6-47fb-9255-a3b7515a3195-0.png"
+        ],
+        [
+          "https://cdn2.stablediffusionapi.com/generations/45246538-f71c-4a59-84a6-68e44657f331-0.png"
+        ]
       ],
-      "image_prompts": [
-        "A person climbing a mountain - symbolizing overcoming challenges",
-        "A toolbox with different tools - representing problem-solving or resourcefulness",
-        "A group of people brainstorming ideas - illustrating collaboration and creativity"
-      ],
-      "speaker_notes": "In this content slide, you will address the third main point or topic of your presentation. Identify potential challenges or obstacles related to the topic and provide practical solutions or recommendations. This shows the audience that you have thought through the complexities of the subject matter."
+      "notes": "Speaker Notes: \n- Choose an image that showcases the natural habitat of horses. \n- Discuss the ecological significance of horses as grazers and seed dispersers. \n- Highlight the aesthetic value of horses in the wild."
     },
     {
       "title": "Conclusion",
       "content": [
-        "Summarize the main points or topics covered",
-        "Reiterate the key message or takeaway",
-        "End with a memorable closing statement"
+        "Horses bring happiness and joy to our lives in countless ways.",
+        "Their beauty, strength, and grace inspire us, and their companionship fills our hearts with warmth.",
+        "Let us cherish and celebrate these incredible creatures and the happiness they bring."
       ],
       "image_prompts": [
-        "A finish line with a winner crossing it - symbolizing the completion of the presentation",
-        "A person giving a thumbs-up - indicating success or approval",
-        "A group of people clapping - representing audience appreciation or applause"
+        [
+          "https://cdn2.stablediffusionapi.com/generations/a64d06d4-a61f-4ed7-92cd-8e262ee90de6-0.png"
+        ],
+        [
+          "https://cdn2.stablediffusionapi.com/generations/5afc2c00-775d-4a11-b4b1-e0b7579ae8a3-0.png"
+        ],
+        [
+          "https://cdn2.stablediffusionapi.com/generations/03a4490c-4450-4408-a42a-2beacb5ca028-0.png"
+        ]
       ],
-      "speaker_notes": "In the conclusion slide, you want to reinforce the main points or topics discussed in the presentation. Restate the key message or takeaway that you want the audience to remember. End with a strong and memorable closing statement that leaves a lasting impression."
+      "notes": "Speaker Notes: \n- Use an image that symbolizes the happiness horses bring. \n- Summarize the main points of the presentation, emphasizing the joy and inspiration horses provide. \n- Encourage the audience to appreciate and value horses."
     }
   ]
 }

@@ -159,6 +159,56 @@ def create_slide(presentation_id, page_id, layout, index, creds):
     return response
 
 
+def replace_text_in_textbox(presentation_id, page_id, textbox_id, new_text="dummy"):
+    creds = get_credentials()
+    
+
+    def func(service):
+        requests = [
+            {
+                "insertText": {
+                    "objectId": textbox_id.lstrip("editor-"),
+                    "text": ' ',
+                    "insertionIndex": 0
+                }
+            },
+            {
+                "deleteText": {
+                    "objectId": textbox_id.lstrip("editor-"),
+                    "textRange": {
+                        "type": "ALL",
+                    },
+                },
+            },
+            {
+                "insertText": {
+                    "objectId": textbox_id.lstrip("editor-"),
+                    "text": new_text,
+                    "insertionIndex": 0
+                }
+            },
+        ]
+
+        # Execute the request.
+        body = {
+            'requests': requests
+        }
+
+        response = service.presentations() \
+            .batchUpdate(presentationId=presentation_id, body=body).execute()
+        create_shape_response = response.get('replies')[0].get('createShape')
+        return create_shape_response
+    
+    def success(response):
+        print("successfully replaced text")
+
+    error = "Failed to replace text"
+
+    request = create_request_dict(func, success, error)
+    response = service_helper(request, creds)
+    return response
+
+
 def create_textbox_with_text(presentation_id, page_id, textbox_id, rect, text, creds):
     """
     Creates the textbox with text, the user has access to.
@@ -370,11 +420,9 @@ def populate_slides(json_file: str, presentation_id: str):
         page_id = create_slide(presentation_id, None,
                                Layout.BLANK, None, creds)["objectId"]
         print(page_id)
-        textbox_id = create_textbox_with_text(
-            presentation_id, page_id, page_id+"textbox", title_box_rect, slide["title"], creds)["objectId"]
+        textbox_id = create_textbox_with_text(presentation_id, page_id, page_id+"textbox", title_box_rect, slide["title"], creds)["objectId"]
         add_style(presentation_id, textbox_id, None, None, creds)
         
-
         dotpoints = "\t" + "\n\t".join(slide["content"])
         create_textbox_with_text(
             presentation_id, page_id, page_id+"bodybox", content_box_rect, dotpoints, creds)
@@ -454,9 +502,12 @@ def main():
     #                    "https://cdn2.stablediffusionapi.com/generations/3c617436-bd0f-4c3c-8782-f0f02c9d1254-0.png", creds)
     # print(response)
 
-def get_slide_pageElement(presentationId: str, pageObjectId: str, objectId: str):
+def get_slide_pageElement(presentationId: str, pageObjectId: str | None, objectId: str | None):
     creds = get_credentials()
     service = build('slides', 'v1', credentials=creds)
+    if pageObjectId is None:
+        return None
+    
     page = service.presentations().pages().get(presentationId=presentationId, pageObjectId=pageObjectId).execute()
     elements = page.get("pageElements")
     for elem in elements:

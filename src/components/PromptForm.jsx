@@ -1,8 +1,13 @@
-import { useEffect, useState } from 'react';
+import { useState } from 'react';
 import { Box, Button, CircularProgress, Grid, TextField } from '@mui/material';
+// import { io } from 'socket.io-client';
+
+// const URL = process.env.NODE_ENV === 'production' ? undefined : 'http://localhost:4000';
 
 const GOOGLE_SLIDES_URL_REGEX =
     /https:\/\/docs\.google\.com\/presentation\/d\/([a-zA-Z0-9_-]+)\/edit#slide=id.([a-zA-Z0-9_-]+)/;
+
+// export const socketio = io(URL);
 
 export default function PromptForm() {
   const [generating, setGenerating] = useState(false);
@@ -25,8 +30,11 @@ export default function PromptForm() {
 
     chrome.tabs.query({active: true, currentWindow: true})
         .then(([tab]) => {
-          const [, presentationID, slidePageID] = GOOGLE_SLIDES_URL_REGEX.exec(tab.url);
-          if (presentationID && slidePageID) {
+          // const [, presentationID, slidePageID] = GOOGLE_SLIDES_URL_REGEX.exec(tab.url);
+          const regexMatch = GOOGLE_SLIDES_URL_REGEX.exec(tab.url);
+          if (regexMatch) {
+            const presentationID = regexMatch[1];
+            const slidePageID = regexMatch[2];
             console.log("matched");
             return chrome.scripting.executeScript({
               target: {tabId: tab.id},
@@ -75,6 +83,10 @@ export default function PromptForm() {
             jsonData.presentationID = presentationID;
             jsonData.pageID = pageID;
             jsonData.objectID = objectID;
+          } else {
+            jsonData.presentationID = null;
+            jsonData.pageID = null;
+            jsonData.objectID = null;
           }
           
           return jsonData;
