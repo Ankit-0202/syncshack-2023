@@ -16,6 +16,7 @@
     "chrome-types": "^0.1.227",
     "react": "^18.0.0",
     "react-dom": "^18.0.0",
+    "socket.io": "^4.7.2",
     "typechat": "^0.0.10"
   },
   "devDependencies": {
