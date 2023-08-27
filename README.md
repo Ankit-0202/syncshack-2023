@@ -109,6 +109,6 @@ Once you've pulled the repository, follow these steps to use Slidey:
     You should now see your extension icon in the Chrome extension toolbar.
     ![Open Slidey!] (https://github.com/Ankit-0202/syncshack-2023/blob/main/resources/choose_slidey.png)
 
-    Make sure that when you run Slidey you are on a Google Slide presentation!
+    Make sure that when you run Slidey you are on a Google Slide presentation! Slidey may take a minute or two to make your presentation.
 
 We hope you enjoy using Slidey!
