@@ -33,10 +33,10 @@ Slidey offers a user-friendly Chrome extension that streamlines the presentation
 
 ## Who Can Use Slidey?
 
-Slidey is designed to cater to a wide spectrum of users eager to share information effectively. Its intuitive interface makes it accessible to users of all demographics, from tech-savvy youngsters to seasoned professionals. Specifically, Slidey caters to:
+Slidey is designed to cater to a wide spectrum of users eager to share information effectively. Its intuitive interface makes it accessible to users of all demographics, from young presenters just starting out to full-blown professionals. Specifically, Slidey caters to:
 
 - Individuals looking to create quick and engaging presentations for informal occasions.
-- Those seeking a template to build comprehensive and visually appealing slideshows.
+- Those seeking a template to build comprehensive and visually appealing slideshows for more complex presentations.
 
 ## Prototype Overview
 
