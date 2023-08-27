@@ -22,6 +22,9 @@ def process_prompt():
     json_data = request.json
     # Access prompt data (under "prompt" key)
     prompt_text = json_data["prompt"]
+    mood = json_data["mood"]
+
+
     # Get object ID
     selected_object_id = json_data["objectID"]
     if selected_object_id is not None:
@@ -29,7 +32,7 @@ def process_prompt():
     
     # print(prompt_text, out, "\n", sep='\n')
     
-    generate_json(prompt_text);
+    generate_json(prompt_text+", and the presentation should have a mood of "+mood);
     json_output = json.load(open("output.json", "r"))
     populate_slides(json_output, '1IlA5ES-gKdA_ySNXK3SsiQD3D0Oo8NhCSqby7VGrqPQ')
 

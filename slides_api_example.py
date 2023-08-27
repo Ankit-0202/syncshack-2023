@@ -11,6 +11,7 @@ from enum import Enum
 from dataclasses import dataclass
 import json
 
+
 @dataclass
 class Rect():
     x: int
@@ -31,13 +32,17 @@ PRESENTATION_ID = '1IlA5ES-gKdA_ySNXK3SsiQD3D0Oo8NhCSqby7VGrqPQ'
 class Layout():
     TITLE_AND_BODY = "TITLE_AND_BODY"
     BLANK = "BLANK"
+    TITLE = "TITLE"
 
 # Font size
+
+
 def getptobj(scalar):
     return {
         'magnitude': scalar,
         'unit': 'PT'
     }
+
 
 def service_helper(request: dict, creds: str):
     """
@@ -165,8 +170,6 @@ def create_textbox_with_text(presentation_id, page_id, textbox_id, rect, text, c
     def func(service):
         # Create a new square textbox, using the supplied element ID.
 
-       
-
         requests = [
             {
                 'createShape': {
@@ -246,13 +249,13 @@ def make_textbox_bullets(presentation_id, textbox_id, creds):
         response = service.presentations() \
             .batchUpdate(presentationId=presentation_id, body=body).execute()
         return response
-    
+
     def success(response):
         print("Succesfully made textbox bullets")
         return response
-    
+
     error = "failed to make textbox bullets"
-    
+
     request = create_request_dict(func, success, error)
     response = service_helper(request, creds)
     return response
@@ -260,7 +263,7 @@ def make_textbox_bullets(presentation_id, textbox_id, creds):
 
 def add_image_to_slide(presentation_id, page_id, image_id, img_addr, img_rect, creds):
     def func(service):
-        
+
         requests = [{
             'createImage': {
                 'objectId': image_id,
@@ -283,13 +286,13 @@ def add_image_to_slide(presentation_id, page_id, image_id, img_addr, img_rect, c
         }]
 
         body = {
-                    'requests': requests
-                }
+            'requests': requests
+        }
         response = service.presentations() \
             .batchUpdate(presentationId=presentation_id, body=body).execute()
         create_image_response = response.get('replies')[0].get('createImage')
         return create_image_response
-        
+
     def success(response):
         print("successfully added image to slide with response", response)
         return response
@@ -300,6 +303,41 @@ def add_image_to_slide(presentation_id, page_id, image_id, img_addr, img_rect, c
     response = service_helper(request, creds)
     return response
 
+
+def add_style(presentationId, objectId, style, textRange, creds):
+    def func(service):
+        requests = [
+            {"updateTextStyle": {
+                "objectId": objectId,
+                'style': {
+                    'bold': True,
+                    'italic': True
+                },
+                "textRange": {
+                    "type": "ALL"
+                },
+                'fields': 'bold,italic',
+            }
+            }
+        ]
+        body = {
+            "requests": requests
+        }
+
+        response = service.presentations() \
+            .batchUpdate(presentationId=presentationId, body=body).execute()
+        return response
+
+    def success(response):
+        print("Successfully styled text")
+
+    error = "Failed to style text"
+
+    request = create_request_dict(func, success, error)
+    response = service_helper(request, creds)
+    return response
+
+
 def populate_slides(json_file: str, presentation_id: str):
     creds = get_credentials()
 
@@ -307,38 +345,98 @@ def populate_slides(json_file: str, presentation_id: str):
     json_output = json.load(json_file)
     json_file.close()
     # list_slides(presentation_id, creds)
+    if "title" in json_output:
+        title = json_output["title"]
+        page_id = create_slide(presentation_id, None,
+                               Layout.BLANK, None, creds)["objectId"]
+
+        title_rect = Rect(400, 200, 50, 200)
+        textbox_id = create_textbox_with_text(
+            presentation_id, page_id, page_id+"title", title_rect, title, creds)["objectId"]
+        add_style(presentation_id, textbox_id, None, None, creds)
 
     slide_info = json_output["slides"]
     print(slide_info)
 
-    title_box_rect = Rect(20,20, 50, 500)
-    content_box_rect = Rect(20,50,300, 500)
+    title_box_rect = Rect(20, 20, 50, 500)
+    content_box_rect = Rect(20, 50, 300, 500)
     dim = 512
     scale_factor = 0.3
     new_dim = dim*scale_factor
-    image_box_rect = Rect(550, 50, new_dim, new_dim)
-    image_counter = 0;
+    image_box_rect = Rect(550, 100, new_dim, new_dim)
+    image_counter = 0
+    slide_info
     for slide in slide_info:
-        page_id = create_slide(presentation_id, None, Layout.BLANK, None, creds)["objectId"]
+        page_id = create_slide(presentation_id, None,
+                               Layout.BLANK, None, creds)["objectId"]
         print(page_id)
-        create_textbox_with_text(presentation_id, page_id, page_id+"textbox", title_box_rect, slide["title"], creds)
+        create_textbox_with_text(
+            presentation_id, page_id, page_id+"textbox", title_box_rect, slide["title"], creds)
+
         dotpoints = "\t" + "\n\t".join(slide["content"])
-        create_textbox_with_text(presentation_id, page_id, page_id+"bodybox", content_box_rect, dotpoints, creds)
+        create_textbox_with_text(
+            presentation_id, page_id, page_id+"bodybox", content_box_rect, dotpoints, creds)
         make_textbox_bullets(presentation_id, page_id+"bodybox", creds)
+        if "speaker_notes" in slide:
+            add_speaker_notes(presentation_id, page_id,
+                              slide["speaker_notes"], creds)
+
         if len(slide["image_prompts"]) > 0:
             image_url = slide["image_prompts"][0][0]
-            add_image_to_slide(presentation_id, page_id, page_id+str(image_counter), image_url, image_box_rect, creds)
+            add_image_to_slide(presentation_id, page_id, page_id +
+                               str(image_counter), image_url, image_box_rect, creds)
             image_counter += 1
 
+    # hardcoded textbox locations: title, content, images
 
-    
-    #hardcoded textbox locations: title, content, images
 
+def add_speaker_notes(presentation_id, page_id, speaker_notes, creds):
+    def func(service):
+        presentation = service.presentations().get(
+            presentationId=presentation_id).execute()
+
+        slides = presentation.get('slides')
+
+        def getSlideByObjectId(slides, objectId):
+            # Find the slide with the correct page object id
+            for slide in slides:
+                print(slide["objectId"], objectId)
+                if slide["objectId"] == objectId:
+                    return slide
+            return None
+
+        page = getSlideByObjectId(slides, page_id)
+        notesobjid = page["slideProperties"]["notesPage"]["notesProperties"]["speakerNotesObjectId"]
+
+        requests = [{
+            "insertText": {
+                "objectId": notesobjid,
+                "text": speaker_notes,
+                "insertionIndex": 0
+            }
+        }]
+
+        body = {
+            'requests': requests
+        }
+
+        response = service.presentations() \
+            .batchUpdate(presentationId=presentation_id, body=body).execute()
+        return response
+
+    def success(response):
+        print("succesfully inserted reader notes")
+
+    error = "failed to list slides"
+
+    request = create_request_dict(func, success, error)
+    response = service_helper(request, creds)
+    return response
 
 
 def main():
     creds = get_credentials()
-
+    # add_speaker_notes(PRESENTATION_ID, "SLIDES_API1090881242_0", "I love pies", creds)
     populate_slides("output.json", PRESENTATION_ID)
     # # NB: Object id for slide must have length >= 5
     # list_slides(PRESENTATION_ID, creds)
@@ -350,9 +448,10 @@ def main():
     #                                     page_id + "textbox", Rect(0, 0, 100, 100), "Ankit is a savage", creds)
     # textbox_id = response["objectId"]
     # make_textbox_bullets(PRESENTATION_ID, textbox_id, creds)
-    # add_image_to_slide(PRESENTATION_ID, page_id, None, 
+    # add_image_to_slide(PRESENTATION_ID, page_id, None,
     #                    "https://cdn2.stablediffusionapi.com/generations/3c617436-bd0f-4c3c-8782-f0f02c9d1254-0.png", creds)
     # print(response)
+
 
 if __name__ == "__main__":
     main()
