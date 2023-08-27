@@ -25,10 +25,11 @@ def process_prompt():
     # Access prompt data (under "prompt" key)
     prompt_text = json_data["prompt"]
     # Get object ID
-    selected_object_id = json_data["objectID"]
+    selected_object_id = json_data.get("objectID")
     if selected_object_id is not None:
         session["selected_object_id"] = selected_object_id
     
+    print(json_data.get("presentationID"), json_data.get("pageID"), json_data.get("objectID"))
     elem = get_slide_pageElement(json_data.get("presentationID"), json_data.get("pageID"), json_data.get("objectID"))
     if (elem is not None):
         #otherwise it's just normal page
@@ -42,7 +43,8 @@ def process_prompt():
     
         generate_json(prompt_text);
         json_output = json.load(open("output.json", "r"))
-        populate_slides(json_output, '1IlA5ES-gKdA_ySNXK3SsiQD3D0Oo8NhCSqby7VGrqPQ')
+        #populate_slides(json_output, '1IlA5ES-gKdA_ySNXK3SsiQD3D0Oo8NhCSqby7VGrqPQ')
+        populate_slides(json_output, json_data.get("presentationID"))
 
     response = {
         "status": "OK",

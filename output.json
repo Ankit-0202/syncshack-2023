@@ -1,91 +1,73 @@
 {
-  "title": "How to Give an Effective Presentation",
+  "title_slide": {
+    "title": "Samurai",
+    "subtitle": "The Legendary Warriors of Japan"
+  },
   "slides": [
     {
-      "title": "Introduction",
+      "title": "Origins of the Samurai",
       "content": [
-        "Welcome",
-        "Introduce yourself",
-        "State the purpose of the presentation"
+        "Emergence in the 12th century",
+        "Derived from the word 'saburau', meaning 'to serve'",
+        "Originally tasked with protecting the estates of the noble class"
       ],
       "image_prompts": [
-        "A person standing confidently and speaking in front of an audience - professional presentation style",
-        "A person giving a presentation with engaging visuals on a big screen - effective presentation techniques",
-        "A group of people listening attentively to a speaker - audience engagement in presentations"
-      ],
-      "speaker_notes": "In the introduction slide, it is important to capture the attention of the audience and establish your credibility as a speaker. Make sure to clearly state the purpose of the presentation and what the audience can expect to learn or gain from it."
+        "Samurai warrior on horseback",
+        "Traditional samurai armor",
+        "Samurai training in a dojo"
+      ]
     },
     {
-      "title": "Outline",
+      "title": "Code of Bushido",
       "content": [
-        "Provide an overview of the presentation",
-        "Outline the main points or topics that will be covered",
-        "Briefly explain the structure or flow of the presentation"
+        "Strict code of conduct followed by samurai",
+        "Emphasized loyalty, honor, and self-discipline",
+        "Included virtues such as courage, respect, and integrity"
       ],
       "image_prompts": [
-        "A road map with different destinations - outlining the main points of the presentation",
-        "A table of contents - visually representing the structure of the presentation",
-        "A puzzle with different pieces coming together - illustrating how the topics will be connected"
-      ],
-      "speaker_notes": "In the outline slide, you want to give the audience a clear roadmap of what will be covered in the presentation. This helps them understand the structure and flow of the content and mentally prepare for what's to come."
+        "Samurai meditating under a cherry blossom tree",
+        "Samurai performing a tea ceremony",
+        "Illustration of the seven virtues of Bushido"
+      ]
     },
     {
-      "title": "Content Slide 1",
+      "title": "Weaponry and Fighting Techniques",
       "content": [
-        "Present the first main point or topic",
-        "Provide relevant information or data",
-        "Include supporting examples or case studies"
+        "Famous weapons: katana (longsword) and wakizashi (short sword)",
+        "Martial arts training: kenjutsu (swordsmanship) and kyujutsu (archery)",
+        "Strategies and tactics: 'Ichi-ryu' (one-strike school) and 'Niten-Ichi-ryu' (two-sword style)"
       ],
       "image_prompts": [
-        "A graph showing an upward trend - illustrating positive results or growth",
-        "A person analyzing data on a computer screen - demonstrating the use of data in decision-making",
-        "A group of people collaborating in a meeting room - showcasing teamwork or problem-solving"
-      ],
-      "speaker_notes": "In this content slide, you will dive into the first main point or topic of your presentation. Make sure to provide valuable information, data, and examples that support your key message. This will help the audience understand the importance and relevance of the topic."
+        "Samurai wielding a katana in battle",
+        "Samurai practicing archery",
+        "Illustration of different samurai fighting stances"
+      ]
     },
     {
-      "title": "Content Slide 2",
+      "title": "End of the Samurai Era",
       "content": [
-        "Present the second main point or topic",
-        "Highlight key findings or insights",
-        "Include visual aids or diagrams"
+        "Modernization and decline in the late 19th century",
+        "Samurai class abolished in 1873",
+        "Legacy and influence on Japanese culture and martial arts"
       ],
       "image_prompts": [
-        "A magnifying glass zooming in on details - emphasizing the importance of attention to detail",
-        "A lightbulb with gears inside - representing innovative ideas or problem-solving",
-        "A Venn diagram showing overlapping circles - illustrating the intersection of different concepts or ideas"
-      ],
-      "speaker_notes": "In this content slide, you will discuss the second main point or topic of your presentation. Focus on presenting key findings, insights, or ideas that are relevant to the topic. Visual aids can help enhance the audience's understanding and retention of the information."
+        "Samurai armor displayed in a museum",
+        "Photograph of a group of samurai in the late 19th century",
+        "Modern martial artists practicing samurai techniques"
+      ]
     },
     {
-      "title": "Content Slide 3",
+      "title": "Samurai in Popular Culture",
       "content": [
-        "Present the third main point or topic",
-        "Discuss potential challenges or obstacles",
-        "Offer solutions or recommendations"
+        "Depicted in numerous films, books, and video games",
+        "Famous examples: 'Seven Samurai', 'The Last Samurai', 'Ghost of Tsushima'",
+        "Symbol of honor, discipline, and legendary swordsmanship"
       ],
       "image_prompts": [
-        "A person climbing a mountain - symbolizing overcoming challenges",
-        "A toolbox with different tools - representing problem-solving or resourcefulness",
-        "A group of people brainstorming ideas - illustrating collaboration and creativity"
-      ],
-      "speaker_notes": "In this content slide, you will address the third main point or topic of your presentation. Identify potential challenges or obstacles related to the topic and provide practical solutions or recommendations. This shows the audience that you have thought through the complexities of the subject matter."
-    },
-    {
-      "title": "Conclusion",
-      "content": [
-        "Summarize the main points or topics covered",
-        "Reiterate the key message or takeaway",
-        "End with a memorable closing statement"
-      ],
-      "image_prompts": [
-        "A finish line with a winner crossing it - symbolizing the completion of the presentation",
-        "A person giving a thumbs-up - indicating success or approval",
-        "A group of people clapping - representing audience appreciation or applause"
-      ],
-      "speaker_notes": "In the conclusion slide, you want to reinforce the main points or topics discussed in the presentation. Restate the key message or takeaway that you want the audience to remember. End with a strong and memorable closing statement that leaves a lasting impression."
-    },
-    {
-      "title": "Q&A",
-      "content": [
-        "Encourage the
+        "Movie poster for 'The Last Samurai'",
+        "Cover art of the video game 'Ghost of Tsushima'",
+        "Illustration of a samurai in a traditional pose"
+      ]
+    }
+  ]
+}
