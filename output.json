@@ -1,78 +1,83 @@
 {
   "title_slide": {
-    "title": "Samurai",
-    "subtitle": "The Legendary Warriors of Japan"
+    "title": "The Art of Hamburgers",
+    "subtitle": "A Presentation by [Your Name Here]"
   },
   "slides": [
     {
-      "title": "Origins of the Samurai",
+      "title": "History of Hamburgers",
       "content": [
-        "Emergence in the 12th century",
-        "Derived from the word 'saburau', meaning 'to serve'",
-        "Originally tasked with protecting the estates of the noble class"
+        "Originated in the 19th century in the United States",
+        "Popularized by fast food chains in the 20th century",
+        "Evolved to include various toppings and flavors"
       ],
       "image_prompts": [
-        "Samurai warrior on horseback",
-        "Traditional samurai armor",
-        "Samurai training in a dojo"
-      ]
+        "Hamburger on a vintage advertisement",
+        "Evolution of hamburger toppings",
+        "People enjoying hamburgers at a picnic"
+      ],
+      "speaker_notes": "In this slide, we will discuss the history of hamburgers, from their origins to their evolution in the fast food industry. It would be great to include images of a vintage hamburger advertisement, the different toppings that have been added to hamburgers over time, and people enjoying hamburgers at a picnic or gathering."
     },
     {
-      "title": "Code of Bushido",
+      "title": "Types of Hamburgers",
       "content": [
-        "Strict code of conduct followed by samurai",
-        "Emphasized loyalty, honor, and self-discipline",
-        "Included virtues such as courage, respect, and integrity"
+        "Classic hamburger: beef patty with lettuce, tomato, and onion",
+        "Cheeseburger: classic hamburger with cheese",
+        "Veggie burger: plant-based patty for vegetarian or vegan options"
       ],
       "image_prompts": [
-        "Samurai meditating under a cherry blossom tree",
-        "Samurai performing a tea ceremony",
-        "Illustration of the seven virtues of Bushido"
-      ]
+        "Delicious classic hamburger with lettuce, tomato, and onion",
+        "Cheeseburger with melted cheese oozing out",
+        "Tasty veggie burger with avocado and sprouts"
+      ],
+      "speaker_notes": "In this slide, we will explore the different types of hamburgers available. We can include images of a delicious classic hamburger with all the toppings, a cheeseburger with melting cheese, and a tasty veggie burger with avocado and sprouts to show the variety of options."
     },
     {
-      "title": "Weaponry and Fighting Techniques",
+      "title": "Hamburger Trivia",
       "content": [
-        "Famous weapons: katana (longsword) and wakizashi (short sword)",
-        "Martial arts training: kenjutsu (swordsmanship) and kyujutsu (archery)",
-        "Strategies and tactics: 'Ichi-ryu' (one-strike school) and 'Niten-Ichi-ryu' (two-sword style)"
+        "The largest hamburger ever made weighed over 3,000 pounds",
+        "Americans consume over 50 billion hamburgers each year",
+        "The world's most expensive hamburger costs $5,000"
       ],
       "image_prompts": [
-        "Samurai wielding a katana in battle",
-        "Samurai practicing archery",
-        "Illustration of different samurai fighting stances"
-      ]
+        "Giant hamburger weighing over 3,000 pounds",
+        "Stack of hamburgers representing billions consumed",
+        "Luxurious hamburger with gold leaf and caviar"
+      ],
+      "speaker_notes": "In this slide, we will share some interesting hamburger trivia. It would be great to include images of a giant hamburger weighing over 3,000 pounds, a stack of hamburgers to represent the billions consumed each year, and a luxurious hamburger with gold leaf and caviar to illustrate the most expensive burger."
     },
     {
-      "title": "End of the Samurai Era",
+      "title": "Hamburgers Around the World",
       "content": [
-        "Modernization and decline in the late 19th century",
-        "Samurai class abolished in 1873",
-        "Legacy and influence on Japanese culture and martial arts"
+        "In Japan: Teriyaki burger with soy-based sauce",
+        "In Germany: Frikadelle, a pan-fried meat patty",
+        "In India: Aloo Tikki burger with a potato patty"
       ],
       "image_prompts": [
-        "Samurai armor displayed in a museum",
-        "Photograph of a group of samurai in the late 19th century",
-        "Modern martial artists practicing samurai techniques"
-      ]
+        "Delicious teriyaki burger with soy-based sauce",
+        "Traditional German Frikadelle burger",
+        "Spicy Aloo Tikki burger with a potato patty"
+      ],
+      "speaker_notes": "In this slide, we will explore the different variations of hamburgers around the world. We can include images of a delicious teriyaki burger with soy-based sauce from Japan, a traditional German Frikadelle burger, and a spicy Aloo Tikki burger with a potato patty from India to showcase the global diversity of hamburgers."
     },
     {
-      "title": "Samurai in Popular Culture",
+      "title": "Healthier Hamburger Options",
       "content": [
-        "Depicted in numerous films, books, and video games",
-        "Famous examples: 'Seven Samurai', 'The Last Samurai', 'Ghost of Tsushima'",
-        "Symbol of honor, discipline, and legendary swordsmanship"
+        "Turkey burger: leaner meat option",
+        "Portobello mushroom burger: vegetarian alternative",
+        "Lettuce wrap burger: low-carb option"
       ],
       "image_prompts": [
-        "A person climbing a mountain - symbolizing overcoming challenges",
-        "A toolbox with different tools - representing problem-solving or resourcefulness",
-        "A group of people brainstorming ideas - illustrating collaboration and creativity"
+        "Juicy turkey burger with fresh toppings",
+        "Grilled Portobello mushroom burger with melted cheese",
+        "Lettuce wrap burger with a flavorful patty"
       ],
-      "speaker_notes": "In this content slide, you will address the third main point or topic of your presentation. Identify potential challenges or obstacles related to the topic and provide practical solutions or recommendations. This shows the audience that you have thought through the complexities of the subject matter."
+      "speaker_notes": "In this slide, we will discuss healthier options for hamburgers. It would be great to include images of a juicy turkey burger with fresh toppings, a grilled Portobello mushroom burger with melted cheese, and a lettuce wrap burger with a flavorful patty to showcase alternative choices for those looking for healthier options."
     },
     {
-      "title": "Conclusion",
+      "title": "Creative Hamburger Creations",
       "content": [
+<<<<<<< HEAD
 <<<<<<< HEAD
         "Tissues are essential for the proper functioning of the body.",
         "Understanding the different types of tissues helps in diagnosing and treating various diseases and conditions.",
@@ -107,3 +112,12 @@
       "content": [
         "Encourage the
 >>>>>>> 5bcd88bcd1c56d0174f03840e897ba91963fded8
+=======
+        "Ram-don burger: inspired by the movie 'Parasite'",
+        "Rainbow burger: vibrant and colorful",
+        "Doughnut burger: sweet and savory combination"
+      ],
+      "image_prompts": [
+        "Innovative ram-don burger inspired by 'Parasite'",
+        "Vibrant
+>>>>>>> e07dfc0 (Chris made changes)
