@@ -37,7 +37,9 @@ template_file = open("template.txt", "r")
 template_txt = template_file.read()
 template_file.close()
 
-
+template_partial_file = open("template_partial.txt", "r")
+template_partial_txt = template_partial_file.read()
+template_partial_file.close()
 
 
 def generate_text(my_prompt: str, template = template_txt):
