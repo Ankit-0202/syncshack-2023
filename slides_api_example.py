@@ -239,7 +239,7 @@ def make_textbox_bullets(presentation_id, textbox_id, creds):
                 "textRange": range,
                 "bulletPreset": "BULLET_DISC_CIRCLE_SQUARE"
             }
-        }]
+        }]  
 
         # Execute the request.
         body = {
@@ -370,8 +370,10 @@ def populate_slides(json_file: str, presentation_id: str):
         page_id = create_slide(presentation_id, None,
                                Layout.BLANK, None, creds)["objectId"]
         print(page_id)
-        create_textbox_with_text(
-            presentation_id, page_id, page_id+"textbox", title_box_rect, slide["title"], creds)
+        textbox_id = create_textbox_with_text(
+            presentation_id, page_id, page_id+"textbox", title_box_rect, slide["title"], creds)["objectId"]
+        add_style(presentation_id, textbox_id, None, None, creds)
+        
 
         dotpoints = "\t" + "\n\t".join(slide["content"])
         create_textbox_with_text(

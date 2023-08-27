@@ -73,24 +73,6 @@
     {
       "title": "Conclusion",
       "content": [
-<<<<<<< HEAD
-        "Tissues are essential for the proper functioning of the body.",
-        "Understanding the different types of tissues helps in diagnosing and treating various diseases and conditions.",
-        "Appreciate the complexity and beauty of tissues!"
-      ],
-      "image_prompts": [
-        [
-          "https://cdn2.stablediffusionapi.com/generations/e9190b92-70c5-45f6-ae65-afaafa3fe5ba-0.png"
-        ],
-        [
-          "https://cdn2.stablediffusionapi.com/generations/dad21bb5-ff66-4786-86de-9d0de3468057-0.png"
-        ],
-        "Artistic representation of tissues"
-      ]
-    }
-  ]
-}
-=======
         "Summarize the main points or topics covered",
         "Reiterate the key message or takeaway",
         "End with a memorable closing statement"
@@ -101,9 +83,6 @@
         "A group of people clapping - representing audience appreciation or applause"
       ],
       "speaker_notes": "In the conclusion slide, you want to reinforce the main points or topics discussed in the presentation. Restate the key message or takeaway that you want the audience to remember. End with a strong and memorable closing statement that leaves a lasting impression."
-    },
-    {
-      "title": "Q&A",
-      "content": [
-        "Encourage the
->>>>>>> 5bcd88bcd1c56d0174f03840e897ba91963fded8
+    }
+  ]
+}

@@ -35,6 +35,7 @@ def process_prompt():
     
     print(json_data.get("presentationID"), json_data.get("pageID"), json_data.get("objectID"))
     elem = get_slide_pageElement(json_data.get("presentationID"), json_data.get("pageID"), json_data.get("objectID"))
+    print(elem, flush=True)
     if (elem is not None):
         #otherwise it's just normal page
         #only handle text and image for now
