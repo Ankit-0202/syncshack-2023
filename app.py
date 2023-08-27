@@ -33,6 +33,7 @@ def process_prompt():
     if selected_object_id is not None:
         session["selected_object_id"] = selected_object_id
     
+    
     print(json_data.get("presentationID"), json_data.get("pageID"), json_data.get("objectID"))
     elem = get_slide_pageElement(json_data.get("presentationID"), json_data.get("pageID"), json_data.get("objectID"))
     if (elem is not None):
@@ -49,10 +50,13 @@ def process_prompt():
         #populate_slides(json_output, '1IlA5ES-gKdA_ySNXK3SsiQD3D0Oo8NhCSqby7VGrqPQ')
         populate_slides(json_output, json_data.get("presentationID"))
 
+
     response = {
         "status": "OK",
     }
     return response
+
+
 
 @app.before_request
 def initialise_session():
