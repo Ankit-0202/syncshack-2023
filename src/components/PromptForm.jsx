@@ -1,10 +1,12 @@
 import { useEffect, useState } from 'react';
-import { Button, Grid, TextField } from '@mui/material';
+import { Box, Button, CircularProgress, Grid, TextField } from '@mui/material';
 
 const GOOGLE_SLIDES_URL_REGEX =
     /https:\/\/docs\.google\.com\/presentation\/d\/([a-zA-Z0-9_-]+)\/edit#slide=id.([a-zA-Z0-9_-]+)/;
 
 export default function PromptForm() {
+  const [generating, setGenerating] = useState(false);
+  const [generateSuccessful, setGenerateSuccessful] = useState(false);
   const [prompt, setPrompt] = useState("");
   const [mood, setMood] = useState("");
 
@@ -15,6 +17,11 @@ export default function PromptForm() {
 
   function submitPrompt(event) {
     event.preventDefault();
+
+    if (!generating) {
+      setGenerateSuccessful(false);
+      setGenerating(true);
+    }
 
     chrome.tabs.query({active: true, currentWindow: true})
         .then(([tab]) => {
@@ -70,7 +77,6 @@ export default function PromptForm() {
             jsonData.objectID = objectID;
           }
           
-          clearForm();
           return jsonData;
         }).then((jsonData) => {
           return fetch("http://localhost:5000/prompt-processing", {
@@ -86,6 +92,10 @@ export default function PromptForm() {
           if (jsonResponseData.status != "OK") {
             throw new Error("bad status");
           }
+        }).then(() => {
+          setGenerateSuccessful(true);
+          setGenerating(false);
+          clearForm();
         }).catch((error) => {
           console.error(error);
         });
@@ -106,6 +116,7 @@ export default function PromptForm() {
           fullWidth
           size="small"
           value={prompt}
+          disabled={generating}
           onChange={(e) => setPrompt(e.target.value)}
         />
       </Grid>
@@ -118,12 +129,33 @@ export default function PromptForm() {
           fullWidth
           size="small"
           value={mood}
+          disabled={generating}
           onChange={(e) => setMood(e.target.value)}
         />
       </Grid>
 
       <Grid item xs={12}>
-        <Button type="submit" variant="contained">Send Prompt</Button>
+        <Box sx={{m: 1, position: "relative"}}>
+          <Button
+            type="submit"
+            variant="contained"
+            disabled={generating}
+          >
+            Send Prompt
+          </Button>
+          {generating && (
+            <CircularProgress
+              size={24}
+              sx={{
+                position: "absolute",
+                top: "50%",
+                left: "50%",
+                marginTop: "-12px",
+                marginLeft: "-12px",
+              }}
+            />
+          )}
+        </Box>
       </Grid>
     </Grid>
   );
