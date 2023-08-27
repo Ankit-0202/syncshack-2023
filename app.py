@@ -2,6 +2,7 @@ from flask import Flask, request, session
 from my_ai import *
 from json import *
 from logging import Logger
+from qiskit import *
 import sys
 from logging.config import dictConfig
 from flask_cors import CORS
